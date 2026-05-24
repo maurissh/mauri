@@ -1,48 +1,30 @@
 # Report playlist tivusat
 
-Ultimo aggiornamento: **2026-05-24 15:15 UTC**
+Ultimo aggiornamento: **2026-05-24 15:49 UTC**
 
 ## Riepilogo
 
 - Canali IT nell'anagrafica iptv-org: **616**
 - Canali IT con stream disponibile: **247**
-- Canali abbinati a un LCN tivusat: **41**
+- Canali abbinati a un LCN tivusat: **65**
 - Canali senza LCN (accodati da 9000): **206**
 
 ## Canali in tabella LCN ma senza stream oggi
 
 (numero — nome: lo stream potrebbe essere temporaneamente assente)
 
-- 8 — TV8
-- 9 — Nove
 - 16 — Mediaset Italia 2
-- 17 — Mediaset Extra
-- 19 — Cielo
 - 20 — 20 Mediaset
-- 22 — Focus
-- 28 — DMAX
 - 28 — DMAX Italy
 - 30 — WeDoTV Movies
-- 31 — Real Time
 - 31 — Real Time Italy
-- 33 — Food Network
 - 33 — Food Network Italy
-- 35 — Radio Italia TV
 - 37 — Discovery
-- 37 — Discovery Channel
 - 37 — Discovery Italy
 - 37 — Warner TV
 - 37 — Warner TV Italy
-- 38 — Giallo
-- 40 — Boing
-- 41 — Cartoonito
-- 44 — Frisbee
-- 44 — Frisbee HD
-- 46 — K2
-- 46 — K2 HD
 - 48 — Arte
 - 49 — Mezzo
-- 51 — EQU TV
 - 54 — Solo Calcio
 - 55 — Marcopolo
 - 56 — HGTV
@@ -50,15 +32,10 @@ Ultimo aggiornamento: **2026-05-24 15:15 UTC**
 - 58 — Euronews Italiano
 - 59 — Discovery Turbo
 - 59 — Discovery Turbo Italy
-- 59 — Motor Trend
-- 59 — MotorTrend
 - 60 — WeDo Big Stories
 - 63 — Radio Italia Live
-- 64 — Radio Kiss Kiss TV
 - 65 — Radio Zeta TV
 - 66 — Radiofreccia TV
-- 67 — Radio Monte Carlo TV
-- 68 — Virgin Radio TV
 - 69 — France 24 English
 - 70 — BBC News
 - 71 — Al Jazeera English
@@ -85,7 +62,6 @@ Ultimo aggiornamento: **2026-05-24 15:15 UTC**
 - 98 — Belarus Tomorrow
 - 99 — Gordon Live
 - 202 — Rai Radio 2 Visual
-- 210 — Rai 4K
 - 220 — Museum 4K
 - 222 — MyZen 4K
 - 225 — TravelXP 4K
@@ -116,7 +92,6 @@ Ultimo aggiornamento: **2026-05-24 15:15 UTC**
 - 412 — Teleradiopace
 - 413 — Sender Neu Jerusalem
 - 420 — People TV
-- 422 — Telecupole
 - 500 — Tivu La Guida
 - 519 — TRM h24
 - 550 — San Marino RTV
@@ -129,7 +104,6 @@ Ultimo aggiornamento: **2026-05-24 15:15 UTC**
 - 607 — Rai Radio 3 Classica
 - 608 — RDS
 - 609 — DimSuono Roma
-- 610 — RTL 102.5
 - 613 — Radio Gamma Stereo
 - 615 — Radio 105
 - 616 — Virgin Radio
@@ -163,7 +137,6 @@ Ultimo aggiornamento: **2026-05-24 15:15 UTC**
 - 662 — Swiss Jazz
 - 663 — Swiss Classic
 - 815 — Vatican Media
-- 819 — Videolina
 - 822 — Telesardegna
 - 868 — Arte Investimenti
 
