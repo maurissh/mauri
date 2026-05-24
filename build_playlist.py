@@ -41,6 +41,12 @@ COUNTRY = "IT"  # codice ISO 3166-1 alpha-2 del paese da estrarre
 FALLBACK_ENABLED = True
 FALLBACK_URL = "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_italy.m3u8"
 
+# Canali per cui lo stream di iptv-org e' inaffidabile e vogliamo SEMPRE quello
+# di Free-TV (che usa i relinker/feed ufficiali). Si indicano per numero LCN.
+# Per questi, lo stream iptv-org viene ignorato anche se presente e "vivo".
+# Qui: tutti i canali Rai nazionali principali (1,2,3) + Rai tematici comuni.
+FORCE_FREETV_LCN = {1, 2, 3, 10, 13, 14, 15, 21, 23, 24}
+
 # --- Validazione stream -----------------------------------------------------
 # Prima di pubblicare, lo script puo' testare ogni URL e scartare i canali morti,
 # cosi' la playlist contiene solo stream vivi al momento della generazione.
@@ -313,6 +319,7 @@ def build():
     entries = []        # canali abbinati a un LCN
     unmapped = []       # canali italiani senza LCN noto
     matched_lcns = set()
+    forced_skipped = {}  # LCN forzati a Free-TV: stream iptv-org tenuto come ripiego
 
     for cid, ch in it_channels.items():
         ch_streams = streams_by_channel.get(cid)
@@ -340,8 +347,18 @@ def build():
         }
 
         if lcn_info:
-            record["lcn"] = lcn_info["lcn"]
-            matched_lcns.add(lcn_info["lcn"])
+            lcn_num = lcn_info["lcn"]
+            if lcn_num in FORCE_FREETV_LCN:
+                # questo canale deve venire da Free-TV: ignoro lo stream iptv-org,
+                # ma lo salvo come ripiego nel caso Free-TV non lo fornisca
+                forced_skipped[lcn_num] = {
+                    "id": record["id"], "name": record["name"],
+                    "logo": record["logo"], "categories": record["categories"],
+                    "url": record["url"], "lcn": lcn_num,
+                }
+                continue
+            record["lcn"] = lcn_num
+            matched_lcns.add(lcn_num)
             entries.append(record)
         else:
             unmapped.append(record)
@@ -381,6 +398,19 @@ def build():
               f"(tra cui il bouquet Discovery se presente)")
     if fallback_preferred:
         print(f"  Preferiti da Free-TV su iptv-org (doppioni): {len(fallback_preferred)}")
+
+    # Ripiego: canali forzati a Free-TV che pero' Free-TV non ha fornito.
+    # Per non perderli, recuperiamo lo stream iptv-org che avevamo messo da parte.
+    rescued = []
+    for lcn, record in forced_skipped.items():
+        if lcn not in by_lcn:
+            entries.append(record)
+            matched_lcns.add(lcn)
+            by_lcn[lcn] = record
+            rescued.append((record["name"], lcn))
+    if rescued:
+        print(f"  Ripiego iptv-org (Free-TV non li aveva): {len(rescued)} "
+              f"-> {', '.join(n for n, _ in rescued)}")
 
     # --- Applica gli override (stream manuali da fonti diverse da iptv-org) ---
     overrides = load_overrides()
@@ -475,46 +505,4 @@ def write_report(raw_map, entries, unmapped, it_channels, streams_by_channel):
     found_names = {normalize(r["name"]) for r in entries}
     missing = []
     for label in raw_map:
-        if normalize(label) not in found_names:
-            missing.append((raw_map[label], label))
-    missing.sort()
-
-    lines = [
-        "# Report playlist tivusat",
-        "",
-        f"Ultimo aggiornamento: **{now}**",
-        "",
-        "## Riepilogo",
-        "",
-        f"- Canali {COUNTRY} nell'anagrafica iptv-org: **{len(it_channels)}**",
-        f"- Canali {COUNTRY} con stream disponibile: **{len(streams_by_channel)}**",
-        f"- Canali abbinati a un LCN tivusat: **{mapped_count}**",
-        f"- Canali senza LCN (accodati da {UNMAPPED_START}): **{len(unmapped)}**",
-        "",
-    ]
-
-    if missing:
-        lines += [
-            "## Canali in tabella LCN ma senza stream oggi",
-            "",
-            "(numero — nome: lo stream potrebbe essere temporaneamente assente)",
-            "",
-        ]
-        lines += [f"- {lcn} — {label}" for lcn, label in missing]
-        lines.append("")
-
-    if unmapped:
-        lines += [
-            "## Canali italiani senza LCN tivusat",
-            "",
-            "Aggiungi questi nomi a `lcn_tivusat.json` se vuoi assegnare loro un numero:",
-            "",
-        ]
-        lines += [f'- `"{r["name"]}"`' for r in unmapped]
-        lines.append("")
-
-    REPORT_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
-if __name__ == "__main__":
-    build()
+        if normalize(label) not in foun
