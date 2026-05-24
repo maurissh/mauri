@@ -15,7 +15,7 @@ https://live02-seg.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/index.m3u8
 https://d1chghleocc9sm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-evfku205gqrtf/Live.m3u8
 #EXTINF:-1 tvg-id="freetv:tv8" tvg-chno="8" tvg-logo="https://i.imgur.com/xvoHVOU.png" group-title="Italia",  8 TV8
 https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
-#EXTINF:-1 tvg-id="freetv:nove" tvg-chno="9" tvg-logo="https://i.imgur.com/Hp723RU.png" group-title="Italia",  9 Nove
+#EXTINF:-1 tvg-id="freetv:nove" tvg-chno="9" tvg-logo="https://i.imgur.com/Hp723RU.png" group-title="Discovery",  9 Nove
 https://d31mw7o1gs0dap.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-y5pbi2sq9r609/NOVE_IT.m3u8
 #EXTINF:-1 tvg-id="freetv:rai4" tvg-chno="10" tvg-logo="https://i.imgur.com/XFkZRfv.png" group-title="Italia", 10 Rai 4
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=rainet/4.0.5
@@ -49,25 +49,23 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1&output=7&forceUser
 https://live02-seg.msf.cdn.mediaset.net/live/ch-kf/kf-clr.isml/index.m3u8
 #EXTINF:-1 tvg-id="freetv:raiscuola" tvg-chno="26" tvg-logo="https://i.imgur.com/tmtJW6s.png" group-title="Italia", 26 Rai Scuola
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747011&output=7&forceUserAgent=rainet/4.0.5
-#EXTINF:-1 tvg-id="iptvorg:twentyseven" tvg-chno="27" tvg-logo="" group-title="Italia", 27 TwentySeven
+#EXTINF:-1 tvg-id="Twentyseven.it" tvg-chno="27" tvg-logo="" group-title="movies", 27 Twentyseven
 https://live2.msf.cdn.mediaset.net/content/hls_h0_cls_vos/live/channel(ts)/index.m3u8
-#EXTINF:-1 tvg-id="freetv:dmax" tvg-chno="28" tvg-logo="https://i.imgur.com/dmEmRX7.png" group-title="Italia", 28 DMAX
+#EXTINF:-1 tvg-id="freetv:dmax" tvg-chno="28" tvg-logo="https://i.imgur.com/dmEmRX7.png" group-title="Discovery", 28 DMAX
 https://d2j2nqgg7bzth.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-02k1gv1j0ufwn/DMAX_IT.m3u8
-#EXTINF:-1 tvg-id="freetv:la7cinema" tvg-chno="29" tvg-logo="https://i.imgur.com/khPweok.png" group-title="Italia", 29 La7 Cinema
-https://viamotionhsi.netplus.ch/live/eds/la7d/browser-HLS8/la7d.m3u8
-#EXTINF:-1 tvg-id="freetv:realtime" tvg-chno="31" tvg-logo="https://i.imgur.com/9dcTYg1.png" group-title="Italia", 31 Real Time
+#EXTINF:-1 tvg-id="freetv:realtime" tvg-chno="31" tvg-logo="https://i.imgur.com/9dcTYg1.png" group-title="Discovery", 31 Real Time
 https://d3562mgijzx0zq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-kizqtzpvvl3i8/Realtime_IT.m3u8
-#EXTINF:-1 tvg-id="freetv:foodnetwork" tvg-chno="33" tvg-logo="https://i.imgur.com/i60OYr9.png" group-title="Italia", 33 Food Network
+#EXTINF:-1 tvg-id="freetv:foodnetwork" tvg-chno="33" tvg-logo="https://i.imgur.com/i60OYr9.png" group-title="Discovery", 33 Food Network
 https://dk3okdd5036kz.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-o4pw0nc02sthz/Foodnetwork_IT.m3u8
 #EXTINF:-1 tvg-id="freetv:cine34" tvg-chno="34" tvg-logo="https://i.imgur.com/YyldwhI.png" group-title="Italia", 34 Cine 34
 https://live02-seg.msf.cdn.mediaset.net/live/ch-b6/b6-clr.isml/index.m3u8
 #EXTINF:-1 tvg-id="freetv:radioitaliatv" tvg-chno="35" tvg-logo="https://i.imgur.com/4VCEJuJ.png" group-title="Italia", 35 Radio Italia TV
 https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8
-#EXTINF:-1 tvg-id="iptvorg:rtl1025tv" tvg-chno="36" tvg-logo="" group-title="Italia", 36 RTL 102.5 TV
+#EXTINF:-1 tvg-id="RTL1025TV.it" tvg-chno="36" tvg-logo="" group-title="music", 36 RTL 102.5 TV
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/playlist_video.m3u8
-#EXTINF:-1 tvg-id="freetv:discoverychannel" tvg-chno="37" tvg-logo="https://i.imgur.com/5IxIFJ0.png" group-title="Italia", 37 Discovery Channel
+#EXTINF:-1 tvg-id="freetv:discoverychannel" tvg-chno="37" tvg-logo="https://i.imgur.com/5IxIFJ0.png" group-title="Discovery", 37 Discovery Channel
 https://d24aqelmrau4kx.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-l1oas691aj7p2/WBTV_IT.m3u8
-#EXTINF:-1 tvg-id="freetv:giallo" tvg-chno="38" tvg-logo="https://i.imgur.com/0PIRwZS.png" group-title="Italia", 38 Giallo
+#EXTINF:-1 tvg-id="freetv:giallo" tvg-chno="38" tvg-logo="https://i.imgur.com/0PIRwZS.png" group-title="Discovery", 38 Giallo
 https://d9fqo6nfqlv2h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ulukbrgm1n3yb/Giallo_IT.m3u8
 #EXTINF:-1 tvg-id="freetv:topcrime" tvg-chno="39" tvg-logo="https://i.imgur.com/RFIwv9O.png" group-title="Italia", 39 Top Crime
 https://live02-seg.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/index.m3u8
@@ -79,21 +77,19 @@ https://live02-seg.msf.cdn.mediaset.net/live/ch-la/la-clr.isml/index.m3u8
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953&output=7&forceUserAgent=rainet/4.0.5
 #EXTINF:-1 tvg-id="freetv:raiyoyo" tvg-chno="43" tvg-logo="https://i.imgur.com/DRSa3ys.png" group-title="Italia", 43 Rai Yoyo
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746899&output=7&forceUserAgent=rainet/4.0.5
-#EXTINF:-1 tvg-id="freetv:frisbee" tvg-chno="44" tvg-logo="https://i.imgur.com/9y1zIAe.png" group-title="Italia", 44 Frisbee HD
+#EXTINF:-1 tvg-id="freetv:frisbee" tvg-chno="44" tvg-logo="https://i.imgur.com/9y1zIAe.png" group-title="Discovery", 44 Frisbee HD
 https://d6m7lubks416z.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zmbstsedxme9s/Frisbee_IT.m3u8
-#EXTINF:-1 tvg-id="freetv:k2" tvg-chno="46" tvg-logo="https://i.imgur.com/wlLgSiA.png" group-title="Italia", 46 K2 HD
+#EXTINF:-1 tvg-id="freetv:k2" tvg-chno="46" tvg-logo="https://i.imgur.com/wlLgSiA.png" group-title="Discovery", 46 K2 HD
 https://d1pmpe0hs35ka5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-39hsskpppgf72/K2_IT.m3u8
 #EXTINF:-1 tvg-id="freetv:super" tvg-chno="47" tvg-logo="https://i.imgur.com/1124YEp.png" group-title="Italia", 47 Super!
 https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_hbbtv/playlist.m3u8
 #EXTINF:-1 tvg-id="freetv:rdssocialtv" tvg-chno="50" tvg-logo="https://i.imgur.com/TY6FhqI.png" group-title="Italia", 50 RDS Social TV
 https://stream.rdstv.radio/index.m3u8
-#EXTINF:-1 tvg-id="freetv:equtv" tvg-chno="51" tvg-logo="https://i.imgur.com/x9Wdz7h.png" group-title="Italia", 51 EQU TV
-https://ippicabetflag-live.morescreens.com/IPPICA_1_003/304p.m3u8
-#EXTINF:-1 tvg-id="iptvorg:acisporttv" tvg-chno="52" tvg-logo="" group-title="Italia", 52 ACI Sport TV
+#EXTINF:-1 tvg-id="ACISportTV.it" tvg-chno="52" tvg-logo="" group-title="sports", 52 ACI Sport TV
 https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8
-#EXTINF:-1 tvg-id="freetv:motortrend" tvg-chno="59" tvg-logo="https://i.imgur.com/ipj2H0n.png" group-title="Italia", 59 MotorTrend
+#EXTINF:-1 tvg-id="freetv:motortrend" tvg-chno="59" tvg-logo="https://i.imgur.com/ipj2H0n.png" group-title="Discovery", 59 MotorTrend
 https://d205m6k582pec4.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-asg5puyzdtnqu/Motortrend_IT.m3u8
-#EXTINF:-1 tvg-id="iptvorg:rtl1025caliente" tvg-chno="62" tvg-logo="" group-title="Italia", 62 RTL 102.5 Caliente
+#EXTINF:-1 tvg-id="RTL1025Caliente.it" tvg-chno="62" tvg-logo="" group-title="music", 62 RTL 102.5 Caliente
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S8448465/zTYa1Z5Op9ue/playlist_video.m3u8
 #EXTINF:-1 tvg-id="freetv:radiokisskisstv" tvg-chno="64" tvg-logo="https://i.imgur.com/UTStxDW.png" group-title="Italia", 64 Radio Kiss Kiss TV
 https://kk.fluid.stream/KKMulti/smil:KissKissTV.smil/playlist.m3u8
@@ -101,13 +97,11 @@ https://kk.fluid.stream/KKMulti/smil:KissKissTV.smil/playlist.m3u8
 https://live02-seg.msr.cdn.mediaset.net/live/ch-bb/bb-clr.isml/index.m3u8
 #EXTINF:-1 tvg-id="freetv:virginradiotv" tvg-chno="68" tvg-logo="https://i.imgur.com/7Im3HI1.png" group-title="Italia", 68 Virgin Radio TV
 https://live02-seg.msr.cdn.mediaset.net/live/ch-ew/ew-clr.isml/index.m3u8
-#EXTINF:-1 tvg-id="iptvorg:cameradeideputati" tvg-chno="90" tvg-logo="" group-title="Italia", 90 Camera dei Deputati
+#EXTINF:-1 tvg-id="CameradeiDeputati.it" tvg-chno="90" tvg-logo="" group-title="legislative", 90 Camera dei Deputati
 https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8
 #EXTINF:-1 tvg-id="freetv:rai" tvg-chno="210" tvg-logo="https://i.imgur.com/5gkt9DD.png" group-title="Italia",210 Rai 4K
 https://raievent10-elem-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telecupole" tvg-chno="422" tvg-logo="https://i.imgur.com/ZmUI9zb.png" group-title="Italia",422 Telecupole
-https://nrvideo1.newradio.it/euhsbdamnx/euhsbdamnx/playlist.m3u8
-#EXTINF:-1 tvg-id="iptvorg:horsetv" tvg-chno="444" tvg-logo="" group-title="Italia",444 Horse TV
+#EXTINF:-1 tvg-id="HorseTV.it" tvg-chno="444" tvg-logo="" group-title="sports",444 Horse TV
 https://a-cdn.klowdtv.com/live2/horsetv_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="freetv:padrepiotv" tvg-chno="445" tvg-logo="https://i.imgur.com/7ajxEPH.png" group-title="Italia",445 Padre Pio TV
 https://600f07e114306.streamlock.net/PadrePioTV/livestream/playlist.m3u8
@@ -121,671 +115,305 @@ https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/p
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S9346184/XEx1LqlYbNic/playlist.m3u8
 #EXTINF:-1 tvg-id="freetv:radiofreccia" tvg-chno="612" tvg-logo="https://i.imgur.com/J5N9F7Z.png" group-title="Italia",612 Radiofreccia
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S3160845/0tuSetc8UFkF/playlist.m3u8
-#EXTINF:-1 tvg-id="iptvorg:radionumberone" tvg-chno="631" tvg-logo="" group-title="Italia",631 Radio Number One
+#EXTINF:-1 tvg-id="RadioNumberOne.it" tvg-chno="631" tvg-logo="" group-title="Italia",631 Radio Number One
 https://56b50ada2d659.streamlock.net/RN1TV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="freetv:uninettunouniversitytv" tvg-chno="701" tvg-logo="https://i.imgur.com/BOGMeio.png" group-title="Italia",701 UNINETTUNO University TV
 https://stream6-rai-it.akamaized.net/live/uninettuno/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:videolina" tvg-chno="819" tvg-logo="https://i.imgur.com/bnDZJwd.gif" group-title="Italia",819 Videolina
-http://livestreaming.videolina.it/live/Videolina/playlist.m3u8
 #EXTINF:-1 tvg-id="freetv:tvavicenza" tvg-chno="832" tvg-logo="https://i.imgur.com/FtFuPCC.png" group-title="Italia",832 TVA Vicenza
 http://fms.tvavicenza.it:1935/live/diretta_1/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:111tv" tvg-chno="9000" tvg-logo="https://i.imgur.com/4jY8yAI.png" group-title="Italia",9000 111 Tv
+#EXTINF:-1 tvg-id="111TV.it" tvg-chno="9000" tvg-logo="" group-title="general",9000 111 TV
 https://5db313b643fd8.streamlock.net/111/111/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:12tvparma" tvg-chno="9001" tvg-logo="https://i.imgur.com/xnUgx6b.png" group-title="Italia",9001 12 Tv Parma
+#EXTINF:-1 tvg-id="12TVParma.it" tvg-chno="9001" tvg-logo="" group-title="general",9001 12 TV Parma
 https://5929b138b139d.streamlock.net/12TVParma/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:27twentyseven" tvg-chno="9002" tvg-logo="https://i.imgur.com/y2PdPCK.png" group-title="Italia",9002 27 Twentyseven
-https://live02-seg.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/index.m3u8
-#EXTINF:-1 tvg-id="freetv:4youtv" tvg-chno="9003" tvg-logo="https://i.imgur.com/NN0cSbz.png" group-title="Italia",9003 4 You Tv
-https://streamsrv2.nets-sr.com:19360/4youtv/4youtv.m3u8
-#EXTINF:-1 tvg-id="freetv:abchannel" tvg-chno="9004" tvg-logo="https://i.imgur.com/k8EPLB9.png" group-title="Italia",9004 AB Channel
-https://tsw.streamingwebtv24.it:1936/abchanneltv/abchanneltv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:abctv" tvg-chno="9005" tvg-logo="https://i.imgur.com/nVmIeTD.png" group-title="Italia",9005 Abc Tv
-https://diretta.arcapuglia.it:8080/live/abctv/index.m3u8
-#EXTINF:-1 tvg-id="freetv:almatv" tvg-chno="9006" tvg-logo="https://i.imgur.com/Y8JiDwN.png" group-title="Italia",9006 Alma TV
-https://streaming.softwarecreation.it/AlmaTv/AlmaTv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:alpauno" tvg-chno="9007" tvg-logo="https://i.imgur.com/4QKFtUa.png" group-title="Italia",9007 Alpauno
-https://5f22d76e220e1.streamlock.net/alpaunotv/alpaunotv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:altoadigetv" tvg-chno="9008" tvg-logo="https://i.imgur.com/S2sCFQi.png" group-title="Italia",9008 Alto Adige Tv
+#EXTINF:-1 tvg-id="51RadioTV.it" tvg-chno="9002" tvg-logo="" group-title="music",9002 51 Radio TV
+http://wms.shared.streamshow.it/canale51/canale51/playlist.m3u8
+#EXTINF:-1 tvg-id="7RadioVisione.it" tvg-chno="9003" tvg-logo="" group-title="music",9003 7 RadioVisione
+https://stream10.xdevel.com/video1s976543-1932/stream/playlist.m3u8
+#EXTINF:-1 tvg-id="7YOUME.it" tvg-chno="9004" tvg-logo="" group-title="music",9004 7 YOU & ME
+https://stream10.xdevel.com/video0s977798-2239/stream/playlist.m3u8
+#EXTINF:-1 tvg-id="7080TV.it" tvg-chno="9005" tvg-logo="" group-title="music",9005 70-80 TV
+https://585b674743bbb.streamlock.net/9050/9050/playlist.m3u8
+#EXTINF:-1 tvg-id="A2iTV.it" tvg-chno="9006" tvg-logo="" group-title="general",9006 A2i TV
+https://stream.sen-gt.com/A2itv/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="AltoAdigeTV.it" tvg-chno="9009" tvg-logo="" group-title="general",9009 AltoAdige TV
 https://5f204aff97bee.streamlock.net/AltoAdigeTV/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:antenna2bergamo" tvg-chno="9009" tvg-logo="https://i.imgur.com/NfvHIAw.png" group-title="Italia",9009 Antenna 2 Bergamo
+#EXTINF:-1 tvg-id="Antenna2TV.it" tvg-chno="9010" tvg-logo="" group-title="general",9010 Antenna 2 TV
 https://58f12ffd2447a.streamlock.net/Antenna2/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:antenna3massa" tvg-chno="9010" tvg-logo="https://i.imgur.com/CHDU86j.png" group-title="Italia",9010 Antenna 3 Massa
-https://media2021.rtvweb.com/antenna3massa/a3/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:antenna3venetonordest" tvg-chno="9011" tvg-logo="https://i.imgur.com/NiVHLwp.png" group-title="Italia",9011 Antenna 3 Veneto Nord Est
-https://59d7d6f47d7fc.streamlock.net/antennatreveneto/antennatreveneto.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:antennasiciliat" tvg-chno="9012" tvg-logo="https://i.imgur.com/8DOdqsE.png" group-title="Italia",9012 Antenna Sicilia Ⓣ
-https://www.twitch.tv/antennasicilia
-#EXTINF:-1 tvg-id="freetv:antennasud" tvg-chno="9013" tvg-logo="https://i.imgur.com/b8y6ImZ.png" group-title="Italia",9013 Antenna Sud
-https://live.antennasudwebtv.it:9443/hls/vod.m3u8
-#EXTINF:-1 tvg-id="freetv:antennasudextra" tvg-chno="9014" tvg-logo="https://i.imgur.com/6tBv8VD.png" group-title="Italia",9014 Antenna Sud Extra
-https://live.antennasudwebtv.it:9443/hls/vod92.m3u8
-#EXTINF:-1 tvg-id="freetv:aristanissupertv" tvg-chno="9015" tvg-logo="https://i.imgur.com/v8PlAJO.png" group-title="Italia",9015 Aristanis SuperTv
-https://video2.azotosolutions.com:1936/supertvoristano/supertvoristano/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:artenetworkorler" tvg-chno="9016" tvg-logo="https://i.imgur.com/DP5y0Er.png" group-title="Italia",9016 Arte Network Orler
-https://tsw.streamingwebtv24.it:1936/artenetwork/artenetwork/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:auroraarte" tvg-chno="9017" tvg-logo="https://i.imgur.com/BoLZ5wG.png" group-title="Italia",9017 Aurora Arte
+#EXTINF:-1 tvg-id="AuroraArte.it" tvg-chno="9014" tvg-logo="" group-title="culture",9014 Aurora Arte
 https://59d7d6f47d7fc.streamlock.net/auroraarte/auroraarte/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:azzurratvvco" tvg-chno="9018" tvg-logo="https://i.imgur.com/mSWw8uW.png" group-title="Italia",9018 Azzurra Tv Vco
-https://59d7d6f47d7fc.streamlock.net/azzurratv/azzurratv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:basilicata1tv" tvg-chno="9019" tvg-logo="https://i.imgur.com/VS6CQ88.png" group-title="Italia",9019 Basilicata 1 Tv
-http://77.68.40.210:8888/hls/basilicata1.m3u8
-#EXTINF:-1 tvg-id="freetv:bergamotv" tvg-chno="9020" tvg-logo="https://i.imgur.com/1doR6Vl.png" group-title="Italia",9020 Bergamo Tv
-https://db142859fd5541b09de25d6507f1f2d3.msvdn.net/live/S17501676/oIxAsgEEA46M/playlist.m3u8?DVR
-#EXTINF:-1 tvg-id="freetv:bikechannel" tvg-chno="9021" tvg-logo="https://i.imgur.com/4IzVSQI.png" group-title="Italia",9021 BIKE Channel
-https://stream.prod-01.milano.nxmedge.net/argocdn/bikechannel/video.m3u8
-#EXTINF:-1 tvg-id="freetv:bomchannel" tvg-chno="9022" tvg-logo="https://i.imgur.com/hISoOK3.png" group-title="Italia",9022 BOM Channel
+#EXTINF:-1 tvg-id="AzzurraTV.it" tvg-chno="9015" tvg-logo="" group-title="general",9015 Azzurra TV
+https://ed05.top-ix.org/avtvlive/azzurra/streaming/playlist.m3u8
+#EXTINF:-1 tvg-id="BergamoTV.it" tvg-chno="9016" tvg-logo="" group-title="general",9016 Bergamo TV
+https://db142859fd5541b09de25d6507f1f2d3.msvdn.net/live/S17501676/oIxAsgEEA46M/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="BomChannel.it" tvg-chno="9017" tvg-logo="" group-title="general",9017 Bom Channel
 https://5f22d76e220e1.streamlock.net/canale6/canale6/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:byoblu" tvg-chno="9023" tvg-logo="https://i.imgur.com/1xaHGtU.png" group-title="Italia",9023 ByoBlu
-https://09bd1346f7a44cc9ac230cc1cb22ca4f.msvdn.net/live/S39249178/EnTK3KeeN1Eg/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:cafetv24" tvg-chno="9024" tvg-logo="https://i.imgur.com/KbcbxFw.png" group-title="Italia",9024 Cafe Tv 24
+#EXTINF:-1 tvg-id="CafeTV24.it" tvg-chno="9018" tvg-logo="" group-title="Italia",9018 CafeTV24
 https://srvx1.selftv.video/cafe/live/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:calabriatv" tvg-chno="9025" tvg-logo="https://i.imgur.com/qWirucd.png" group-title="Italia",9025 Calabria tv
-https://64b16f23efbee.streamlock.net/calabriatv-clone/calabriatv-clone/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:calabriaunotv" tvg-chno="9026" tvg-logo="https://i.imgur.com/2TK1GQ5.png" group-title="Italia",9026 Calabria Uno Tv
-https://635320cd397eb.streamlock.net/live/ngrp:calabriaunolive_all/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:cameradeideputatis" tvg-chno="9027" tvg-logo="https://i.imgur.com/fqGn1k9.png" group-title="Italia",9027 Camera dei Deputati Ⓢ
-https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:canale10" tvg-chno="9028" tvg-logo="https://i.imgur.com/KuQcjYV.png" group-title="Italia",9028 Canale 10
-https://nrvideo1.newradio.it:1936/desxcerbht/desxcerbht/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:canale2" tvg-chno="9029" tvg-logo="https://i.imgur.com/ETqDkS1.png" group-title="Italia",9029 Canale 2
+#EXTINF:-1 tvg-id="CalabriaTV.it" tvg-chno="9019" tvg-logo="" group-title="general",9019 Calabria TV
+https://64b16f23efbee.streamlock.net/calabriatv/calabriatv/playlist.m3u8
+#EXTINF:-1 tvg-id="Canale2Altamura.it" tvg-chno="9020" tvg-logo="" group-title="general",9020 Canale 2 Altamura
 https://59d7d6f47d7fc.streamlock.net/canale2/canale2/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:canale21" tvg-chno="9030" tvg-logo="https://i.imgur.com/mU6Cq89.png" group-title="Italia",9030 Canale 21
-https://0ff9dd7fe9b64bc08a5fc4ed525454c3.msvdn.net/live/S38994111/B7j0ql4XaZtE/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:canale21extra" tvg-chno="9031" tvg-logo="https://i.imgur.com/cDAsrBl.png" group-title="Italia",9031 Canale 21 Extra
+#EXTINF:-1 tvg-id="Canale21Extra.it" tvg-chno="9021" tvg-logo="" group-title="general",9021 Canale 21 Extra
 https://0ff9dd7fe9b64bc08a5fc4ed525454c3.msvdn.net/live/S42170132/sT6C3LFaD1iA/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:canale7" tvg-chno="9032" tvg-logo="https://i.imgur.com/9cuOLCn.png" group-title="Italia",9032 Canale 7
-http://wms.shared.streamshow.it:80/canale7/canale7/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:canale74sicilia" tvg-chno="9033" tvg-logo="https://i.imgur.com/18JIVgu.png" group-title="Italia",9033 Canale 74 Sicilia
-https://stream.cp.ets-sistemi.it:1936/canale74/canale74/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:canale8campania" tvg-chno="9034" tvg-logo="https://i.imgur.com/ElAS2WC.png" group-title="Italia",9034 Canale 8 Campania
-https://59d7d6f47d7fc.streamlock.net/canale8/canale8/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:canaleitalia" tvg-chno="9035" tvg-logo="https://i.imgur.com/QlwLRyh.png" group-title="Italia",9035 Canale Italia
-https://ovp-live.akamaized.net/ac115_live/canale1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:carinatv" tvg-chno="9036" tvg-logo="https://i.imgur.com/FMGcm6I.jpg" group-title="Italia",9036 Carina Tv
-https://samson.streamerr.co:8081/carinatv/index.m3u8
-#EXTINF:-1 tvg-id="freetv:casaitalia53" tvg-chno="9037" tvg-logo="https://i.imgur.com/O4GQVCk.png" group-title="Italia",9037 Casa Italia 53
+#EXTINF:-1 tvg-id="Canale7.it" tvg-chno="9022" tvg-logo="" group-title="general",9022 Canale 7
+http://wms.shared.streamshow.it/canale7/canale7/playlist.m3u8
+#EXTINF:-1 tvg-id="Canale8.it" tvg-chno="9023" tvg-logo="" group-title="Italia",9023 Canale 8
+http://wms.shared.streamshow.it/canale8/canale8/playlist.m3u8
+#EXTINF:-1 tvg-id="CarinaTV.it" tvg-chno="9025" tvg-logo="" group-title="Italia",9025 CarinaTV
+https://samson.streamerr.co:8081/carinatv/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="CasaItalia53.it" tvg-chno="9026" tvg-logo="" group-title="shop",9026 Casa Italia 53
 https://ovp-live.akamaized.net/ac115_live/canale3.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:casasanremotv" tvg-chno="9038" tvg-logo="https://i.imgur.com/WL3SFTs.png" group-title="Italia",9038 Casa Sanremo Tv
-https://router.xdevel.com/video0s975911-633/stream/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="freetv:castrovillaritv" tvg-chno="9039" tvg-logo="https://i.imgur.com/V0kjYNG.png" group-title="Italia",9039 Castrovillari Tv
-http://msh0062.stream.seeweb.it/live/flv:stream00.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:cittacelestetv" tvg-chno="9040" tvg-logo="https://i.imgur.com/9RVriNK.jpeg" group-title="Italia",9040 Cittaceleste Tv
-https://sportitaliaamd.akamaized.net/live/Cittaceleste/hls/A990687F506536598442FC5CD12C97CB78873FBA/index.m3u8
-#EXTINF:-1 tvg-id="freetv:companytv" tvg-chno="9041" tvg-logo="https://i.imgur.com/IbabUDd.png" group-title="Italia",9041 Company Tv
-https://company.fluid.stream/CompanyTV/smil:Company_ALL.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:cremona1" tvg-chno="9042" tvg-logo="https://i.imgur.com/a5d0F01.jpg" group-title="Italia",9042 Cremona 1
-https://cdn2.streamshow.it/cloud-cremona1/cremona1/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:cusanoitaliatv" tvg-chno="9043" tvg-logo="https://i.imgur.com/9F1sVjZ.png" group-title="Italia",9043 Cusano Italia Tv
+#EXTINF:-1 tvg-id="CGEntertainment.it" tvg-chno="9027" tvg-logo="" group-title="entertainment",9027 CG Entertainment
+https://cgentertainment-cgtv-1-it.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="CompanyTV.it" tvg-chno="9030" tvg-logo="" group-title="music",9030 Company TV
+https://5929b138b139d.streamlock.net/CompanyTV/smil:CompanyTV.smil/master.m3u8
+#EXTINF:-1 tvg-id="CusanoItaliaTV.it" tvg-chno="9031" tvg-logo="" group-title="general",9031 Cusano Italia TV
 https://router.xdevel.com/video0s975363-69/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:cusanonews7" tvg-chno="9044" tvg-logo="https://i.imgur.com/L49Ie1Q.png" group-title="Italia",9044 Cusano News 7
-https://router.xdevel.com/video1s975363-1596/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:deejaytv" tvg-chno="9045" tvg-logo="https://i.imgur.com/rlaKH6k.png" group-title="Italia",9045 Deejay TV
+#EXTINF:-1 tvg-id="DeejayTV.it" tvg-chno="9032" tvg-logo="" group-title="general",9032 Deejay TV
 https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:deltatv" tvg-chno="9046" tvg-logo="https://i.imgur.com/mfwVXt7.png" group-title="Italia",9046 Delta Tv
-http://hbbtv-server.zivoli.it:8080/hls/deltatv/deltatv/index.m3u8
-#EXTINF:-1 tvg-id="freetv:deluxe139" tvg-chno="9047" tvg-logo="https://i.imgur.com/kRexw3w.png" group-title="Italia",9047 Deluxe 139
+#EXTINF:-1 tvg-id="DellaTV.it" tvg-chno="9033" tvg-logo="" group-title="general",9033 DellaTV
+https://live20.bozztv.com/giatvplayout7/giatv-211474/playlist.m3u8
+#EXTINF:-1 tvg-id="Deluxe139.it" tvg-chno="9034" tvg-logo="" group-title="Italia",9034 Deluxe 139
 https://59d7d6f47d7fc.streamlock.net/pierstyle/pierstyle/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:ditv80" tvg-chno="9048" tvg-logo="https://i.imgur.com/kHxTsJw.png" group-title="Italia",9048 Di.Tv 80
+#EXTINF:-1 tvg-id="DITV80.it" tvg-chno="9035" tvg-logo="" group-title="general",9035 DI.TV 80
 https://5f22d76e220e1.streamlock.net/ditv80/ditv80/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:ditv92" tvg-chno="9049" tvg-logo="https://i.imgur.com/g3SI08H.png" group-title="Italia",9049 Di.Tv 92
-https://media2021.rtvweb.com/di_tv_92/live/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:digitaltv7benevento" tvg-chno="9050" tvg-logo="https://i.imgur.com/NaQkklP.png" group-title="Italia",9050 Digital Tv7 Benevento
-http://streaming.senecadot.com/live/flv:tv7.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:donnashoppingtv" tvg-chno="9051" tvg-logo="https://i.imgur.com/oLDvx2T.png" group-title="Italia",9051 Donna Shopping Tv
-https://5f22d76e220e1.streamlock.net/fascinotv/fascinotv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:donnatvs" tvg-chno="9052" tvg-logo="https://i.imgur.com/Aa1Abme.png" group-title="Italia",9052 Donna TV Ⓢ
-https://5a1178b42cc03.streamlock.net/donnatv/donnatv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:elivebresciatv" tvg-chno="9053" tvg-logo="https://i.imgur.com/bZ3B7pi.png" group-title="Italia",9053 E'live Brescia Tv
+#EXTINF:-1 tvg-id="EliveTVBrescia.it" tvg-chno="9037" tvg-logo="" group-title="general",9037 Elive TV Brescia
 https://59d7d6f47d7fc.streamlock.net/elivebresciatv/elivebresciatv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:easytvcanale190" tvg-chno="9054" tvg-logo="https://i.imgur.com/LKrVuRR.jpg" group-title="Italia",9054 Easy Tv Canale 190
-https://diretta.arcapuglia.it:8080/live/easytv/index.m3u8
-#EXTINF:-1 tvg-id="freetv:entellatv" tvg-chno="9055" tvg-logo="https://i.imgur.com/1VPXKrW.png" group-title="Italia",9055 Entella Tv
-https://5f22d76e220e1.streamlock.net:443/EntellaTV/EntellaTV/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:equostv" tvg-chno="9056" tvg-logo="https://i.imgur.com/YwyfNDF.png" group-title="Italia",9056 Equos Tv
-https://dacastmmd.mmdlive.lldns.net/dacastmmd/2824fb123d5e44b797232c7abf8195da/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:espansionetv" tvg-chno="9057" tvg-logo="https://i.imgur.com/mm9HKpD.png" group-title="Italia",9057 Espansione Tv
-https://srvx1.selftv.video/espansione/smil:live.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:esperiatv" tvg-chno="9058" tvg-logo="https://patbuweb.com/tivustream/chanlogoz/ita/esperiatv.png" group-title="Italia",9058 Esperia Tv
+#EXTINF:-1 tvg-id="EntellaTV.it" tvg-chno="9038" tvg-logo="" group-title="general",9038 Entella TV
+https://5f22d76e220e1.streamlock.net/EntellaTV/EntellaTV/playlist.m3u8
+#EXTINF:-1 tvg-id="EsperiaTV.it" tvg-chno="9039" tvg-logo="" group-title="general",9039 Esperia TV
 https://59d7d6f47d7fc.streamlock.net/esperiatv/esperiatv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:etnaespressochannel" tvg-chno="9059" tvg-logo="https://i.imgur.com/hMUxytZ.png" group-title="Italia",9059 Etna Espresso Channel
+#EXTINF:-1 tvg-id="EtnaEspressoChannel.it" tvg-chno="9040" tvg-logo="" group-title="news",9040 Etna Espresso Channel
 https://5db313b643fd8.streamlock.net/Etnachannelponte/Etnachannelponte/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:eurotv" tvg-chno="9060" tvg-logo="https://i.imgur.com/HCl5Zbu.png" group-title="Italia",9060 Euro Tv
-https://5f22d76e220e1.streamlock.net/eurotv/eurotv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:euronewsitaliany" tvg-chno="9061" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Euronews_2022.svg/640px-Euronews_2022.svg.png" group-title="Italia",9061 Euronews Italian Ⓨ
-https://www.youtube.com/user/euronewsit/live
-#EXTINF:-1 tvg-id="freetv:extratv" tvg-chno="9062" tvg-logo="https://i.imgur.com/KCBurST.png" group-title="Italia",9062 Extra Tv
-https://rst2.saiuzwebnetwork.it:8081/extratvlive/index.m3u8
-#EXTINF:-1 tvg-id="freetv:fanotv" tvg-chno="9063" tvg-logo="https://i.imgur.com/orqEzJ6.png" group-title="Italia",9063 Fano Tv
-https://diretta.arcapuglia.it:8080/live/fanotv/index.m3u8
-#EXTINF:-1 tvg-id="freetv:fascinotv" tvg-chno="9064" tvg-logo="https://i.imgur.com/4XYYY5B.png" group-title="Italia",9064 Fascino Tv
-https://5f22d76e220e1.streamlock.net/canale157/canale157/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:fmtvmarche" tvg-chno="9065" tvg-logo="https://i.imgur.com/yY01NhL.jpg" group-title="Italia",9065 FM Tv Marche
-https://bbtv.intvstream.net:3988/hybrid/play.m3u8
-#EXTINF:-1 tvg-id="freetv:gamberorosso" tvg-chno="9066" tvg-logo="https://i.imgur.com/RApMW5x.png" group-title="Italia",9066 Gambero Rosso
-https://2018f6355a15442ebb37007fa4f6c064.msvdn.net/live/S7530969/XWerenuxbSdW/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:garganotv" tvg-chno="9067" tvg-logo="https://i.imgur.com/OlJohKK.png" group-title="Italia",9067 GarganoTv
-https://cdn80-ger.azotosolutions.com:8443/cdnedge3/smil:live3.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:giornaleradiotv" tvg-chno="9068" tvg-logo="https://i.imgur.com/TMtvCLL.jpg" group-title="Italia",9068 Giornale Radio Tv
-https://5f204aff97bee.streamlock.net/GR_tv/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:giovannipaolotv" tvg-chno="9069" tvg-logo="https://i.imgur.com/GH5eJE6.png" group-title="Italia",9069 Giovanni Paolo Tv
-https://media2021.rtvweb.com/giovannipaolotv/web/chunklist_w663456797.m3u8
-#EXTINF:-1 tvg-id="freetv:globustelevision" tvg-chno="9070" tvg-logo="https://i.imgur.com/yUTYqCv.png" group-title="Italia",9070 Globus Television
-https://cdn.cubws.com/live/globus.m3u8
-#EXTINF:-1 tvg-id="freetv:gotvchannel" tvg-chno="9071" tvg-logo="https://i.imgur.com/xgjrAAn.png" group-title="Italia",9071 GO-TV Channel
-https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648993a.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:goldtv" tvg-chno="9072" tvg-logo="https://i.imgur.com/3rVi4kD.png" group-title="Italia",9072 Gold Tv
-https://streaming.softwarecreation.it/GoldTv/GoldTv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:grptelevisione" tvg-chno="9073" tvg-logo="https://i.imgur.com/1zNPpVE.png" group-title="Italia",9073 GRP Televisione
-https://webstream.multistream.it/memfs/a3195c96-f884-4c74-924f-2648814fc0b5.m3u8
-#EXTINF:-1 tvg-id="freetv:gschannel" tvg-chno="9074" tvg-logo="https://i.imgur.com/ExfxCRv.png" group-title="Italia",9074 GS Channel
-https://rst.saiuzwebnetwork.it:8081/retereggio/index.m3u8
-#EXTINF:-1 tvg-id="freetv:hgtvhomegardentv" tvg-chno="9075" tvg-logo="https://i.imgur.com/emLNC0U.png" group-title="Italia",9075 HGTV – Home & Garden Tv
-https://d1tidto9vz737l.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-joaw4f4kh2en1/HGTV_IT.m3u8
-#EXTINF:-1 tvg-id="freetv:icarotvrimini" tvg-chno="9076" tvg-logo="https://i.imgur.com/z05VSSN.png" group-title="Italia",9076 Icaro Tv Rimini
-https://59d7d6f47d7fc.streamlock.net/icarotv/icarotv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:ideaplus" tvg-chno="9077" tvg-logo="https://i.imgur.com/2edmxYF.png" group-title="Italia",9077 Idea Plus
-https://rst.saiuzwebnetwork.it:19360/teleidea/teleidea.m3u8
-#EXTINF:-1 tvg-id="freetv:il61" tvg-chno="9078" tvg-logo="https://i.imgur.com/1rUZsBv.png" group-title="Italia",9078 il61
-https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:italia2" tvg-chno="9079" tvg-logo="https://i.imgur.com/nq48sjO.png" group-title="Italia",9079 Italia 2
-https://live02-seg.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/index.m3u8
-#EXTINF:-1 tvg-id="freetv:italia2tv" tvg-chno="9080" tvg-logo="https://i.imgur.com/ISbxfY0.png" group-title="Italia",9080 Italia 2 Tv
-https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:italia7" tvg-chno="9081" tvg-logo="https://i.imgur.com/YBXkY4w.png" group-title="Italia",9081 Italia 7
-https://streaming.softwarecreation.it/Italia7/Italia7/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:italia8prestige" tvg-chno="9082" tvg-logo="https://i.imgur.com/uDxWI4a.png" group-title="Italia",9082 Italia 8 Prestige
-https://5f22d76e220e1.streamlock.net/italia8prestige/italia8prestige/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:italiachannel" tvg-chno="9083" tvg-logo="https://i.imgur.com/zuuKXGv.png" group-title="Italia",9083 Italia Channel
-https://stream1.aswifi.it/italiachannel/stream/index.m3u8
-#EXTINF:-1 tvg-id="freetv:iuniortv" tvg-chno="9084" tvg-logo="https://i.imgur.com/9jeNlLE.png" group-title="Italia",9084 Iunior Tv
-https://5f22d76e220e1.streamlock.net/iuniortv/iuniortv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:laltrocorrieretv" tvg-chno="9085" tvg-logo="https://i.imgur.com/dgj79J3.png" group-title="Italia",9085 L'Altro Corriere Tv
-https://stream.cp.ets-sistemi.it:1936/laltrocorriere-tv/laltrocorriere-tv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:lanuovatv" tvg-chno="9086" tvg-logo="https://i.imgur.com/wg8FhdN.png" group-title="Italia",9086 La Nuova Tv
-https://5dcabf026b188.streamlock.net/lanuovatvbas/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:latendatv" tvg-chno="9087" tvg-logo="https://i.imgur.com/XnBp0hT.png" group-title="Italia",9087 La Tenda Tv
-https://2-fss-1.streamhoster.com/pl_148/206202-2980948-1/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:latr3marsala" tvg-chno="9088" tvg-logo="https://i.imgur.com/XlxpfEx.png" group-title="Italia",9088 La tr3 Marsala
-https://tsw.streamingwebtv24.it:1936/eslife1/eslife1/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:labtv" tvg-chno="9089" tvg-logo="https://i.imgur.com/OpRS6Fl.png" group-title="Italia",9089 Lab Tv
-https://customer-yzibk50951uq418a.cloudflarestream.com/a58893dee4b9922a75e41b4ec4243f84/manifest/video.m3u8
-#EXTINF:-1 tvg-id="freetv:lacnews24" tvg-chno="9090" tvg-logo="https://i.imgur.com/02vCECa.png" group-title="Italia",9090 LaC News 24
-https://f5842579ff984c1c98d63b8d789673eb.msvdn.net/live/S27391994/HVvPMzy/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:lactvcalabria" tvg-chno="9091" tvg-logo="https://i.imgur.com/2Ef6crS.png" group-title="Italia",9091 LaC Tv Calabria
-https://f5842579ff984c1c98d63b8d789673eb.msvdn.net/live/S47282891/JWjL3xqPf4bX/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:laziotv" tvg-chno="9092" tvg-logo="https://i.imgur.com/DAj5Uwb.png" group-title="Italia",9092 Lazio Tv
-https://streaming.softwarecreation.it/LazioTv/LazioTv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:lecronachelucanetv" tvg-chno="9093" tvg-logo="https://i.imgur.com/EBY3IZL.jpg" group-title="Italia",9093 Le Cronache Lucane Tv
-http://stucazz.com:8888/hls/cronache.m3u8
-#EXTINF:-1 tvg-id="freetv:liratv" tvg-chno="9094" tvg-logo="https://i.imgur.com/S0ReVEo.png" group-title="Italia",9094 Lira Tv
-https://a928c0678d284da5b383f29ecc5dfeec.msvdn.net/live/S57315730/8kTBWibNteJA/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:lombardiatv" tvg-chno="9095" tvg-logo="https://i.imgur.com/aksVy9f.jpg" group-title="Italia",9095 Lombardia Tv
-https://5db313b643fd8.streamlock.net/lmbiatv/lmbiatv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:loveinvenice" tvg-chno="9096" tvg-logo="https://i.imgur.com/lLBzzce.png" group-title="Italia",9096 Love in Venice
-http://59d7d6f47d7fc.streamlock.net/loveinvenice/loveinvenice/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:lucaniatv" tvg-chno="9097" tvg-logo="https://i.imgur.com/wuUNVR5.png" group-title="Italia",9097 Lucania Tv
-https://cdn15.streamshow.it/cloud-lucaniatv/lucaniatv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:madeinbo" tvg-chno="9098" tvg-logo="https://i.imgur.com/WFnrMS0.png" group-title="Italia",9098 Made in BO
-https://srvx1.selftv.video/dmchannel/live/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:manga" tvg-chno="9099" tvg-logo="https://i.imgur.com/8a6WYU2.png" group-title="Italia",9099 MAN-GA
-https://c65b9e710bde44819015af98e72cd7ab.msvdn.net/live/S93572876/aILSQPYFY3pF/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:mariavision" tvg-chno="9100" tvg-logo="https://i.imgur.com/fdx5YXi.png" group-title="Italia",9100 Maria Vision
-https://1601580044.rsc.cdn77.org/live/_jcn_/amls:CHANNEL_2/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:matrixtv" tvg-chno="9101" tvg-logo="https://i.imgur.com/m1HeXrn.png" group-title="Italia",9101 Matrix Tv
-https://5f22d76e220e1.streamlock.net/GrandeItalia/GrandeItalia/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:mediterraneatv" tvg-chno="9102" tvg-logo="https://i.imgur.com/GUTOqRt.png" group-title="Italia",9102 Mediterranea Tv
-https://stream1.aswifi.it/mediterraneatv/live/index.m3u8
-#EXTINF:-1 tvg-id="freetv:medjugorjeitaliatv" tvg-chno="9103" tvg-logo="https://i.imgur.com/hkZScXf.png" group-title="Italia",9103 Medjugorje Italia Tv
-https://5f22d76e220e1.streamlock.net/medjugorjeitaliatv/medjugorjeitaliatv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:medjugorjetvpuglia" tvg-chno="9104" tvg-logo="https://i.imgur.com/IWBeddh.png" group-title="Italia",9104 Medjugorje Tv Puglia
-https://diretta.arcapuglia.it:8080/live/medjugorietv/index.m3u8
-#EXTINF:-1 tvg-id="freetv:minformotv" tvg-chno="9105" tvg-logo="https://i.imgur.com/VJNtnZM.jpg" group-title="Italia",9105 Minformo Tv
-https://5db313b643fd8.streamlock.net:443/MinformoTV/MinformoTV/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:motoritv" tvg-chno="9106" tvg-logo="https://i.imgur.com/NWXQKbl.png" group-title="Italia",9106 Motori Tv
-https://5f22d76e220e1.streamlock.net/servizio01/servizio01/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:news24city" tvg-chno="9107" tvg-logo="https://i.imgur.com/dak9AtV.png" group-title="Italia",9107 News24 City
-https://dc3.telesveva.com:4433/news24.mp4
-#EXTINF:-1 tvg-id="freetv:nticanale271" tvg-chno="9108" tvg-logo="https://i.imgur.com/zlmcUe0.jpg" group-title="Italia",9108 NTI Canale 271
-https://www.ntimedia.it/video/S0B/S0B_master.m3u8
-#EXTINF:-1 tvg-id="freetv:nuovatv1" tvg-chno="9109" tvg-logo="https://i.imgur.com/1yqTZhR.png" group-title="Italia",9109 Nuova Tv 1
-https://nuovatv.net:8443/tv/stream.m3u8
-#EXTINF:-1 tvg-id="freetv:nuovatv2" tvg-chno="9110" tvg-logo="https://i.imgur.com/0vauyV3.png" group-title="Italia",9110 Nuova Tv 2
-https://nuovatv.net:8443/tv2/stream.m3u8
-#EXTINF:-1 tvg-id="freetv:nuovatvnazionale" tvg-chno="9111" tvg-logo="https://i.imgur.com/QWlRuXg.png" group-title="Italia",9111 Nuova TV Nazionale
-https://stream4.xdevel.com/video0s975955-782/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:nuvolatv" tvg-chno="9112" tvg-logo="https://i.imgur.com/EDGez2x.png" group-title="Italia",9112 Nuvola Tv
-https://stream.nuvola.tv:8181/memfs/4aaa6328-1879-4ebf-b18a-498146d0c61c.m3u8
-#EXTINF:-1 tvg-id="freetv:odeon24" tvg-chno="9113" tvg-logo="https://i.imgur.com/M1tVBuH.png" group-title="Italia",9113 Odeon 24
-https://streaming.softwarecreation.it/Odeon/Odeon/manifest.m3u8
-#EXTINF:-1 tvg-id="freetv:ofantotv" tvg-chno="9114" tvg-logo="https://i.imgur.com/UCgATWn.png" group-title="Italia",9114 Ofanto Tv
-https://videostream.isgm.it:3276/live/tvofantolive.m3u8
-#EXTINF:-1 tvg-id="freetv:ondanovaratv" tvg-chno="9115" tvg-logo="https://i.imgur.com/Qoh9CFy.png" group-title="Italia",9115 Onda Novara Tv
-https://585b674743bbb.streamlock.net/9006/9006/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:ondatvsicilia" tvg-chno="9116" tvg-logo="https://i.imgur.com/0c5Y6lr.png" group-title="Italia",9116 Onda Tv Sicilia
-https://5926fc9c7c5b2.streamlock.net/9040/9040/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:ondawebradio" tvg-chno="9117" tvg-logo="https://i.imgur.com/3hTvrC8.jpg" group-title="Italia",9117 Onda Web Radio
-http://178.33.224.197:1935/ondaradioweb/ondaradioweb/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:oratv" tvg-chno="9118" tvg-logo="https://i.imgur.com/clWVrvE.png" group-title="Italia",9118 Ora Tv
-https://5db313b643fd8.streamlock.net/OraTv/OraTv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:orlertv" tvg-chno="9119" tvg-logo="https://i.imgur.com/dBkxD8e.png" group-title="Italia",9119 Orler Tv
-https://w1.mediastreaming.it/orlertv/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:ottochannel" tvg-chno="9120" tvg-logo="https://i.imgur.com/HRonD2N.png" group-title="Italia",9120 Otto Channel
-https://ottop-live-meride.akamaized.net/hls/live/2039996/ch1/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:paradisetv" tvg-chno="9121" tvg-logo="https://i.imgur.com/okIBfIb.jpg" group-title="Italia",9121 Paradise Tv
-https://tsw.streamingwebtv24.it:1936/paradisetv/paradisetv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:partenopetv" tvg-chno="9122" tvg-logo="https://i.imgur.com/FtuWkj1.png" group-title="Italia",9122 Partenope Tv
-https://diretta.arcapuglia.it:8080/live/partenope/index.m3u8
-#EXTINF:-1 tvg-id="freetv:peertvaltoadige" tvg-chno="9123" tvg-logo="https://www.peer.biz/peertv-iptv/peer-tv-alto-adige.png" group-title="Italia",9123 Peer Tv Alto Adige
-https://iptv.peer.biz/live/peertv-it.m3u8
-#EXTINF:-1 tvg-id="freetv:peertvsudtirol" tvg-chno="9124" tvg-logo="https://www.peer.biz/peertv-iptv/peer-tv-suedtirol.png" group-title="Italia",9124 Peer TV Südtirol
-https://iptv.peer.biz/live/peertv.m3u8
-#EXTINF:-1 tvg-id="freetv:poptv" tvg-chno="9125" tvg-logo="https://i.imgur.com/TeolCu9.png" group-title="Italia",9125 Pop Tv
-https://stream1.aswifi.it/poptelevision/live/index.m3u8
-#EXTINF:-1 tvg-id="freetv:primatvnapoli" tvg-chno="9126" tvg-logo="https://i.imgur.com/yPuQeEy.jpg" group-title="Italia",9126 Prima Tv Napoli
-https://57068da1deb21.streamlock.net/primatvnapoli/primatvnapoli/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:primatvsicilia" tvg-chno="9127" tvg-logo="https://i.imgur.com/br45JER.png" group-title="Italia",9127 Prima Tv Sicilia
-https://5db313b643fd8.streamlock.net/PrimaTV/PrimaTV/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:primafree" tvg-chno="9128" tvg-logo="https://i.imgur.com/YrSSmOL.png" group-title="Italia",9128 PrimaFREE
-https://5f22d76e220e1.streamlock.net/primafree/primafree/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:primantennatorino" tvg-chno="9129" tvg-logo="https://i.imgur.com/sqEcPFs.gif" group-title="Italia",9129 Primantenna Torino
-https://5f22d76e220e1.streamlock.net/primantenna14/primantenna14/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:primocanale" tvg-chno="9130" tvg-logo="https://i.imgur.com/xWF1A1U.png" group-title="Italia",9130 Primocanale
-https://msh0203.stream.seeweb.it/live/flv:stream2.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:promovideotv" tvg-chno="9131" tvg-logo="https://i.imgur.com/MwK9HVG.png" group-title="Italia",9131 Promovideo Tv
-https://media2021.rtvweb.com/promovideo_web/promovideo/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:quartocanaleflegreo" tvg-chno="9132" tvg-logo="https://i.imgur.com/8RKY3Du.png" group-title="Italia",9132 Quarto Canale Flegreo
-http://live.mariatvcdn.com/dialogos/171e41deedf405f10c7dd6311387fb43.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:qvc" tvg-chno="9133" tvg-logo="https://i.imgur.com/Ea7iUX2.png" group-title="Italia",9133 QVC
-https://qrg.akamaized.net/hls/live/2017383/lsqvc1it/master.m3u8
-#EXTINF:-1 tvg-id="freetv:r101tv" tvg-chno="9134" tvg-logo="https://i.imgur.com/mWeEa9T.png" group-title="Italia",9134 R101 TV
-https://live02-seg.msr.cdn.mediaset.net/live/ch-er/er-clr.isml/index.m3u8
-#EXTINF:-1 tvg-id="freetv:radio105tv" tvg-chno="9135" tvg-logo="https://i.imgur.com/3NiLKvj.png" group-title="Italia",9135 Radio 105 TV
-https://live02-seg.msr.cdn.mediaset.net/live/ch-ec/ec-clr.isml/index.m3u8
-#EXTINF:-1 tvg-id="freetv:radio3minblu" tvg-chno="9136" tvg-logo="https://i.imgur.com/d7O7Uqa.png" group-title="Italia",9136 Radio 3M InBlu
-https://stream.mariatvcdn.com/telemistrettaradio/900bfcc0f9012ea272584fd5ff5281b8.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:radio51tv" tvg-chno="9137" tvg-logo="https://uaznao.com/wp-content/uploads/2023/03/radio51.png" group-title="Italia",9137 Radio 51 Tv
-https://59d7d6f47d7fc.streamlock.net/canale51/canale51/chunklist_w1193883900.m3u8
-#EXTINF:-1 tvg-id="freetv:radiobirikinatv" tvg-chno="9138" tvg-logo="https://uaznao.com/wp-content/uploads/2023/03/radiobirikina.png" group-title="Italia",9138 Radio Birikina Tv
-https://tvd-bk.fluid.stream/RadioBirikinaTV/livestream/chunklist_w84398277.m3u8
-#EXTINF:-1 tvg-id="freetv:radiobrunotv" tvg-chno="9139" tvg-logo="https://i.imgur.com/y4vKE83.png" group-title="Italia",9139 Radio Bruno Tv
-https://router.xdevel.com/video0s975758-473/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:radiocolonnatvy" tvg-chno="9140" tvg-logo="https://i.imgur.com/EcQvDfq.png" group-title="Italia",9140 Radio Colonna Tv Ⓨ
-https://www.youtube.com/radiocolonna/live
-#EXTINF:-1 tvg-id="freetv:radioibiza" tvg-chno="9141" tvg-logo="https://i.imgur.com/uu0DHY5.png" group-title="Italia",9141 Radio Ibiza
-https://str48.fluid.stream/RadioIbizaTV/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:radioimmaginetv" tvg-chno="9142" tvg-logo="https://i.imgur.com/iQlXRAB.png" group-title="Italia",9142 Radio Immagine Tv
-https://media.velcom.it:8081/RadioImmagineTV/index.fmp4.m3u8
-#EXTINF:-1 tvg-id="freetv:radioitaliacinatv" tvg-chno="9143" tvg-logo="https://i.imgur.com/QGkyrO3.png" group-title="Italia",9143 Radio Italia Cina Tv
-https://585b674743bbb.streamlock.net/9054/9054/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:radioliberta" tvg-chno="9144" tvg-logo="https://i.imgur.com/HRvPlf5.png" group-title="Italia",9144 Radio Libertà
-https://router.xdevel.com/video0s975360-67/stream/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="freetv:radiom2otv" tvg-chno="9145" tvg-logo="https://i.imgur.com/wl30UFj.png" group-title="Italia",9145 Radio m2o Tv
-https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:radiomontekroniotv" tvg-chno="9146" tvg-logo="https://i.imgur.com/t0I2Shi.jpg" group-title="Italia",9146 Radio Monte Kronio Tv (R.M.K.)
-https://648026e87a75e.streamlock.net/rmktv/rmktv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:radionorbatv" tvg-chno="9147" tvg-logo="https://i.imgur.com/qftBPM9.png" group-title="Italia",9147 Radio Norba Tv
-https://router.xdevel.com/video0s975885-462/stream/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="freetv:radiopiterpantv" tvg-chno="9148" tvg-logo="https://uaznao.com/wp-content/uploads/2023/03/radiopiterpan.png" group-title="Italia",9148 Radio Piter Pan Tv
-https://tvd-piter.fluid.stream/RadioPiterpanTV/livestream/chunklist_w1866496033.m3u8
-#EXTINF:-1 tvg-id="freetv:radioradiotv" tvg-chno="9149" tvg-logo="https://i.imgur.com/iKuRg2b.png" group-title="Italia",9149 Radio Radio Tv
-https://200912.global.ssl.fastly.net/646b335e2291a2022444bb7c/live_22f84390fe1411ed919df3da85a483cc/rewind-14400.m3u8
-#EXTINF:-1 tvg-id="freetv:radioradiosatv" tvg-chno="9150" tvg-logo="https://i.imgur.com/8kqyxvz.png" group-title="Italia",9150 Radio Radiosa Tv
-https://stream7.zivoli.it/radiosatv/radiosatv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:radioroma" tvg-chno="9151" tvg-logo="https://i.imgur.com/RKvfStm.png" group-title="Italia",9151 Radio Roma
-https://585b674743bbb.streamlock.net/9044/9044/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:radioromatelevision" tvg-chno="9152" tvg-logo="https://i.imgur.com/RKvfStm.png" group-title="Italia",9152 Radio Roma Television
-https://5926fc9c7c5b2.streamlock.net/rtfeunawfu/rtfeunawfu/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:radiotvserieaconrds" tvg-chno="9153" tvg-logo="https://i.imgur.com/NzDeCIx.png" group-title="Italia",9153 Radio TV Serie A con RDS
-https://stream.radioseriea.com/50773f0d0070476a8612d9984c6059d8/index.m3u8
-#EXTINF:-1 tvg-id="freetv:radio24ilsole24oretv" tvg-chno="9154" tvg-logo="https://i.imgur.com/NTqrdWW.png" group-title="Italia",9154 Radio24-IlSole24OreTV
-https://ilsole24ore-radiovisual.akamaized.net/hls/live/2035302/persidera/master.m3u8
-#EXTINF:-1 tvg-id="freetv:rairadio2visualradio" tvg-chno="9155" tvg-logo="https://i.imgur.com/nVBet0h.png" group-title="Italia",9155 Rai Radio 2 Visual Radio
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=5674080&output=7&forceUserAgent=rainet/4.0.5
-#EXTINF:-1 tvg-id="freetv:ranfriul" tvg-chno="9156" tvg-logo="https://i.imgur.com/Qs5eQPM.png" group-title="Italia",9156 Ran Friul
-https://5f22d76e220e1.streamlock.net/RanFriul/RanFriul/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rdetv" tvg-chno="9157" tvg-logo="https://i.imgur.com/NiwPlrr.png" group-title="Italia",9157 RDE Tv
-https://rst2.saiuzwebnetwork.it:8081/rdetrieste/index.m3u8
-#EXTINF:-1 tvg-id="freetv:reggiotv" tvg-chno="9158" tvg-logo="https://i.imgur.com/merrg2C.png" group-title="Italia",9158 Reggio Tv
-https://cdn10.streamshow.it/cloud-reggiotv/reggiotv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:reitv" tvg-chno="9159" tvg-logo="https://i.imgur.com/YNRWFOo.png" group-title="Italia",9159 Rei Tv
-https://5f22d76e220e1.streamlock.net/reitv/reitv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rete55" tvg-chno="9160" tvg-logo="https://i.imgur.com/EsZn2cj.png" group-title="Italia",9160 Rete 55
-https://live1.giocabet.tv/stream/6/index.m3u8
-#EXTINF:-1 tvg-id="freetv:rete8" tvg-chno="9161" tvg-logo="https://i.imgur.com/bGsjPRh.png" group-title="Italia",9161 Rete 8
-https://64b16f23efbee.streamlock.net/rete8/rete8/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rete8sport" tvg-chno="9162" tvg-logo="https://i.imgur.com/uUAjWlF.png" group-title="Italia",9162 Rete 8 Sport
-https://64b16f23efbee.streamlock.net/rete8sport/rete8sport/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rete8vga" tvg-chno="9163" tvg-logo="https://i.imgur.com/3wF2AJX.jpg" group-title="Italia",9163 Rete 8 Vga
-https://604e46ac2bdee.streamlock.net:1936/rete8_1/rete8_1/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:retebiellatv" tvg-chno="9164" tvg-logo="https://i.imgur.com/e2ryHx7.png" group-title="Italia",9164 Rete Biella Tv
-https://sb.top-ix.org/retebiella/streaming/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:retemia" tvg-chno="9165" tvg-logo="https://i.imgur.com/kCJ621Q.png" group-title="Italia",9165 Rete Mia
-https://5db313b643fd8.streamlock.net/rete/rete/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:reteorotv" tvg-chno="9166" tvg-logo="https://i.imgur.com/OCxGtwA.png" group-title="Italia",9166 Rete Oro Tv
-https://5926fc9c7c5b2.streamlock.net/9094/9094/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:retesole" tvg-chno="9167" tvg-logo="https://i.imgur.com/u0ezKgE.png" group-title="Italia",9167 Rete Sole
-https://5926fc9c7c5b2.streamlock.net/9332/9332/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:retetvitalia" tvg-chno="9168" tvg-logo="https://i.imgur.com/lXGWoV9.png" group-title="Italia",9168 Rete Tv Italia
-https://57068da1deb21.streamlock.net/retetvitalia/retetvitalia/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:reteveneta" tvg-chno="9169" tvg-logo="https://i.imgur.com/cInhQFp.png" group-title="Italia",9169 Rete Veneta
-http://wms.shared.streamshow.it/reteveneta/reteveneta/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:romatv82" tvg-chno="9170" tvg-logo="https://i.imgur.com/C3UnlFF.png" group-title="Italia",9170 Roma Tv 82
-https://streaming.softwarecreation.it/RomaCH71/RomaCH71/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rossinitv" tvg-chno="9171" tvg-logo="https://i.imgur.com/K0Em0nx.jpg" group-title="Italia",9171 Rossini Tv
-https://stream.rossinitv.it/memfs/3bca4ad7-adfc-4610-ac0e-e826743ddc57.m3u8
-#EXTINF:-1 tvg-id="freetv:rtcquartarete" tvg-chno="9172" tvg-logo="https://i.imgur.com/rFGA6qL.png" group-title="Italia",9172 RTC Quarta Rete
-https://msh0232.stream.seeweb.it/live/stream00.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rtctelecalabria" tvg-chno="9173" tvg-logo="https://i.imgur.com/tTYLcuh.jpg" group-title="Italia",9173 RTC Telecalabria
-https://w1.mediastreaming.it/calabriachannel/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rticalabria" tvg-chno="9174" tvg-logo="https://i.imgur.com/hVzEvmo.jpg" group-title="Italia",9174 RTI Calabria
-https://stream.ets-sistemi.it:8081/rticalabria/index.m3u8
-#EXTINF:-1 tvg-id="freetv:rtl1025plus" tvg-chno="9175" tvg-logo="https://i.imgur.com/mPqDtCO.png" group-title="Italia",9175 RTL 102.5 + Plus
-https://streamcdng14-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S82929343/cAcsSu4Wecc5/chunklist_b5256000.m3u8
-#EXTINF:-1 tvg-id="freetv:rtl1025traffic" tvg-chno="9176" tvg-logo="https://i.imgur.com/GH7byqm.jpeg" group-title="Italia",9176 RTL 102.5 Traffic
-https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S38122967/2lyQRIAAGgRR/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rtmmanduria" tvg-chno="9177" tvg-logo="https://i.imgur.com/WwzU0EP.png" group-title="Italia",9177 RTM Manduria
-https://5f22d76e220e1.streamlock.net/rtm/rtm/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rtptv" tvg-chno="9178" tvg-logo="https://i.imgur.com/I1hYI0C.png" group-title="Italia",9178 Rtp Tv
-http://flash2.xdevel.com/rtptv/rtptv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rtr99tv" tvg-chno="9179" tvg-logo="https://i.imgur.com/mkO95pD.png" group-title="Italia",9179 RTR99 Tv
-https://5e73cf528f404.streamlock.net/RTR99TV/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rttr" tvg-chno="9180" tvg-logo="https://i.imgur.com/z7xMArA.png" group-title="Italia",9180 Rttr
-https://5f204aff97bee.streamlock.net/RTTRlive/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:rtv38toscana" tvg-chno="9181" tvg-logo="https://i.imgur.com/xqlhJqK.png" group-title="Italia",9181 Rtv 38 Toscana
-https://845d8509d2cb4f249dd0b2ae5755b6c2.msvdn.net/rtv38/rtv38_live_main/mainabr/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="freetv:sardegna1" tvg-chno="9182" tvg-logo="https://i.imgur.com/YNEW2h2.png" group-title="Italia",9182 Sardegna 1
-https://7e1cc2454f2242afabe05cc0a2f483cd.msvdn.net/live/S30721796/ZS3Xu8mn5f0J/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:senatotv" tvg-chno="9183" tvg-logo="https://i.imgur.com/FoQoNZW.png" group-title="Italia",9183 Senato TV
-https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:sestarete" tvg-chno="9184" tvg-logo="https://i.imgur.com/0B0S2gI.png" group-title="Italia",9184 Sesta Rete
-https://stream10.xdevel.com/video0s977089-1792/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:settvcilento" tvg-chno="9185" tvg-logo="https://i.imgur.com/qN5D1jD.png" group-title="Italia",9185 Set Tv Cilento
-https://stream1.aswifi.it/settv/live/index.m3u8
-#EXTINF:-1 tvg-id="freetv:sicilia24tv" tvg-chno="9186" tvg-logo="https://i.imgur.com/GhQX36O.png" group-title="Italia",9186 Sicilia 24 Tv
-https://5f22d76e220e1.streamlock.net/sicilia24/sicilia24/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:siciliatv" tvg-chno="9187" tvg-logo="https://i.imgur.com/I5FoThW.png" group-title="Italia",9187 Sicilia Tv
-https://stream9.xdevel.com/video0s976441-1226/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:sienatv" tvg-chno="9188" tvg-logo="https://i.imgur.com/gcysky4.png" group-title="Italia",9188 Sienatv
-https://router.xdevel.com/video0s976727-1441/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:skytg24" tvg-chno="9189" tvg-logo="https://i.imgur.com/q4d3Dah.png" group-title="Italia",9189 Sky TG24
-https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/12221/web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
-#EXTINF:-1 tvg-id="freetv:sl48tv" tvg-chno="9190" tvg-logo="https://i.imgur.com/b58oouu.jpg" group-title="Italia",9190 SL 48 Tv
-http://media.velcom.it:1935/sl48/sl48/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:sophiatv" tvg-chno="9191" tvg-logo="https://i.imgur.com/fiLNK3b.jpg" group-title="Italia",9191 Sophia Tv
-https://bild-und-ton.stream/sophiatv-it/smil:sophia-tv-it.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:sportitaliaplus" tvg-chno="9192" tvg-logo="https://i.imgur.com/hu56Ya5.png" group-title="Italia",9192 Sportitalia Plus
-https://sportsitalia-samsungitaly.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:sportitaliasolocalcio" tvg-chno="9193" tvg-logo="https://i.imgur.com/hu56Ya5.png" group-title="Italia",9193 Sportitalia SOLOCALCIO
-https://di-g7ij0rwh.vo.lswcdn.net/sportitalia/sisolocalcio.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:steuropechannel" tvg-chno="9194" tvg-logo="https://i.imgur.com/QpPgSfr.png" group-title="Italia",9194 ST Europe Channel
-https://5f22d76e220e1.streamlock.net/steuropetv/steuropetv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:stiletv" tvg-chno="9195" tvg-logo="https://i.imgur.com/ZP3cJi7.png" group-title="Italia",9195 Stiletv
-https://proxy.media.convergenze.it/stiletv/streams/oQOFd7JglHjO1631525551097.m3u8
-#EXTINF:-1 tvg-id="freetv:superjtv" tvg-chno="9196" tvg-logo="https://i.imgur.com/5oy5Nuu.png" group-title="Italia",9196 Super J Tv
-https://59d39900ebfb8.streamlock.net/SuperJtv/SuperJtv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:supersix" tvg-chno="9197" tvg-logo="https://i.imgur.com/kHSuyub.png" group-title="Italia",9197 Super Six
-https://5db313b643fd8.streamlock.net/SUPERSIXLombardia/SUPERSIXLombardia/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:supertennis" tvg-chno="9198" tvg-logo="https://i.imgur.com/GzsPlbX.png" group-title="Italia",9198 SuperTennis
-https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
-#EXTINF:-1 tvg-id="freetv:supertv" tvg-chno="9199" tvg-logo="https://i.imgur.com/7gUZcEh.png" group-title="Italia",9199 Supertv
-http://wms.shared.streamshow.it:1935/supertv/supertv/live.m3u8
-#EXTINF:-1 tvg-id="freetv:t9" tvg-chno="9200" tvg-logo="https://i.imgur.com/XzL05Py.png" group-title="Italia",9200 T9
-https://streaming.softwarecreation.it/tnove/tnove/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:tcftv" tvg-chno="9201" tvg-logo="https://i.imgur.com/fiylFs2.jpg" group-title="Italia",9201 Tcf Tv
-https://stream10.xdevel.com/video1s977294-1864/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:tci" tvg-chno="9202" tvg-logo="https://i.imgur.com/lCZTaKs.jpg" group-title="Italia",9202 Tci
-https://tbn-jw.cdn.vustreams.com/live/tci/live.isml/2b7d53c5-b504-4d26-b25f-a70deb8d0faf.m3u8
-#EXTINF:-1 tvg-id="freetv:teatrotv" tvg-chno="9203" tvg-logo="https://i.imgur.com/UsvffQL.png" group-title="Italia",9203 Teatro Tv
-https://m.iostream.it/hls/teatrotv/teatrotv.m3u8
-#EXTINF:-1 tvg-id="freetv:telea" tvg-chno="9204" tvg-logo="https://i.imgur.com/l7Za9KH.jpg" group-title="Italia",9204 Tele A
-https://lostream.it/hls/telea/video.m3u8
-#EXTINF:-1 tvg-id="freetv:teleabruzzotv" tvg-chno="9205" tvg-logo="https://i.imgur.com/koB8J4b.jpg" group-title="Italia",9205 Tele Abruzzo Tv
-http://uk4.streamingpulse.com:1935/TeleabruzzoTV/TeleabruzzoTV/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleacras" tvg-chno="9206" tvg-logo="https://i.imgur.com/90Lsv8q.png" group-title="Italia",9206 Tele Acras
-https://5db313b643fd8.streamlock.net/teleacras/teleacras/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telearena" tvg-chno="9207" tvg-logo="https://i.imgur.com/9hsoWMO.png" group-title="Italia",9207 Tele Arena
-https://5e73cf528f404.streamlock.net/TeleArena/TeleArena.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telebari" tvg-chno="9208" tvg-logo="https://i.imgur.com/HYSz4rx.png" group-title="Italia",9208 Tele Bari
-https://w1.mediastreaming.it/telebari/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telebelluno" tvg-chno="9209" tvg-logo="https://i.imgur.com/YiM2Z7E.png" group-title="Italia",9209 Tele Belluno
-https://live.mariatvcdn.com/telebelluno/a3b80388da9801906adf885282e73bc3.sdp/mono.m3u8
-#EXTINF:-1 tvg-id="freetv:teleboario" tvg-chno="9210" tvg-logo="https://i.imgur.com/LlLD3L6.png" group-title="Italia",9210 Tele Boario
-https://stream7.xdevel.com/video0s976425-1244/stream/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="freetv:telebruzzano" tvg-chno="9211" tvg-logo="https://i.imgur.com/7TWbCDt.jpg" group-title="Italia",9211 Tele Bruzzano
-https://playerssl.telemia.tv/fileadmin/hls/Telebruzzano/telebruzzano_mediachunks.m3u8
-#EXTINF:-1 tvg-id="freetv:telechiara" tvg-chno="9212" tvg-logo="https://i.imgur.com/Q5XpnXR.png" group-title="Italia",9212 Tele Chiara
-http://fms.tvavicenza.it:1935/telechiara/diretta/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleestense" tvg-chno="9213" tvg-logo="https://i.imgur.com/X7i7DWo.png" group-title="Italia",9213 Tele Estense
-https://5e73cf528f404.streamlock.net/TeleEstense/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telefoggia" tvg-chno="9214" tvg-logo="https://i.imgur.com/M7tqBu9.jpg" group-title="Italia",9214 Tele Foggia
-https://59d7d6f47d7fc.streamlock.net/telefoggia/telefoggia/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telefriuli" tvg-chno="9215" tvg-logo="https://i.imgur.com/AoQxZxD.png" group-title="Italia",9215 Tele Friuli
-https://5757bf2aa08e42248fb9b9d620f5d900.msvdn.net/live/S11646715/pE3ax0lT0rBd/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleischia" tvg-chno="9216" tvg-logo="https://i.imgur.com/vihHVQn.jpg" group-title="Italia",9216 Tele Ischia
-https://rst.saiuzwebnetwork.it:8081/teleischia/index.m3u8
-#EXTINF:-1 tvg-id="freetv:telejonio" tvg-chno="9217" tvg-logo="https://i.imgur.com/qJeDV8R.png" group-title="Italia",9217 Tele Jonio
-http://59d7d6f47d7fc.streamlock.net/telejonio/telejonio/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleliberta" tvg-chno="9218" tvg-logo="https://i.imgur.com/XzAB5k7.jpg" group-title="Italia",9218 Tele Liberta' HD
-https://streaming.liberta.it/hls/liberta.m3u8
-#EXTINF:-1 tvg-id="freetv:teleliguriasud" tvg-chno="9219" tvg-logo="https://i.imgur.com/BeLAYJ6.jpg" group-title="Italia",9219 Tele Liguria Sud
-https://64b16f23efbee.streamlock.net/teleliguriasud/teleliguriasud/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telemantova" tvg-chno="9220" tvg-logo="https://i.imgur.com/bkSPcs4.png" group-title="Italia",9220 Tele Mantova
-https://5ce9406b73c33.streamlock.net/TeleMantova/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telemia" tvg-chno="9221" tvg-logo="https://i.imgur.com/SdXpCwL.png" group-title="Italia",9221 Tele Mia
-https://playerssl.telemia.tv/fileadmin/hls/TelemiaHD/telemia85_mediachunks.m3u8
-#EXTINF:-1 tvg-id="freetv:telemiaextra" tvg-chno="9222" tvg-logo="https://i.imgur.com/upzBG32.png" group-title="Italia",9222 Tele Mia Extra
-https://playerssl.telemia.tv/fileadmin/hls/TelemiaExtra/telemiaextra_mediachunks.m3u8
-#EXTINF:-1 tvg-id="freetv:telemistretta" tvg-chno="9223" tvg-logo="https://i.imgur.com/OJ3zUS0.png" group-title="Italia",9223 Tele Mistretta
-https://live.mariatvcdn.com/telemistretta/8fbcd205ada81b295ee6c211c3a80dde.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telemolise" tvg-chno="9224" tvg-logo="https://i.imgur.com/u5VD0x9.png" group-title="Italia",9224 Tele Molise
-http://185.202.128.1:1935/Telemolise4K/Telemolise4K/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telenordgenova" tvg-chno="9225" tvg-logo="https://i.imgur.com/I6yegEK.png" group-title="Italia",9225 Tele Nord Genova
-https://64b16f23efbee.streamlock.net/telenord/telenord/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telenostra" tvg-chno="9226" tvg-logo="https://i.imgur.com/FACahKZ.png" group-title="Italia",9226 Tele Nostra
-https://13574-8.b.cdn12.com/hls/f099fa8883.ulive/_c/master.m3u8
-#EXTINF:-1 tvg-id="freetv:teleoccidente" tvg-chno="9227" tvg-logo="https://i.imgur.com/3aOiWKa.png" group-title="Italia",9227 Tele Occidente
-https://stream9.xdevel.com/video0s976532-1292/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleoltre" tvg-chno="9228" tvg-logo="https://i.imgur.com/PxtJAxs.png" group-title="Italia",9228 Tele Oltre
-http://1se1.troydesign.eu/np_teleoltre/_definst_/channel1_np_teleoltre/playlist.m3u8?ext=.m3u8
-#EXTINF:-1 tvg-id="freetv:teleone" tvg-chno="9229" tvg-logo="https://i.imgur.com/9trB6mj.png" group-title="Italia",9229 Tele One
-https://648026e87a75e.streamlock.net/teleone/teleone/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telepacetrento" tvg-chno="9230" tvg-logo="https://i.imgur.com/o5sQCpF.png" group-title="Italia",9230 Tele Pace Trento
-https://5a1178b42cc03.streamlock.net/telepacetrento/telepacetrento/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telepavia" tvg-chno="9231" tvg-logo="https://i.imgur.com/YVodo4T.png" group-title="Italia",9231 Tele Pavia
-http://wms.shared.streamshow.it:1935/telepavia/telepavia/live.m3u8
-#EXTINF:-1 tvg-id="freetv:telepegaso" tvg-chno="9232" tvg-logo="https://i.imgur.com/FQkM8Vd.png" group-title="Italia",9232 Tele Pegaso
-https://flash2.xdevel.com/telepegasocanale812/telepegasocanale812/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telepiadena" tvg-chno="9233" tvg-logo="https://i.imgur.com/VqaPuQN.png" group-title="Italia",9233 Tele Piadena
-https://stream3.xdevel.com/video0s975441-151/stream/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="freetv:telepordenone" tvg-chno="9234" tvg-logo="https://i.imgur.com/dbYwXwg.png" group-title="Italia",9234 Tele Pordenone
-https://video.wifi4all.it/telepn/telepn.m3u8
-#EXTINF:-1 tvg-id="freetv:telequattrotrieste" tvg-chno="9235" tvg-logo="https://i.imgur.com/MFxQxve.png" group-title="Italia",9235 Tele Quattro Trieste
-http://wms.shared.streamshow.it/telequattro/telequattro/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleradioercolano" tvg-chno="9236" tvg-logo="https://i.imgur.com/YPuoy8N.jpg" group-title="Italia",9236 Tele Radio Ercolano
-https://rst.saiuzwebnetwork.it:19360/teleradioercolano-1/teleradioercolano-1.m3u8
-#EXTINF:-1 tvg-id="freetv:teleradioorte" tvg-chno="9237" tvg-logo="https://i.imgur.com/uX2uxvN.png" group-title="Italia",9237 Tele Radio Orte
-https://flash2.xdevel.com/ortetv/ortetv/index.m3u8
-#EXTINF:-1 tvg-id="freetv:teleradiopace1" tvg-chno="9238" tvg-logo="https://i.imgur.com/ORkkXM8.png" group-title="Italia",9238 Tele Radio Pace 1
-https://jk3lz2bwlw79-hls-live.mariatvcdn.it/teleradiopace1/efcc8fc46cab26315ce3f5845d76008f.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleradiopace2" tvg-chno="9239" tvg-logo="https://i.imgur.com/U4E3eEr.png" group-title="Italia",9239 Tele Radio Pace 2
-https://zkpywrbgdbeg-hls-live.mariatvcdn.it/teleradiopace2/254c9b5c52a73a94ef0f6169cbd05dc2.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleradiopace3" tvg-chno="9240" tvg-logo="https://i.imgur.com/pTqIxFD.png" group-title="Italia",9240 Tele Radio Pace 3
-https://932y4273djv8-hls-live.mariatvcdn.it/teleradiopace3/d2274c22e9ee09eb2eda01ed0496f8f5.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleradiopace4" tvg-chno="9241" tvg-logo="https://i.imgur.com/KPHHsN5.png" group-title="Italia",9241 Tele Radio Pace 4
-https://j78dpr7nyq5r-hls-live.mariatvcdn.it/teleradiopace4/13d74f2cfe921bfbc262697203d47d8f.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleradiosciacca" tvg-chno="9242" tvg-logo="https://i.imgur.com/suhz5mE.png" group-title="Italia",9242 Tele Radio Sciacca
-https://5db313b643fd8.streamlock.net/teleradiosciaccatv/teleradiosciaccatv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telesirio" tvg-chno="9243" tvg-logo="https://i.imgur.com/mDN6QX1.png" group-title="Italia",9243 Tele Sirio
-https://www.telesirio.it/live/stream.m3u8
-#EXTINF:-1 tvg-id="freetv:telespaziomessina" tvg-chno="9244" tvg-logo="https://i.imgur.com/Io5w6lT.png" group-title="Italia",9244 Tele Spazio Messina
-https://rtm.cyberspazio.cloud:5443/LiveApp/streams/049229794390395765037801.m3u8
-#EXTINF:-1 tvg-id="freetv:telesudpuglia" tvg-chno="9245" tvg-logo="https://i.imgur.com/fqTLtvs.png" group-title="Italia",9245 Tele Sud Puglia
-https://64b16f23efbee.streamlock.net/telesud/telesud/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teletricolore" tvg-chno="9246" tvg-logo="https://i.imgur.com/A2XouAd.png" group-title="Italia",9246 Tele Tricolore
-https://59d7d6f47d7fc.streamlock.net/rs2/rs2/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teletutto" tvg-chno="9247" tvg-logo="https://i.imgur.com/sZxMP7g.png" group-title="Italia",9247 Tele Tutto
-https://600f07e114306.streamlock.net/TT_TELETUTTO/smil:TT.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teletutto2" tvg-chno="9248" tvg-logo="https://i.imgur.com/mxXbMaw.png" group-title="Italia",9248 Tele Tutto 2
-https://600f07e114306.streamlock.net/TT2_TELETUTTO/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teletutto24" tvg-chno="9249" tvg-logo="https://i.imgur.com/weKWQgx.png" group-title="Italia",9249 Tele Tutto 24
-https://600f07e114306.streamlock.net/TT24_TELETUTTO/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:televenezia" tvg-chno="9250" tvg-logo="https://i.imgur.com/SavGpCE.jpg" group-title="Italia",9250 Tele Venezia
-https://59d7d6f47d7fc.streamlock.net/televenezia/televenezia/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:televideoagrigento" tvg-chno="9251" tvg-logo="https://i.imgur.com/AaPr63E.png" group-title="Italia",9251 Tele Video Agrigento (T.V.A.)
-https://59d7d6f47d7fc.streamlock.net/tva/tva/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:tele8tv" tvg-chno="9252" tvg-logo="https://i.imgur.com/dM0HE6O.png" group-title="Italia",9252 Tele8 Tv
-https://57068da1deb21.streamlock.net/teletv8/teletv8/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleambiente" tvg-chno="9253" tvg-logo="https://i.imgur.com/jxZcQhU.png" group-title="Italia",9253 TeleAmbiente
-https://5f22d76e220e1.streamlock.net/teleambiente2024/teleambiente2024/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telecampione" tvg-chno="9254" tvg-logo="https://i.imgur.com/LhjwmME.png" group-title="Italia",9254 Telecampione
-https://5f22d76e220e1.streamlock.net/telecampione/telecampione/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telecittapadova" tvg-chno="9255" tvg-logo="https://i.imgur.com/xvVgEaA.jpg" group-title="Italia",9255 Telecittà Padova
-https://tango.wifi4all.it/telecitta/telecitta.m3u8
-#EXTINF:-1 tvg-id="freetv:telecitylombardia" tvg-chno="9256" tvg-logo="https://i.imgur.com/ECvJ3ZD.jpeg" group-title="Italia",9256 Telecity Lombardia
-https://64b16f23efbee.streamlock.net/telecitylombardia/telecitylombardia/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telecitypiemonte" tvg-chno="9257" tvg-logo="https://i.imgur.com/CrlzHjv.jpeg" group-title="Italia",9257 Telecity Piemonte
-https://64b16f23efbee.streamlock.net/telecitypiemonte/telecitypiemonte/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telecityvalledaosta" tvg-chno="9258" tvg-logo="https://i.imgur.com/T9EsAOX.jpeg" group-title="Italia",9258 Telecity Valle D'Aosta
-https://64b16f23efbee.streamlock.net/telecityvda/telecityvda/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telecolor" tvg-chno="9259" tvg-logo="https://i.imgur.com/urUG78J.png" group-title="Italia",9259 Telecolor
-https://1aadf145546f475282c5b4e658c0ac4b.msvdn.net/live/324149/hlbAWtl/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telecolort" tvg-chno="9260" tvg-logo="https://i.imgur.com/rfNg6fw.png" group-title="Italia",9260 Telecolor Ⓣ
-https://www.twitch.tv/telecolorlive
-#EXTINF:-1 tvg-id="freetv:telecostasmeralda" tvg-chno="9261" tvg-logo="https://i.imgur.com/QLqkbss.png" group-title="Italia",9261 TeleCostaSmeralda
-https://7e1cc2454f2242afabe05cc0a2f483cd.msvdn.net/tcs_live/tcs/tcs/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telegenova" tvg-chno="9262" tvg-logo="https://i.imgur.com/D6HC0So.png" group-title="Italia",9262 Telegenova
-https://64b16f23efbee.streamlock.net/telegenova/telegenova/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleiblea" tvg-chno="9263" tvg-logo="https://i.imgur.com/n1THygZ.png" group-title="Italia",9263 Teleiblea
-https://5f22d76e220e1.streamlock.net/teleiblea/teleiblea/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleitalia41" tvg-chno="9264" tvg-logo="https://i.imgur.com/lTuPSOn.png" group-title="Italia",9264 Teleitalia 41
-https://streaming.softwarecreation.it/teleitalia/teleitalia/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telejato" tvg-chno="9265" tvg-logo="https://i.imgur.com/r3Dqzdj.png" group-title="Italia",9265 Telejato
-https://telejato.liberotratto.com/hls/stream.m3u8
-#EXTINF:-1 tvg-id="freetv:teleleonessa" tvg-chno="9266" tvg-logo="https://i.imgur.com/jq3etlV.png" group-title="Italia",9266 Teleleonessa
-http://wms.shared.streamshow.it:1935/teleleonessa/teleleonessa/live.m3u8
-#EXTINF:-1 tvg-id="freetv:telemajg" tvg-chno="9267" tvg-logo="https://i.imgur.com/9tefonp.jpg" group-title="Italia",9267 TeleMajg
-https://59d7d6f47d7fc.streamlock.net/telemajg/telemajg/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telenova" tvg-chno="9268" tvg-logo="https://i.imgur.com/x41IkJK.png" group-title="Italia",9268 Telenova
-https://64b16f23efbee.streamlock.net/telenova/telenova/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleradiostereot" tvg-chno="9269" tvg-logo="https://i.imgur.com/eRNgqnA.png" group-title="Italia",9269 TeleRadioStereo Ⓣ
-https://www.twitch.tv/teleradiostereo
-#EXTINF:-1 tvg-id="freetv:telerama" tvg-chno="9270" tvg-logo="https://i.imgur.com/enfqUlI.jpg" group-title="Italia",9270 Telerama
-https://58d921499d3d3.streamlock.net/TeleRama/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleregione" tvg-chno="9271" tvg-logo="https://i.imgur.com/i5WozUP.png" group-title="Italia",9271 TeleRegione
-https://streaming.softwarecreation.it/TR118/TR118/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleregionecolor" tvg-chno="9272" tvg-logo="https://i.imgur.com/vi5Nf3S.png" group-title="Italia",9272 TeleRegione Color
-https://live.antennasudwebtv.it:9443/hls/vodtele.m3u8
-#EXTINF:-1 tvg-id="freetv:teleregionelive" tvg-chno="9273" tvg-logo="https://i.imgur.com/DBrt8L3.png" group-title="Italia",9273 TeleRegione Live
-https://5f22d76e220e1.streamlock.net/galluralive/galluralive/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telerent7gold" tvg-chno="9274" tvg-logo="https://i.imgur.com/YZadq0M.png" group-title="Italia",9274 TeleRent 7Gold
-https://router.xdevel.com/video0s86-21/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telereporter" tvg-chno="9275" tvg-logo="https://i.imgur.com/WIo6SPc.png" group-title="Italia",9275 Telereporter
-https://5f22d76e220e1.streamlock.net/telereporter/telereporter/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleroma56t" tvg-chno="9276" tvg-logo="https://i.imgur.com/wGfpUj8.png" group-title="Italia",9276 Teleroma 56 Ⓣ
-https://www.twitch.tv/teleroma_56
-#EXTINF:-1 tvg-id="freetv:teleromadue" tvg-chno="9277" tvg-logo="https://i.imgur.com/78hA7ma.png" group-title="Italia",9277 TeleRomaDue
-https://57068da1deb21.streamlock.net/teletibur/teletibur/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleromagna" tvg-chno="9278" tvg-logo="https://i.imgur.com/4jWadI8.png" group-title="Italia",9278 Teleromagna
-https://livetr.teleromagna.it/teleromagna/live/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:teleromagna24" tvg-chno="9279" tvg-logo="https://i.imgur.com/Bpml478.png" group-title="Italia",9279 Teleromagna 24
-https://livetr.teleromagna.it/mia/live/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telesudtrapani" tvg-chno="9280" tvg-logo="https://i.imgur.com/tpZvU1P.png" group-title="Italia",9280 Telesud Trapani
-https://64b16f23efbee.streamlock.net/telesudtrapani/telesudtrapani/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:telesveva" tvg-chno="9281" tvg-logo="https://i.imgur.com/SCDETZC.jpeg" group-title="Italia",9281 Telesveva
-https://dc3.telesveva.com:4433/cmaf/livetv/index.mpd
-#EXTINF:-1 tvg-id="freetv:teleuniverso" tvg-chno="9282" tvg-logo="https://i.imgur.com/u8E9wBb.png" group-title="Italia",9282 Teleuniverso
-https://stream.ets-sistemi.it:19360/teleuniverso/teleuniverso.m3u8
-#EXTINF:-1 tvg-id="freetv:televallotrapani" tvg-chno="9283" tvg-logo="https://i.imgur.com/P6zuiRH.png" group-title="Italia",9283 Televallo Trapani
-https://64b16f23efbee.streamlock.net/televallo/televallo/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:tgnorba24" tvg-chno="9284" tvg-logo="https://i.imgur.com/9MhrrJK.png" group-title="Italia",9284 TG Norba 24
-https://router.xdevel.com/video0s976570-1326/stream/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="freetv:tltmolise" tvg-chno="9285" tvg-logo="https://i.imgur.com/wgwD7gh.png" group-title="Italia",9285 TLT Molise
-https://5f22d76e220e1.streamlock.net/tltmolise/tltmolise/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:topcalcio24" tvg-chno="9286" tvg-logo="https://i.imgur.com/DnVPKPE.png" group-title="Italia",9286 Top Calcio 24
-https://sportitaliaamd.akamaized.net/live/Telelombardia/hls/1CCCD0BCA2F9C979BC0632230F8E31EAEA41562B/index.m3u8
-#EXTINF:-1 tvg-id="freetv:traveltv" tvg-chno="9287" tvg-logo="https://i.imgur.com/aXAUyLN.png" group-title="Italia",9287 Travel TV
-https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:trcsanteramo" tvg-chno="9288" tvg-logo="https://i.imgur.com/VbYdS8P.jpg" group-title="Italia",9288 TRC Santeramo
-https://stream7.livinlive.it/trc/trc/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:tremediatv" tvg-chno="9289" tvg-logo="https://i.imgur.com/dqRV1ff.jpeg" group-title="Italia",9289 Tremedia Tv
-https://stream4.xdevel.com/video0s976062-1263/stream/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="freetv:trentinotv" tvg-chno="9290" tvg-logo="https://i.imgur.com/ROKOCR2.png" group-title="Italia",9290 Trentino Tv
-https://5e73cf528f404.streamlock.net/TrentinoTV/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:trlteleradioleo" tvg-chno="9291" tvg-logo="https://i.imgur.com/qAagkJT.png" group-title="Italia",9291 TRL Tele Radio Leo
-https://5db313b643fd8.streamlock.net/TRL/TRL/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:trmh24y" tvg-chno="9292" tvg-logo="https://i.imgur.com/d47CdYU.png" group-title="Italia",9292 TRM h24 Ⓨ
-https://www.youtube.com/user/trmh24/live
-#EXTINF:-1 tvg-id="freetv:tsdtvarezzo" tvg-chno="9293" tvg-logo="https://i.imgur.com/WQ8eQXc.png" group-title="Italia",9293 TSD Tv Arezzo(Tele San Domenico)
-https://stream.mariatvcdn.com/tsd/7c59373bfdb38201b9215ff86f0ce6af.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:tusciasabina2000tv" tvg-chno="9294" tvg-logo="https://i.imgur.com/Tq5nEAy.png" group-title="Italia",9294 Tuscia Sabina 2000Tv
-http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/chunks.m3u8
-#EXTINF:-1 tvg-id="freetv:tv12" tvg-chno="9295" tvg-logo="https://i.imgur.com/oxv08pJ.png" group-title="Italia",9295 Tv 12
-https://59d7d6f47d7fc.streamlock.net/tv12/tv12/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:tvcampiflegrei" tvg-chno="9296" tvg-logo="https://i.imgur.com/9d2K1nX.png" group-title="Italia",9296 Tv Campi Flegrei
-https://tv.radiosaiuz.com:3836/live/campiflegreilive.m3u8
-#EXTINF:-1 tvg-id="freetv:tvlunanapoli" tvg-chno="9297" tvg-logo="https://i.imgur.com/jxhuoyE.png" group-title="Italia",9297 Tv Luna Napoli
-https://diretta.arcapuglia.it:8080/live/teleluna/index.m3u8
-#EXTINF:-1 tvg-id="freetv:tvprato" tvg-chno="9298" tvg-logo="https://i.imgur.com/zDeVpZd.png" group-title="Italia",9298 Tv Prato
-https://live.mariatvcdn.com/tvprato/2db0dd5674586686a867ec52c3aa8e06.sdp/mono.m3u8
-#EXTINF:-1 tvg-id="freetv:tvquimodena" tvg-chno="9299" tvg-logo="https://i.imgur.com/4bOYlfg.png" group-title="Italia",9299 Tv Qui Modena
-https://59d7d6f47d7fc.streamlock.net/tvqui/tvqui/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:tvuno" tvg-chno="9300" tvg-logo="https://i.imgur.com/OtCwYsh.jpg" group-title="Italia",9300 Tv Uno
-http://ftp.tiscali.it/francescovernata/TVUNO/monoscopioTvUNOint-1.wmv
-#EXTINF:-1 tvg-id="freetv:tvyes" tvg-chno="9301" tvg-logo="https://i.imgur.com/1wsO8U7.png" group-title="Italia",9301 Tv Yes
-https://stream1.aswifi.it/radioyes/live/index.m3u8
-#EXTINF:-1 tvg-id="freetv:tvl" tvg-chno="9302" tvg-logo="https://i.imgur.com/07geF0L.png" group-title="Italia",9302 TVL (TV Libera Pistoia)
-http://live.mariatvcdn.com/mariatvcdn/70564e1c6884c007c76f0c128d679eed.sdp/mono.m3u8
-#EXTINF:-1 tvg-id="freetv:tvmpalermo" tvg-chno="9303" tvg-logo="https://i.imgur.com/uqOdAXB.png" group-title="Italia",9303 Tvm Palermo
-https://stream2.xdevel.com/video1s86-22/stream/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="freetv:tvrxenon" tvg-chno="9304" tvg-logo="https://i.imgur.com/kLzW1Pf.jpg" group-title="Italia",9304 Tvr Xenon
-https://cdn107-ita.azotosolutions.com:8443/cdnedge4/smil:live4.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:tvrstv" tvg-chno="9305" tvg-logo="https://i.imgur.com/6p7hTmY.jpg" group-title="Italia",9305 Tvrs Tv
-https://cdn8.streamshow.it/cloud-tvrs/tvrs/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:umbriatv" tvg-chno="9306" tvg-logo="https://i.imgur.com/XKCVEmK.png" group-title="Italia",9306 Umbria Tv
-https://umbriatv.stream.rubidia.it:8083/live/umbriatv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:umbriatrt" tvg-chno="9307" tvg-logo="https://i.imgur.com/CU6BBgs.png" group-title="Italia",9307 Umbria+ TRT
-https://diretta.teleterni.it:8080//show/show.m3u8
-#EXTINF:-1 tvg-id="freetv:unotv" tvg-chno="9308" tvg-logo="https://i.imgur.com/4PNbqqL.png" group-title="Italia",9308 Uno Tv
-https://stream1.aswifi.it/unotv/live/index.m3u8
-#EXTINF:-1 tvg-id="freetv:uno4tv" tvg-chno="9309" tvg-logo="https://i.imgur.com/wfPPpBA.png" group-title="Italia",9309 Uno4 Tv
-https://cdn.uno4.it/index.m3u8
-#EXTINF:-1 tvg-id="freetv:vb33" tvg-chno="9310" tvg-logo="https://i.imgur.com/ygDuIxU.png" group-title="Italia",9310 VB33
-https://live.ipstream.it/vb33/vb33.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:veratv" tvg-chno="9311" tvg-logo="https://i.imgur.com/djMvkvN.png" group-title="Italia",9311 Vera Tv
-http://wms.shared.streamshow.it/veratv/veratv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:videocalabria" tvg-chno="9312" tvg-logo="https://i.imgur.com/Bc2AvIm.png" group-title="Italia",9312 Video Calabria
-https://a8a02dd9a49a4fc9810743615c65ab73.msvdn.net/live/S76734991/i6NeNqLYaspb/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:videomediterraneo" tvg-chno="9313" tvg-logo="https://i.imgur.com/hJHC3uQ.png" group-title="Italia",9313 Video Mediterraneo
-https://bfbe5f347ac4424faf719dda285bc39e.msvdn.net/live/S54897858/4gWO7tTzpK3N/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:videonola" tvg-chno="9314" tvg-logo="https://i.imgur.com/M5z5UoD.jpg" group-title="Italia",9314 Video Nola
-https://videonola.aswifi.it/videonolaabr/live.m3u8
-#EXTINF:-1 tvg-id="freetv:videoregionesicilia" tvg-chno="9315" tvg-logo="https://i.imgur.com/0szwnR3.png" group-title="Italia",9315 Video Regione Sicilia
-https://57214cb172d84f8cb311b91513952b03.msvdn.net/live/S40896499/ZuaLjACsWIL4/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:videostartvsicilia" tvg-chno="9316" tvg-logo="https://i.imgur.com/1ddJVZ7.jpg" group-title="Italia",9316 Video Star Tv Sicilia
-https://stream9.xdevel.com/video0s976556-1321/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:videotouringtv" tvg-chno="9317" tvg-logo="https://i.imgur.com/E2Feao5.jpg" group-title="Italia",9317 Video Touring Tv
-https://streamingvideo.auranex.cloud/memfs/70baacad-47c6-41a6-aee0-86530c31e080.m3u8
-#EXTINF:-1 tvg-id="freetv:videonovara" tvg-chno="9318" tvg-logo="https://i.imgur.com/NnO7E5I.png" group-title="Italia",9318 Videonovara
-https://ed04.top-ix.org/avtvlive/videonovara/streaming/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:videotelecarnia" tvg-chno="9319" tvg-logo="https://i.imgur.com/r4K9JHW.png" group-title="Italia",9319 Videotelecarnia
-https://rst2.saiuzwebnetwork.it:8081/vtccarnia/index.m3u8
-#EXTINF:-1 tvg-id="freetv:vintageradiotv" tvg-chno="9320" tvg-logo="https://i.imgur.com/n3LtBNT.jpg" group-title="Italia",9320 Vintage Radio Tv
-https://5f22d76e220e1.streamlock.net/vintageradiotv/vintageradiotv/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:vuemmetv" tvg-chno="9321" tvg-logo="https://i.imgur.com/x5A0xU6.png" group-title="Italia",9321 Vuemme Tv
-https://5db313b643fd8.streamlock.net/Vuemme/Vuemme/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:webcomtv" tvg-chno="9322" tvg-logo="https://i.imgur.com/KLwj2vj.png" group-title="Italia",9322 Webcom Tv
-https://www.webcomiptv.it/mistserver/passionelotto/index.m3u8
-#EXTINF:-1 tvg-id="freetv:wltv" tvg-chno="9323" tvg-logo="https://i.imgur.com/aL8jKtU.png" group-title="Italia",9323 WLTV
-https://5db313b643fd8.streamlock.net/WLTV/WLTV/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:yviitv" tvg-chno="9324" tvg-logo="https://i.imgur.com/yP5AvDo.png" group-title="Italia",9324 Yvii Tv
-https://stream.wired-shop.com/hls/yviitv.m3u8
-#EXTINF:-1 tvg-id="freetv:zerounotvmusic" tvg-chno="9325" tvg-logo="https://i.imgur.com/r74lqW8.png" group-title="Italia",9325 Zerouno Tv Music
-https://5f22d76e220e1.streamlock.net/zerounotvmusic/zerounotvmusic/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:zerounotvnews" tvg-chno="9326" tvg-logo="https://i.imgur.com/vxRzyjE.png" group-title="Italia",9326 Zerouno Tv News
-https://5f22d76e220e1.streamlock.net/01news/01news/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:etvmarche" tvg-chno="9327" tvg-logo="https://i.imgur.com/vxgbFnR.png" group-title="Italia",9327 è Tv Marche
+#EXTINF:-1 tvg-id="eTvMarche.it" tvg-chno="9041" tvg-logo="" group-title="news",9041 eTv Marche
 https://live.ipstream.it/etvmarche/etvmarche.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:etvrete7" tvg-chno="9328" tvg-logo="https://i.imgur.com/FXFzJhM.png" group-title="Italia",9328 è Tv Rete7
+#EXTINF:-1 tvg-id="eTvRete7.it" tvg-chno="9042" tvg-logo="" group-title="news",9042 eTv Rete 7
 https://live.ipstream.it/etv/etv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="freetv:etvumbria" tvg-chno="9329" tvg-logo="https://i.imgur.com/DASRCe2.png" group-title="Italia",9329 è Tv Umbria
-https://live.ipstream.it/etvumbria/etvumbria.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="EuroIndieMusicChartTV.it" tvg-chno="9043" tvg-logo="" group-title="music",9043 Euro Indie Music Chart TV
+http://178.33.224.197:1935/euroindiemusic/euroindiemusic/playlist.m3u8
+#EXTINF:-1 tvg-id="EuroTV.it" tvg-chno="9044" tvg-logo="" group-title="Italia",9044 Euro TV
+https://5f22d76e220e1.streamlock.net/eurotv/eurotv/playlist.m3u8
+#EXTINF:-1 tvg-id="FMITALIA.it" tvg-chno="9046" tvg-logo="" group-title="music",9046 FM ITALIA
+https://stream2.xdevel.com/video0s975817-1183/stream/playlist.m3u8
+#EXTINF:-1 tvg-id="GiornaleRadioTV.it" tvg-chno="9047" tvg-logo="" group-title="news",9047 Giornale Radio TV
+https://5f204aff97bee.streamlock.net/GR_tv/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="GiovanniPaoloTV.it" tvg-chno="9048" tvg-logo="" group-title="religious",9048 Giovanni Paolo TV
+https://media2021.rtvweb.com/giovannipaolotv/web/playlist.m3u8
+#EXTINF:-1 tvg-id="GOTVCanale163.it" tvg-chno="9050" tvg-logo="" group-title="general",9050 GO-TV Canale 163
+https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648993a.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="GRPVERATV.it" tvg-chno="9053" tvg-logo="" group-title="general",9053 GRP VERATV
+https://webstream.multistream.it/memfs/a3195c96-f884-4c74-924f-2648814fc0b5_output_0.m3u8
+#EXTINF:-1 tvg-id="IcaroTV.it" tvg-chno="9054" tvg-logo="" group-title="general",9054 Icaro TV
+https://59d7d6f47d7fc.streamlock.net/icarotv/icarotv/playlist.m3u8
+#EXTINF:-1 tvg-id="Italia2.it" tvg-chno="9055" tvg-logo="" group-title="entertainment",9055 Italia 2
+https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8
+#EXTINF:-1 tvg-id="Italia2TV.it" tvg-chno="9057" tvg-logo="" group-title="Italia",9057 Italia2TV
+http://wms.shared.streamshow.it/italia2/mp4:italia2/playlist.m3u8
+#EXTINF:-1 tvg-id="ItalianFishingTV.it" tvg-chno="9058" tvg-logo="" group-title="outdoor",9058 Italian Fishing TV
+https://fms.premio.link/fishingtv/playlist.m3u8
+#EXTINF:-1 tvg-id="IuniorTV.it" tvg-chno="9059" tvg-logo="" group-title="kids",9059 Iunior TV
+https://5f22d76e220e1.streamlock.net/iuniortv/iuniortv/chunklist_w774879328.m3u8
+#EXTINF:-1 tvg-id="Juwelo.it" tvg-chno="9060" tvg-logo="" group-title="shop",9060 Juwelo
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/7841/7841_264_live.m3u8
+#EXTINF:-1 tvg-id="KissKissNapoliTV.it" tvg-chno="9061" tvg-logo="" group-title="music",9061 Kiss Kiss Napoli TV
+https://58f12ffd2447a.streamlock.net/KKTVNapoli/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="KissKissTV.it" tvg-chno="9062" tvg-logo="" group-title="music",9062 Kiss Kiss TV
+https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="LaCTV.it" tvg-chno="9064" tvg-logo="" group-title="general",9064 La C TV
+https://f5842579ff984c1c98d63b8d789673eb.msvdn.net/live/S47282891/JWjL3xqPf4bX/playlist.m3u8
+#EXTINF:-1 tvg-id="LaTR3Marsala.it" tvg-chno="9065" tvg-logo="" group-title="general",9065 La TR3 Marsala
+https://tsw.streamingwebtv24.it:1936/eslife1/eslife1/playlist.m3u8
+#EXTINF:-1 tvg-id="LaCNews24.it" tvg-chno="9066" tvg-logo="" group-title="news",9066 LaC News 24
+https://f5842579ff984c1c98d63b8d789673eb.msvdn.net/live/S27391994/HVvPMzy/playlist.m3u8
+#EXTINF:-1 tvg-id="LeCronacheTV.it" tvg-chno="9068" tvg-logo="" group-title="general",9068 Le Cronache TV
+http://77.68.40.210:8888/hls/cronache.m3u8
+#EXTINF:-1 tvg-id="LunaTV.it" tvg-chno="9070" tvg-logo="" group-title="general",9070 Luna TV
+https://5f22d76e220e1.streamlock.net/lunatv/lunatv/playlist.m3u8
+#EXTINF:-1 tvg-id="m2oTV.it" tvg-chno="9071" tvg-logo="" group-title="music",9071 m2o TV
+https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/playlist.m3u8
+#EXTINF:-1 tvg-id="MadeinBOTV.it" tvg-chno="9072" tvg-logo="" group-title="sports",9072 MadeinBO TV
+https://srvx1.selftv.video/dmchannel/live/playlist.m3u8
+#EXTINF:-1 tvg-id="MariaVisionItalia.it" tvg-chno="9073" tvg-logo="" group-title="religious",9073 Maria Vision Italia
+https://1601580044.rsc.cdn77.org/live/_jcn_/amlst:CHANNEL_2/playlist.m3u8
+#EXTINF:-1 tvg-id="MediasetItalia.it" tvg-chno="9074" tvg-logo="" group-title="general",9074 Mediaset Italia
+https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(i2)/index.m3u8
+#EXTINF:-1 tvg-id="MedjugorjeItaliaTV.it" tvg-chno="9076" tvg-logo="" group-title="religious",9076 Medjugorje Italia TV
+https://5f22d76e220e1.streamlock.net/medjugorjeitaliatv/medjugorjeitaliatv/playlist.m3u8
+#EXTINF:-1 tvg-id="MinformoTV.it" tvg-chno="9077" tvg-logo="" group-title="news",9077 Minformo TV
+https://5db313b643fd8.streamlock.net/MinformoTV/MinformoTV/playlist.m3u8
+#EXTINF:-1 tvg-id="NauticalChannel.it" tvg-chno="9078" tvg-logo="" group-title="sports",9078 Nautical Channel
+https://a-cdn.klowdtv.com/live2/nautical_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="OndaNovaraTV.it" tvg-chno="9081" tvg-logo="" group-title="general",9081 Onda Novara TV
+https://585b674743bbb.streamlock.net/9006/9006/master.m3u8
+#EXTINF:-1 tvg-id="OndaTV.it" tvg-chno="9082" tvg-logo="" group-title="general",9082 Onda TV
+https://5926fc9c7c5b2.streamlock.net/9040/9040/chunklist_w1373908906.m3u8
+#EXTINF:-1 tvg-id="OrlerTV.it" tvg-chno="9083" tvg-logo="" group-title="culture",9083 Orler TV
+https://w1.mediastreaming.it/orlertv/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="OttoChannel.it" tvg-chno="9084" tvg-logo="" group-title="general",9084 Otto Channel
+https://ottop-live-meride.akamaized.net/hls/live/2039996/ch1/playlist.m3u8
+#EXTINF:-1 tvg-id="PaciContemporaryChannel.it" tvg-chno="9085" tvg-logo="" group-title="culture",9085 Paci Contemporary Channel
+https://5f22d76e220e1.streamlock.net/pacicontemporarychannel/pacicontemporarychannel/playlist.m3u8
+#EXTINF:-1 tvg-id="PeerTVAltoAdige.it" tvg-chno="9088" tvg-logo="" group-title="outdoor",9088 Peer TV Alto Adige
+https://iptv.peer.biz/live/peertv-it.m3u8
+#EXTINF:-1 tvg-id="PeerTVSouthTyrol.it" tvg-chno="9089" tvg-logo="" group-title="outdoor",9089 Peer TV South Tyrol
+https://iptv.peer.biz/live/peertv-en.m3u8
+#EXTINF:-1 tvg-id="PeerTVSudtirol.it" tvg-chno="9090" tvg-logo="" group-title="outdoor",9090 Peer TV Sudtirol
+https://iptv.peer.biz/live/peertv.m3u8
+#EXTINF:-1 tvg-id="PrimaFree.it" tvg-chno="9091" tvg-logo="" group-title="general",9091 Prima Free
+https://5f22d76e220e1.streamlock.net/primafree/primafree/playlist.m3u8
+#EXTINF:-1 tvg-id="PrimaTV.it" tvg-chno="9092" tvg-logo="" group-title="general",9092 Prima TV
+https://5db313b643fd8.streamlock.net/PrimaTV/PrimaTV/playlist.m3u8
+#EXTINF:-1 tvg-id="PrimAntennaTV.it" tvg-chno="9093" tvg-logo="" group-title="general",9093 PrimAntenna TV
+https://5f22d76e220e1.streamlock.net/primantenna14/primantenna14/playlist.m3u8
+#EXTINF:-1 tvg-id="Primocanale.it" tvg-chno="9094" tvg-logo="" group-title="Italia",9094 Primocanale
+https://msh0203.stream.seeweb.it/live/flv:stream2.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="PromovideoTV.it" tvg-chno="9095" tvg-logo="" group-title="general",9095 Promovideo TV
+https://media2021.rtvweb.com/promovideo_web/promovideo/playlist.m3u8
+#EXTINF:-1 tvg-id="QuartoCanaleFlegreo.it" tvg-chno="9096" tvg-logo="" group-title="general",9096 Quarto Canale Flegreo
+https://live.mariatvcdn.com/dialogos/171e41deedf405f10c7dd6311387fb43.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="QVC.it" tvg-chno="9097" tvg-logo="" group-title="shop",9097 QVC
+https://qrg.akamaized.net/hls/live/2017383/lsqvc1it/master.m3u8
+#EXTINF:-1 tvg-id="Radio51TV.it" tvg-chno="9098" tvg-logo="" group-title="Italia",9098 Radio 51 TV
+http://178.32.140.155/canale51/canale51/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioBirikinaTV.it" tvg-chno="9099" tvg-logo="" group-title="Italia",9099 Radio Birikina TV
+https://56b50ada2d659.streamlock.net/RadioBirikinaTV/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioCapitalTiVu.it" tvg-chno="9100" tvg-logo="" group-title="music",9100 Radio Capital TiVu
+https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S35394734/Z6U2wGoDYANk/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioIbizaTV.it" tvg-chno="9101" tvg-logo="" group-title="Italia",9101 Radio Ibiza TV
+https://5929b138b139d.streamlock.net/RadioIbizaTV/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioIglesias.it" tvg-chno="9102" tvg-logo="" group-title="Italia",9102 Radio Iglesias
+http://wms.shared.streamshow.it/visualradio/mp4:visualradio/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioIglesiasSardegna.it" tvg-chno="9103" tvg-logo="" group-title="Italia",9103 Radio Iglesias Sardegna
+https://59d7d6f47d7fc.streamlock.net/visualradio/visualradio/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioItaliaTrendTV.it" tvg-chno="9104" tvg-logo="" group-title="music",9104 Radio Italia Trend TV
+https://amg00745-radioitailaspa-radioitalia-rakuten-sucsc.amagi.tv/hls/amagi_hls_data_rakutenAA-radioitalia-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-id="RadioNorbaTV.it" tvg-chno="9105" tvg-logo="" group-title="general",9105 Radio Norba TV
+https://stream12.xdevel.com/video0s975885-2349/stream/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="RadioPiterPanTV.it" tvg-chno="9106" tvg-logo="" group-title="music",9106 Radio Piter Pan TV
+https://58d921499d3d3.streamlock.net/RadioPiterpanTV/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioStudioDeltaTV.it" tvg-chno="9109" tvg-logo="" group-title="Italia",9109 Radio Studio Delta TV
+https://5ce9406b73c33.streamlock.net/RSD/ngrp:livestream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioTaorminaSicilia.it" tvg-chno="9110" tvg-logo="" group-title="Italia",9110 Radio Taormina Sicilia
+https://stream2.xdevel.com/video1s3-7/stream/playlist.m3u8
+#EXTINF:-1 tvg-id="ReggioTV.it" tvg-chno="9111" tvg-logo="" group-title="Italia",9111 ReggioTV
+https://cdn10.streamshow.it/cloud-reggiotv/reggiotv/playlist.m3u8
+#EXTINF:-1 tvg-id="Rete8.it" tvg-chno="9113" tvg-logo="" group-title="general",9113 Rete 8
+https://64b16f23efbee.streamlock.net/rete8/rete8/playlist.m3u8
+#EXTINF:-1 tvg-id="ReteBiellaTV.it" tvg-chno="9114" tvg-logo="" group-title="Italia",9114 Rete Biella TV
+https://sb.top-ix.org/retebiella/streaming/playlist.m3u8
+#EXTINF:-1 tvg-id="ReteOro.it" tvg-chno="9115" tvg-logo="" group-title="Italia",9115 Rete Oro
+https://5926fc9c7c5b2.streamlock.net/9094/9094/playlist.m3u8
+#EXTINF:-1 tvg-id="ReteTVItalia.it" tvg-chno="9116" tvg-logo="" group-title="general",9116 Rete TV Italia
+https://57068da1deb21.streamlock.net/retetvitalia/retetvitalia/playlist.m3u8
+#EXTINF:-1 tvg-id="Reteveneta.it" tvg-chno="9118" tvg-logo="" group-title="Italia",9118 Reteveneta
+https://59d7d6f47d7fc.streamlock.net/reteveneta/reteveneta/playlist.m3u8
+#EXTINF:-1 tvg-id="RTL1025Best.it" tvg-chno="9121" tvg-logo="" group-title="music",9121 RTL 102.5 Best
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S76960628/OEPHRUIctA0M/playlist_video.m3u8
+#EXTINF:-1 tvg-id="RTL1025BroSis.it" tvg-chno="9122" tvg-logo="" group-title="music",9122 RTL 102.5 Bro&Sis
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S75007890/MUGHuxc9dQ3b/playlist_video.m3u8
+#EXTINF:-1 tvg-id="RTL1025Disco.it" tvg-chno="9123" tvg-logo="" group-title="music",9123 RTL 102.5 Disco
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S51100361/0Fb4R3k82b5Z/playlist_video.m3u8
+#EXTINF:-1 tvg-id="RTL1025Napule.it" tvg-chno="9124" tvg-logo="" group-title="music",9124 RTL 102.5 Napule
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S27134503/0f9AhuwKlhnZ/playlist_video.m3u8
+#EXTINF:-1 tvg-id="RTL1025Traffic.it" tvg-chno="9125" tvg-logo="" group-title="music",9125 RTL 102.5 Traffic
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S38122967/2lyQRIAAGgRR/playlist_video.m3u8
+#EXTINF:-1 tvg-id="RTMTV.it" tvg-chno="9126" tvg-logo="" group-title="general",9126 RTM TV
+https://5f22d76e220e1.streamlock.net/rtm/rtm/playlist.m3u8
+#EXTINF:-1 tvg-id="RTP.it" tvg-chno="9127" tvg-logo="" group-title="Italia",9127 RTP
+https://flash2.xdevel.com/rtptv/rtptv/playlist.m3u8
+#EXTINF:-1 tvg-id="RTTRTrento.it" tvg-chno="9128" tvg-logo="" group-title="Italia",9128 RTTR Trento
+https://5f204aff97bee.streamlock.net/RTTRlive/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="RTV38.it" tvg-chno="9129" tvg-logo="" group-title="general",9129 RTV38
+https://845d8509d2cb4f249dd0b2ae5755b6c2.msvdn.net/rtv38/rtv38_live_main/mainabr/rtv38_live_main/main_576/chunks_dvr.m3u8
+#EXTINF:-1 tvg-id="SenatoTV.it" tvg-chno="9130" tvg-logo="" group-title="legislative",9130 Senato TV
+https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8
+#EXTINF:-1 tvg-id="SophiaTV.it" tvg-chno="9132" tvg-logo="" group-title="Italia",9132 Sophia TV
+https://bild-und-ton.stream/sophiatv-it/smil:sophia-tv-it.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="STEuropeChannel.it" tvg-chno="9136" tvg-logo="" group-title="entertainment",9136 ST Europe Channel
+https://5f22d76e220e1.streamlock.net/steuropetv/steuropetv/playlist.m3u8
+#EXTINF:-1 tvg-id="Stereo5TV.it" tvg-chno="9137" tvg-logo="" group-title="Italia",9137 Stereo 5 TV
+https://stream1.aswifi.it/stereo5/live/index.m3u8
+#EXTINF:-1 tvg-id="SuperSix.it" tvg-chno="9139" tvg-logo="" group-title="general",9139 Super Six
+https://5db313b643fd8.streamlock.net/SUPERSIXLombardia/SUPERSIXLombardia/playlist.m3u8
+#EXTINF:-1 tvg-id="SuperTV.it" tvg-chno="9140" tvg-logo="" group-title="general",9140 Super TV
+http://wms.shared.streamshow.it/supertv/mp4:supertv/playlist.m3u8
+#EXTINF:-1 tvg-id="TaurianovaTV.it" tvg-chno="9143" tvg-logo="" group-title="general",9143 Taurianova TV
+https://5f22d76e220e1.streamlock.net/taurianovatv/taurianovatv/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleAbruzzo.it" tvg-chno="9145" tvg-logo="" group-title="Italia",9145 Tele Abruzzo
+http://uk4.streamingpulse.com:1935/TeleabruzzoTV/TeleabruzzoTV/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleChiara.it" tvg-chno="9146" tvg-logo="" group-title="general",9146 Tele Chiara
+http://fms.tvavicenza.it:1935/telechiara/diretta/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleLiguriaSud.it" tvg-chno="9147" tvg-logo="" group-title="Italia",9147 Tele Liguria Sud
+https://5f22d76e220e1.streamlock.net/tls/tls/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleOne16.it" tvg-chno="9148" tvg-logo="" group-title="general",9148 Tele One 16
+https://648026e87a75e.streamlock.net/teleone/teleone/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleQuattro.it" tvg-chno="9150" tvg-logo="" group-title="Italia",9150 Tele Quattro
+https://59d7d6f47d7fc.streamlock.net/telequattro/telequattro/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleArena.it" tvg-chno="9153" tvg-logo="" group-title="Italia",9153 TeleArena
+https://5ce9406b73c33.streamlock.net/TeleArena/TeleArena.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TelecolorLombardia.it" tvg-chno="9154" tvg-logo="" group-title="Italia",9154 Telecolor Lombardia
+https://1aadf145546f475282c5b4e658c0ac4b.msvdn.net/live/324149/hlbAWtl/playlist.m3u8
+#EXTINF:-1 tvg-id="Telefoggia.it" tvg-chno="9155" tvg-logo="" group-title="Italia",9155 Telefoggia
+http://wms.shared.streamshow.it/telefoggia/mp4:telefoggia/playlist.m3u8
+#EXTINF:-1 tvg-id="Telefriuli.it" tvg-chno="9156" tvg-logo="" group-title="Italia",9156 Telefriuli
+https://5757bf2aa08e42248fb9b9d620f5d900.msvdn.net/live/S11646715/pE3ax0lT0rBd/playlist.m3u8
+#EXTINF:-1 tvg-id="Telegela647.it" tvg-chno="9157" tvg-logo="" group-title="news",9157 Telegela 647
+https://64b16f23efbee.streamlock.net/telegela/telegela/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleMajg.it" tvg-chno="9161" tvg-logo="" group-title="general",9161 TeleMajg
+https://59d7d6f47d7fc.streamlock.net/telemajg/telemajg/playlist.m3u8
+#EXTINF:-1 tvg-id="Telemantova.it" tvg-chno="9162" tvg-logo="" group-title="general",9162 Telemantova
+https://5ce9406b73c33.streamlock.net/TeleMantova/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleMia.it" tvg-chno="9163" tvg-logo="" group-title="Italia",9163 TeleMia
+https://playerssl.telemia.tv/fileadmin/hls/TelemiaHD/telemia85_mediachunks.m3u8
+#EXTINF:-1 tvg-id="TeleMiaExtra.it" tvg-chno="9164" tvg-logo="" group-title="Italia",9164 TeleMia Extra
+https://playerssl.telemia.tv/fileadmin/hls/TelemiaExtra/telemiaextra_mediachunks.m3u8
+#EXTINF:-1 tvg-id="TeleMistretta.it" tvg-chno="9165" tvg-logo="" group-title="Italia",9165 TeleMistretta
+https://live.mariatvcdn.com/telemistretta/8fbcd205ada81b295ee6c211c3a80dde.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="Telemolise.it" tvg-chno="9166" tvg-logo="" group-title="Italia",9166 Telemolise
+http://185.202.128.1:1935/TelemoliseStream/telemoliseTV.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="Telenova.it" tvg-chno="9169" tvg-logo="" group-title="Italia",9169 Telenova
+https://64b16f23efbee.streamlock.net/telenova/telenova/playlist.m3u8
+#EXTINF:-1 tvg-id="Telepace1.it" tvg-chno="9170" tvg-logo="" group-title="religious",9170 Telepace 1
+https://jk3lz2bwlw79-hls-live.mariatvcdn.it/teleradiopace1/efcc8fc46cab26315ce3f5845d76008f.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="Telepace2.it" tvg-chno="9171" tvg-logo="" group-title="religious",9171 Telepace 2
+https://zkpywrbgdbeg-hls-live.mariatvcdn.it/teleradiopace2/254c9b5c52a73a94ef0f6169cbd05dc2.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="Telepace3.it" tvg-chno="9172" tvg-logo="" group-title="religious",9172 Telepace 3
+https://932y4273djv8-hls-live.mariatvcdn.it/teleradiopace3/d2274c22e9ee09eb2eda01ed0496f8f5.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="Telepace4.it" tvg-chno="9173" tvg-logo="" group-title="religious",9173 Telepace 4
+https://j78dpr7nyq5r-hls-live.mariatvcdn.it/teleradiopace4/13d74f2cfe921bfbc262697203d47d8f.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TelepaceTrento.it" tvg-chno="9174" tvg-logo="" group-title="religious",9174 Telepace Trento
+https://5a1178b42cc03.streamlock.net/telepacetrento/telepacetrento/playlist.m3u8
+#EXTINF:-1 tvg-id="Telepavia.it" tvg-chno="9175" tvg-logo="" group-title="Italia",9175 Telepavia
+http://wms.shared.streamshow.it/telepavia/telepavia/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleRama.it" tvg-chno="9176" tvg-logo="" group-title="general",9176 TeleRama
+https://58d921499d3d3.streamlock.net/TeleRama/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="Teleromagna.it" tvg-chno="9177" tvg-logo="" group-title="general",9177 Teleromagna
+https://livetr.teleromagna.it/teleromagna/live/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleSanDomenico.it" tvg-chno="9178" tvg-logo="" group-title="religious",9178 TeleSanDomenico
+https://stream.mariatvcdn.com/tsd/7c59373bfdb38201b9215ff86f0ce6af.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="Teletricolore.it" tvg-chno="9181" tvg-logo="" group-title="Italia",9181 Teletricolore
+https://59d7d6f47d7fc.streamlock.net/rs2/rs2/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleTusciaSabina2000.it" tvg-chno="9182" tvg-logo="" group-title="Italia",9182 TeleTusciaSabina 2000
+http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/playlist.m3u8
+#EXTINF:-1 tvg-id="TLTMolise.it" tvg-chno="9186" tvg-logo="" group-title="general",9186 TLT Molise
+https://5f22d76e220e1.streamlock.net/tltmolise/tltmolise/playlist.m3u8
+#EXTINF:-1 tvg-id="TRSport.it" tvg-chno="9187" tvg-logo="" group-title="sports",9187 TR Sport
+https://livetr.teleromagna.it/mia/live/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCampane1.it" tvg-chno="9190" tvg-logo="" group-title="general",9190 TV Campane 1
+https://eu1.servers10.com:8081/8032/index.m3u8
+#EXTINF:-1 tvg-id="TVPrato.it" tvg-chno="9191" tvg-logo="" group-title="Italia",9191 TV Prato
+https://live.mariatvcdn.com/tvprato/2db0dd5674586686a867ec52c3aa8e06.sdp/index.m3u8
+#EXTINF:-1 tvg-id="TVQuiModena.it" tvg-chno="9192" tvg-logo="" group-title="Italia",9192 TV Qui Modena
+https://59d7d6f47d7fc.streamlock.net/tvqui/tvqui/playlist.m3u8
+#EXTINF:-1 tvg-id="TVYesItalia.it" tvg-chno="9194" tvg-logo="" group-title="Italia",9194 TV Yes Italia
+https://stream1.aswifi.it/radioyes/live/index.m3u8
+#EXTINF:-1 tvg-id="TV7Benevento.it" tvg-chno="9195" tvg-logo="" group-title="Italia",9195 TV7 Benevento
+http://streaming.senecadot.com/live/flv:tv7.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="tv9Telemaremma.it" tvg-chno="9197" tvg-logo="" group-title="news",9197 tv9 Telemaremma
+https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/2095a288-1384-ed2e-5da0-278ccbb72295.m3u8
+#EXTINF:-1 tvg-id="UmbriaTV.it" tvg-chno="9200" tvg-logo="" group-title="Italia",9200 Umbria TV
+https://umbriatv.stream.rubidia.it:8083/live/umbriatv/playlist.m3u8
+#EXTINF:-1 tvg-id="VideoRola.it" tvg-chno="9202" tvg-logo="" group-title="music",9202 Video Rola
+https://d3b2epqdk0p7vd.cloudfront.net/out/v1/8a448b5e16384af4a3c8146a7b049c32/index.m3u8
+#EXTINF:-1 tvg-id="VisualRadio.it" tvg-chno="9204" tvg-logo="" group-title="Italia",9204 Visual Radio
+http://wms.shared.streamshow.it:1935/visualradio/visualradio/live.m3u8
