@@ -121,29 +121,58 @@ def parse_lcn(text):
 
 
 def load_current():
+    """
+    Carica la tabella locale come numero -> LISTA di nomi (alias).
+    La tabella puo' avere piu' nomi che puntano allo stesso numero
+    (es. "Discovery", "Discovery Italy", "Warner TV" -> 37): li
+    conserviamo tutti, cosi' il confronto col forum non li scambia
+    per rinomine.
+    """
     if not MAPPING_FILE.exists():
         return {}
     raw = json.loads(MAPPING_FILE.read_text(encoding="utf-8"))
-    # invertiamo in numero -> nome per il confronto
     by_num = {}
     for name, num in raw.items():
-        by_num[int(num)] = name
+        by_num.setdefault(int(num), []).append(name)
     return by_num
 
 
+def name_matches_aliases(forum_name, aliases):
+    """
+    True se il nome dal forum e' "coperto" da almeno uno degli alias
+    locali. Confronto morbido: oltre all'uguaglianza, accetta che uno
+    sia contenuto nell'altro (es. alias "Discovery" copre il nome del
+    forum "Discovery Italy HD", e viceversa).
+    """
+    fn = normalize(forum_name)
+    for alias in aliases:
+        a = normalize(alias)
+        if not a or not fn:
+            continue
+        if a == fn or a in fn or fn in a:
+            return True
+    return False
+
+
 def diff(current_by_num, parsed_by_num):
-    """Calcola aggiunte, rimozioni e cambi di nome/numero."""
+    """Calcola aggiunte, rimozioni e cambi di nome/numero.
+
+    current_by_num: numero -> lista di alias locali
+    parsed_by_num:  numero -> nome dal forum
+    """
     cur_nums = set(current_by_num)
     new_nums = set(parsed_by_num)
 
     added = sorted(new_nums - cur_nums)            # numeri nuovi
     removed = sorted(cur_nums - new_nums)          # numeri spariti
-    renamed = []                                   # stesso numero, nome diverso
+    renamed = []                                   # nessun alias copre il nome forum
     for num in sorted(cur_nums & new_nums):
-        old = current_by_num[num]
-        new = parsed_by_num[num]
-        if normalize(old) != normalize(new):
-            renamed.append((num, old, new))
+        aliases = current_by_num[num]
+        forum_name = parsed_by_num[num]
+        if not name_matches_aliases(forum_name, aliases):
+            # mostriamo gli alias locali separati da " / " per chiarezza
+            old_display = " / ".join(aliases)
+            renamed.append((num, old_display, forum_name))
     return added, removed, renamed
 
 
@@ -163,7 +192,7 @@ def write_changes(added, removed, renamed, parsed_by_num, current_by_num):
             lines.append("")
         if removed:
             lines += ["## Canali rimossi (in tabella ma non piu' sul forum)", ""]
-            lines += [f"- **{n}** — {current_by_num[n]}" for n in removed]
+            lines += [f"- **{n}** — {' / '.join(current_by_num[n])}" for n in removed]
             lines.append("")
         if renamed:
             lines += ["## Canali rinominati (stesso numero, nome diverso)", ""]
