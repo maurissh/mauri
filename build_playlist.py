@@ -38,14 +38,13 @@ COUNTRY = "IT"  # codice ISO 3166-1 alpha-2 del paese da estrarre
 # priorita' a Free-TV (stream piu' affidabile); iptv-org resta la rete di
 # copertura per tutti gli altri canali (regionali, radio, nicchie).
 # Se Free-TV e' irraggiungibile o malformata, lo script prosegue con iptv-org.
+# STRATEGIA FONTI: Free-TV e' la fonte PRIMARIA (stream curati e testati, usa i
+# feed/relinker ufficiali dei broadcaster). iptv-org e' la fonte SECONDARIA: serve
+# solo per i canali che Free-TV non copre (regionali, radio, nicchie). Cosi' i
+# canali principali (Rai, Mediaset, La7, Discovery) usano gli stream piu' affidabili,
+# e iptv-org garantisce comunque l'ampiezza della lista.
 FALLBACK_ENABLED = True
 FALLBACK_URL = "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_italy.m3u8"
-
-# Canali per cui lo stream di iptv-org e' inaffidabile e vogliamo SEMPRE quello
-# di Free-TV (che usa i relinker/feed ufficiali). Si indicano per numero LCN.
-# Per questi, lo stream iptv-org viene ignorato anche se presente e "vivo".
-# Qui: tutti i canali Rai nazionali principali (1,2,3) + Rai tematici comuni.
-FORCE_FREETV_LCN = {1, 2, 3, 10, 13, 14, 15, 21, 23, 24}
 
 # --- Validazione stream -----------------------------------------------------
 # Prima di pubblicare, lo script puo' testare ogni URL e scartare i canali morti,
@@ -317,10 +316,36 @@ def build():
     raw_map, lcn_index = load_mapping()
 
     entries = []        # canali abbinati a un LCN
-    unmapped = []       # canali italiani senza LCN noto
+    unmapped = []       # canali italiani senza LCN noto (solo da iptv-org)
     matched_lcns = set()
-    forced_skipped = {}  # LCN forzati a Free-TV: stream iptv-org tenuto come ripiego
 
+    # === FONTE PRIMARIA: Free-TV ===========================================
+    # Carichiamo prima Free-TV: i suoi stream curati hanno la priorita'.
+    print("Fonte primaria: Free-TV...")
+    fallback_by_lcn = load_fallback_by_lcn(lcn_index)
+    by_lcn = {}
+    freetv_count = 0
+    for lcn, fb in sorted(fallback_by_lcn.items()):
+        record = {
+            "id": f"freetv:{normalize(fb['name'])}",
+            "name": fb["name"],
+            "logo": fb.get("logo", ""),
+            "categories": ["Discovery" if lcn in (9, 28, 31, 33, 37, 38, 44, 46, 56, 59) else "Italia"],
+            "url": fb["url"],
+            "lcn": lcn,
+            "source": "free-tv",
+        }
+        entries.append(record)
+        matched_lcns.add(lcn)
+        by_lcn[lcn] = record
+        freetv_count += 1
+    print(f"  Canali da Free-TV: {freetv_count}")
+
+    # === FONTE SECONDARIA: iptv-org ========================================
+    # Aggiunge SOLO i canali (con LCN) che Free-TV non ha gia' fornito, piu'
+    # tutti i canali italiani senza LCN (che finiranno accodati da 9000).
+    print("Fonte secondaria: iptv-org (riempie i canali mancanti)...")
+    iptvorg_added = 0
     for cid, ch in it_channels.items():
         ch_streams = streams_by_channel.get(cid)
         if not ch_streams:
@@ -348,69 +373,16 @@ def build():
 
         if lcn_info:
             lcn_num = lcn_info["lcn"]
-            if lcn_num in FORCE_FREETV_LCN:
-                # questo canale deve venire da Free-TV: ignoro lo stream iptv-org,
-                # ma lo salvo come ripiego nel caso Free-TV non lo fornisca
-                forced_skipped[lcn_num] = {
-                    "id": record["id"], "name": record["name"],
-                    "logo": record["logo"], "categories": record["categories"],
-                    "url": record["url"], "lcn": lcn_num,
-                }
-                continue
+            if lcn_num in matched_lcns:
+                continue  # Free-TV ha gia' questo canale: ha la priorita'
             record["lcn"] = lcn_num
             matched_lcns.add(lcn_num)
             entries.append(record)
+            by_lcn[lcn_num] = record
+            iptvorg_added += 1
         else:
             unmapped.append(record)
-
-    # --- Seconda fonte (Free-TV) -------------------------------------------
-    # Free-TV cura e testa i suoi stream: dove un canale e' in ENTRAMBE le fonti
-    # preferiamo Free-TV (piu' affidabile), e usiamo Free-TV anche per i canali
-    # che iptv-org non copre (es. bouquet Discovery). iptv-org resta la copertura
-    # per tutto il resto (regionali, radio, nicchie).
-    print("Controllo la seconda fonte (Free-TV)...")
-    fallback_by_lcn = load_fallback_by_lcn(lcn_index)
-    by_lcn = {r["lcn"]: r for r in entries}
-    fallback_added = []      # canali NUOVI presi da Free-TV (iptv-org non li aveva)
-    fallback_preferred = []  # canali per cui Free-TV ha sostituito iptv-org
-    for lcn, fb in fallback_by_lcn.items():
-        record = {
-            "id": f"freetv:{normalize(fb['name'])}",
-            "name": fb["name"],
-            "logo": fb.get("logo", ""),
-            "categories": ["Discovery" if lcn in (9, 28, 31, 33, 37, 38, 44, 46, 56, 59) else "Italia"],
-            "url": fb["url"],
-            "lcn": lcn,
-            "source": "free-tv",
-        }
-        if lcn in by_lcn:
-            # doppione: Free-TV vince, sostituiamo lo stream iptv-org
-            idx = entries.index(by_lcn[lcn])
-            entries[idx] = record
-            fallback_preferred.append((fb["name"], lcn))
-        else:
-            entries.append(record)
-            matched_lcns.add(lcn)
-            fallback_added.append((fb["name"], lcn))
-        by_lcn[lcn] = record
-    if fallback_added:
-        print(f"  Nuovi da Free-TV (assenti in iptv-org): {len(fallback_added)} "
-              f"(tra cui il bouquet Discovery se presente)")
-    if fallback_preferred:
-        print(f"  Preferiti da Free-TV su iptv-org (doppioni): {len(fallback_preferred)}")
-
-    # Ripiego: canali forzati a Free-TV che pero' Free-TV non ha fornito.
-    # Per non perderli, recuperiamo lo stream iptv-org che avevamo messo da parte.
-    rescued = []
-    for lcn, record in forced_skipped.items():
-        if lcn not in by_lcn:
-            entries.append(record)
-            matched_lcns.add(lcn)
-            by_lcn[lcn] = record
-            rescued.append((record["name"], lcn))
-    if rescued:
-        print(f"  Ripiego iptv-org (Free-TV non li aveva): {len(rescued)} "
-              f"-> {', '.join(n for n, _ in rescued)}")
+    print(f"  Canali aggiunti da iptv-org (assenti in Free-TV): {iptvorg_added}")
 
     # --- Applica gli override (stream manuali da fonti diverse da iptv-org) ---
     overrides = load_overrides()
@@ -463,14 +435,10 @@ def build():
     write_report(raw_map, entries, unmapped, it_channels, streams_by_channel)
 
     print(f"\nFatto. Playlist scritta in {OUTPUT_FILE.name} ({len(entries)} canali vivi).")
+    print(f"  - da Free-TV (fonte primaria): {freetv_count}")
+    print(f"  - da iptv-org (canali extra): {iptvorg_added}")
     if dropped:
         print(f"  - scartati perche' morti: {len(dropped)}")
-    if fallback_added:
-        print(f"  - nuovi da Free-TV: {len(fallback_added)}")
-        for name, lcn in sorted(fallback_added, key=lambda x: x[1]):
-            print(f"      [{lcn}] {name}")
-    if fallback_preferred:
-        print(f"  - preferiti da Free-TV (doppioni): {len(fallback_preferred)}")
     if override_applied:
         print(f"  - override applicati: {len(override_applied)}")
         for name, lcn, what in override_applied:
@@ -505,4 +473,46 @@ def write_report(raw_map, entries, unmapped, it_channels, streams_by_channel):
     found_names = {normalize(r["name"]) for r in entries}
     missing = []
     for label in raw_map:
-        if normalize(label) not in foun
+        if normalize(label) not in found_names:
+            missing.append((raw_map[label], label))
+    missing.sort()
+
+    lines = [
+        "# Report playlist tivusat",
+        "",
+        f"Ultimo aggiornamento: **{now}**",
+        "",
+        "## Riepilogo",
+        "",
+        f"- Canali {COUNTRY} nell'anagrafica iptv-org: **{len(it_channels)}**",
+        f"- Canali {COUNTRY} con stream disponibile: **{len(streams_by_channel)}**",
+        f"- Canali abbinati a un LCN tivusat: **{mapped_count}**",
+        f"- Canali senza LCN (accodati da {UNMAPPED_START}): **{len(unmapped)}**",
+        "",
+    ]
+
+    if missing:
+        lines += [
+            "## Canali in tabella LCN ma senza stream oggi",
+            "",
+            "(numero — nome: lo stream potrebbe essere temporaneamente assente)",
+            "",
+        ]
+        lines += [f"- {lcn} — {label}" for lcn, label in missing]
+        lines.append("")
+
+    if unmapped:
+        lines += [
+            "## Canali italiani senza LCN tivusat",
+            "",
+            "Aggiungi questi nomi a `lcn_tivusat.json` se vuoi assegnare loro un numero:",
+            "",
+        ]
+        lines += [f'- `"{r["name"]}"`' for r in unmapped]
+        lines.append("")
+
+    REPORT_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+if __name__ == "__main__":
+    build()
