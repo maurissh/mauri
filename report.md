@@ -1,20 +1,18 @@
 # Report playlist tivusat
 
-Ultimo aggiornamento: **2026-05-24 15:49 UTC**
+Ultimo aggiornamento: **2026-05-24 17:03 UTC**
+Fonte primaria: **free-tv**
 
 ## Riepilogo
 
-- Canali IT nell'anagrafica iptv-org: **616**
-- Canali IT con stream disponibile: **247**
 - Canali abbinati a un LCN tivusat: **65**
-- Canali senza LCN (accodati da 9000): **206**
+- Canali senza LCN (accodati da 9000): **330**
 
 ## Canali in tabella LCN ma senza stream oggi
 
 (numero — nome: lo stream potrebbe essere temporaneamente assente)
 
 - 16 — Mediaset Italia 2
-- 20 — 20 Mediaset
 - 28 — DMAX Italy
 - 30 — WeDoTV Movies
 - 31 — Real Time Italy
@@ -140,214 +138,338 @@ Ultimo aggiornamento: **2026-05-24 15:49 UTC**
 - 822 — Telesardegna
 - 868 — Arte Investimenti
 
-## Canali italiani senza LCN tivusat
+## Canali senza LCN tivusat
 
 Aggiungi questi nomi a `lcn_tivusat.json` se vuoi assegnare loro un numero:
 
-- `"111 TV"`
-- `"12 TV Parma"`
-- `"51 Radio TV"`
-- `"7 RadioVisione"`
-- `"7 YOU & ME"`
-- `"70-80 TV"`
-- `"A2i TV"`
-- `"Adnkronos"`
+- `"111 Tv"`
+- `"12 Tv Parma"`
+- `"27 Twentyseven"`
+- `"4 You Tv"`
+- `"AB Channel"`
+- `"Abc Tv"`
 - `"Alma TV"`
-- `"AltoAdige TV"`
-- `"Antenna 2 TV"`
+- `"Alpauno"`
+- `"Alto Adige Tv"`
+- `"Antenna 2 Bergamo"`
+- `"Antenna 3 Massa"`
+- `"Antenna 3 Veneto Nord Est"`
+- `"Antenna Sicilia Ⓣ"`
 - `"Antenna Sud"`
 - `"Antenna Sud Extra"`
-- `"Antenna Tre"`
+- `"Aristanis SuperTv"`
+- `"Arte Network Orler"`
 - `"Aurora Arte"`
-- `"Azzurra TV"`
-- `"Bergamo TV"`
-- `"Bom Channel"`
-- `"CafeTV24"`
-- `"Calabria TV"`
-- `"Canale 2 Altamura"`
+- `"Azzurra Tv Vco"`
+- `"Basilicata 1 Tv"`
+- `"Bergamo Tv"`
+- `"BIKE Channel"`
+- `"BOM Channel"`
+- `"ByoBlu"`
+- `"Cafe Tv 24"`
+- `"Calabria tv"`
+- `"Calabria Uno Tv"`
+- `"Camera dei Deputati Ⓢ"`
+- `"Canale 10"`
+- `"Canale 2"`
+- `"Canale 21"`
 - `"Canale 21 Extra"`
 - `"Canale 7"`
-- `"Canale 8"`
-- `"Canale Dieci"`
-- `"CarinaTV"`
+- `"Canale 74 Sicilia"`
+- `"Canale 8 Campania"`
+- `"Canale Italia"`
+- `"Carina Tv"`
 - `"Casa Italia 53"`
-- `"CG Entertainment"`
-- `"Class CNBC"`
-- `"Class TV Moda"`
-- `"Company TV"`
-- `"Cusano Italia TV"`
+- `"Casa Sanremo Tv"`
+- `"Castrovillari Tv"`
+- `"Cittaceleste Tv"`
+- `"Company Tv"`
+- `"Cremona 1"`
+- `"Cusano Italia Tv"`
+- `"Cusano News 7"`
 - `"Deejay TV"`
-- `"DellaTV"`
+- `"Delta Tv"`
 - `"Deluxe 139"`
-- `"DI.TV 80"`
-- `"Donna TV"`
-- `"Elive TV Brescia"`
-- `"Entella TV"`
-- `"Esperia TV"`
+- `"Di.Tv 80"`
+- `"Di.Tv 92"`
+- `"Digital Tv7 Benevento"`
+- `"Donna Shopping Tv"`
+- `"Donna TV Ⓢ"`
+- `"E'live Brescia Tv"`
+- `"Easy Tv Canale 190"`
+- `"Entella Tv"`
+- `"Equos Tv"`
+- `"Espansione Tv"`
+- `"Esperia Tv"`
 - `"Etna Espresso Channel"`
-- `"eTv Marche"`
-- `"eTv Rete 7"`
-- `"Euro Indie Music Chart TV"`
-- `"Euro TV"`
-- `"Fano TV"`
-- `"FM ITALIA"`
-- `"Giornale Radio TV"`
-- `"Giovanni Paolo TV"`
-- `"GM24"`
-- `"GO-TV Canale 163"`
-- `"Gold TV"`
-- `"Gold TV Sat"`
-- `"GRP VERATV"`
-- `"Icaro TV"`
+- `"Euro Tv"`
+- `"Euronews Italian Ⓨ"`
+- `"Extra Tv"`
+- `"Fano Tv"`
+- `"Fascino Tv"`
+- `"FM Tv Marche"`
+- `"Gambero Rosso"`
+- `"GarganoTv"`
+- `"Giornale Radio Tv"`
+- `"Giovanni Paolo Tv"`
+- `"Globus Television"`
+- `"GO-TV Channel"`
+- `"Gold Tv"`
+- `"GRP Televisione"`
+- `"GS Channel"`
+- `"HGTV – Home & Garden Tv"`
+- `"Icaro Tv Rimini"`
+- `"Idea Plus"`
+- `"il61"`
 - `"Italia 2"`
+- `"Italia 2 Tv"`
 - `"Italia 7"`
-- `"Italia2TV"`
-- `"Italian Fishing TV"`
-- `"Iunior TV"`
-- `"Juwelo"`
-- `"Kiss Kiss Napoli TV"`
-- `"Kiss Kiss TV"`
-- `"L'altro Corriere TV"`
-- `"La C TV"`
-- `"La TR3 Marsala"`
+- `"Italia 8 Prestige"`
+- `"Italia Channel"`
+- `"Iunior Tv"`
+- `"L'Altro Corriere Tv"`
+- `"La Nuova Tv"`
+- `"La Tenda Tv"`
+- `"La tr3 Marsala"`
+- `"Lab Tv"`
 - `"LaC News 24"`
-- `"Lazio TV"`
-- `"Le Cronache TV"`
-- `"Lira TV"`
-- `"Luna TV"`
-- `"m2o TV"`
-- `"MadeinBO TV"`
-- `"Maria Vision Italia"`
-- `"Mediaset Italia"`
-- `"MediterraniaTV"`
-- `"Medjugorje Italia TV"`
-- `"Minformo TV"`
-- `"Nautical Channel"`
-- `"NTN"`
+- `"LaC Tv Calabria"`
+- `"Lazio Tv"`
+- `"Le Cronache Lucane Tv"`
+- `"Lira Tv"`
+- `"Lombardia Tv"`
+- `"Love in Venice"`
+- `"Lucania Tv"`
+- `"Made in BO"`
+- `"MAN-GA"`
+- `"Maria Vision"`
+- `"Matrix Tv"`
+- `"Mediterranea Tv"`
+- `"Medjugorje Italia Tv"`
+- `"Medjugorje Tv Puglia"`
+- `"Minformo Tv"`
+- `"Motori Tv"`
+- `"News24 City"`
+- `"NTI Canale 271"`
+- `"Nuova Tv 1"`
+- `"Nuova Tv 2"`
+- `"Nuova TV Nazionale"`
+- `"Nuvola Tv"`
 - `"Odeon 24"`
-- `"Onda Novara TV"`
-- `"Onda TV"`
-- `"Orler TV"`
+- `"Ofanto Tv"`
+- `"Onda Novara Tv"`
+- `"Onda Tv Sicilia"`
+- `"Onda Web Radio"`
+- `"Ora Tv"`
+- `"Orler Tv"`
 - `"Otto Channel"`
-- `"Paci Contemporary Channel"`
-- `"Paradise TV"`
-- `"Passione Lotto"`
-- `"Peer TV Alto Adige"`
-- `"Peer TV South Tyrol"`
-- `"Peer TV Sudtirol"`
-- `"Prima Free"`
-- `"Prima TV"`
-- `"PrimAntenna TV"`
+- `"Paradise Tv"`
+- `"Partenope Tv"`
+- `"Peer Tv Alto Adige"`
+- `"Peer TV Südtirol"`
+- `"Pop Tv"`
+- `"Prima Tv Napoli"`
+- `"Prima Tv Sicilia"`
+- `"PrimaFREE"`
+- `"Primantenna Torino"`
 - `"Primocanale"`
-- `"Promovideo TV"`
+- `"Promovideo Tv"`
 - `"Quarto Canale Flegreo"`
 - `"QVC"`
-- `"Radio 51 TV"`
-- `"Radio Birikina TV"`
-- `"Radio Capital TiVu"`
-- `"Radio Ibiza TV"`
-- `"Radio Iglesias"`
-- `"Radio Iglesias Sardegna"`
-- `"Radio Italia Trend TV"`
-- `"Radio Norba TV"`
-- `"Radio Piter Pan TV"`
-- `"Radio Roma News"`
+- `"R101 TV"`
+- `"Radio 105 TV"`
+- `"Radio 3M InBlu"`
+- `"Radio 51 Tv"`
+- `"Radio Birikina Tv"`
+- `"Radio Bruno Tv"`
+- `"Radio Colonna Tv Ⓨ"`
+- `"Radio Ibiza"`
+- `"Radio Immagine Tv"`
+- `"Radio Italia Cina Tv"`
+- `"Radio Libertà"`
+- `"Radio m2o Tv"`
+- `"Radio Monte Kronio Tv (R.M.K.)"`
+- `"Radio Norba Tv"`
+- `"Radio Piter Pan Tv"`
+- `"Radio Radio Tv"`
+- `"Radio Radiosa Tv"`
+- `"Radio Roma"`
 - `"Radio Roma Television"`
-- `"Radio Studio Delta TV"`
-- `"Radio Taormina Sicilia"`
-- `"ReggioTV"`
+- `"Radio TV Serie A con RDS"`
+- `"Radio24-IlSole24OreTV"`
+- `"Rai Radio 2 Visual Radio"`
+- `"Ran Friul"`
+- `"RDE Tv"`
+- `"Reggio Tv"`
+- `"Rei Tv"`
 - `"Rete 55"`
 - `"Rete 8"`
-- `"Rete Biella TV"`
-- `"Rete Oro"`
-- `"Rete TV Italia"`
-- `"Retemia"`
-- `"Reteveneta"`
-- `"Rossini TV"`
+- `"Rete 8 Sport"`
+- `"Rete 8 Vga"`
+- `"Rete Biella Tv"`
+- `"Rete Mia"`
+- `"Rete Oro Tv"`
+- `"Rete Sole"`
+- `"Rete Tv Italia"`
+- `"Rete Veneta"`
+- `"Roma Tv 82"`
+- `"Rossini Tv"`
+- `"RTC Quarta Rete"`
 - `"RTC Telecalabria"`
-- `"RTL 102.5 Best"`
-- `"RTL 102.5 Bro&Sis"`
-- `"RTL 102.5 Disco"`
-- `"RTL 102.5 Napule"`
+- `"RTI Calabria"`
+- `"RTL 102.5 + Plus"`
 - `"RTL 102.5 Traffic"`
-- `"RTM TV"`
-- `"RTP"`
-- `"RTTR Trento"`
-- `"RTV38"`
+- `"RTM Manduria"`
+- `"Rtp Tv"`
+- `"RTR99 Tv"`
+- `"Rttr"`
+- `"Rtv 38 Toscana"`
+- `"Sardegna 1"`
 - `"Senato TV"`
-- `"SL48 TV"`
-- `"Sophia TV"`
-- `"Sportitalia"`
-- `"Sportitalia Motori"`
-- `"Sportitalia Solocalcio"`
+- `"Sesta Rete"`
+- `"Set Tv Cilento"`
+- `"Sicilia 24 Tv"`
+- `"Sicilia Tv"`
+- `"Sienatv"`
+- `"Sky TG24"`
+- `"SL 48 Tv"`
+- `"Sophia Tv"`
+- `"Sportitalia Plus"`
+- `"Sportitalia SOLOCALCIO"`
 - `"ST Europe Channel"`
-- `"Stereo 5 TV"`
-- `"Super J TV Teramo"`
+- `"Stiletv"`
+- `"Super J Tv"`
 - `"Super Six"`
-- `"Super TV"`
-- `"Super TV Oristano"`
+- `"SuperTennis"`
+- `"Supertv"`
 - `"T9"`
-- `"Taurianova TV"`
-- `"Teatro TV"`
-- `"Tele Abruzzo"`
+- `"Tcf Tv"`
+- `"Tci"`
+- `"Teatro Tv"`
+- `"Tele A"`
+- `"Tele Abruzzo Tv"`
+- `"Tele Acras"`
+- `"Tele Arena"`
+- `"Tele Bari"`
+- `"Tele Belluno"`
+- `"Tele Boario"`
+- `"Tele Bruzzano"`
 - `"Tele Chiara"`
+- `"Tele Estense"`
+- `"Tele Foggia"`
+- `"Tele Friuli"`
+- `"Tele Ischia"`
+- `"Tele Jonio"`
+- `"Tele Liberta' HD"`
 - `"Tele Liguria Sud"`
-- `"Tele One 16"`
-- `"Tele Pegaso Catania"`
-- `"Tele Quattro"`
+- `"Tele Mantova"`
+- `"Tele Mia"`
+- `"Tele Mia Extra"`
+- `"Tele Mistretta"`
+- `"Tele Molise"`
+- `"Tele Nord Genova"`
+- `"Tele Nostra"`
+- `"Tele Occidente"`
+- `"Tele Oltre"`
+- `"Tele One"`
+- `"Tele Pace Trento"`
+- `"Tele Pavia"`
+- `"Tele Pegaso"`
+- `"Tele Piadena"`
+- `"Tele Pordenone"`
+- `"Tele Quattro Trieste"`
+- `"Tele Radio Ercolano"`
+- `"Tele Radio Orte"`
+- `"Tele Radio Pace 1"`
+- `"Tele Radio Pace 2"`
+- `"Tele Radio Pace 3"`
+- `"Tele Radio Pace 4"`
 - `"Tele Radio Sciacca"`
-- `"Teleacras"`
-- `"TeleArena"`
-- `"Telecolor Lombardia"`
-- `"Telefoggia"`
-- `"Telefriuli"`
-- `"Telegela 647"`
-- `"Telegranda"`
+- `"Tele Sirio"`
+- `"Tele Spazio Messina"`
+- `"Tele Sud Puglia"`
+- `"Tele Tricolore"`
+- `"Tele Tutto"`
+- `"Tele Tutto 2"`
+- `"Tele Tutto 24"`
+- `"Tele Venezia"`
+- `"Tele Video Agrigento (T.V.A.)"`
+- `"Tele8 Tv"`
+- `"TeleAmbiente"`
+- `"Telecampione"`
+- `"Telecittà Padova"`
+- `"Telecity Lombardia"`
+- `"Telecity Piemonte"`
+- `"Telecity Valle D'Aosta"`
+- `"Telecolor"`
+- `"Telecolor Ⓣ"`
+- `"TeleCostaSmeralda"`
+- `"Telegenova"`
+- `"Teleiblea"`
+- `"Teleitalia 41"`
 - `"Telejato"`
-- `"Teleliberta"`
+- `"Teleleonessa"`
 - `"TeleMajg"`
-- `"Telemantova"`
-- `"TeleMia"`
-- `"TeleMia Extra"`
-- `"TeleMistretta"`
-- `"Telemolise"`
-- `"teleMonteneve"`
-- `"Telenord"`
 - `"Telenova"`
-- `"Telepace 1"`
-- `"Telepace 2"`
-- `"Telepace 3"`
-- `"Telepace 4"`
-- `"Telepace Trento"`
-- `"Telepavia"`
-- `"TeleRama"`
+- `"TeleRadioStereo Ⓣ"`
+- `"Telerama"`
+- `"TeleRegione"`
+- `"TeleRegione Color"`
+- `"TeleRegione Live"`
+- `"TeleRent 7Gold"`
+- `"Telereporter"`
+- `"Teleroma 56 Ⓣ"`
+- `"TeleRomaDue"`
 - `"Teleromagna"`
-- `"TeleSanDomenico"`
-- `"Telestense"`
+- `"Teleromagna 24"`
 - `"Telesud Trapani"`
-- `"Teletricolore"`
-- `"TeleTusciaSabina 2000"`
-- `"Televallo"`
-- `"TeleVenezia"`
+- `"Telesveva"`
+- `"Teleuniverso"`
+- `"Televallo Trapani"`
 - `"TG Norba 24"`
 - `"TLT Molise"`
-- `"TR Sport"`
-- `"Trentino TV"`
-- `"TSN TeleSondrio News"`
-- `"TV Campane 1"`
-- `"TV Prato"`
-- `"TV Qui Modena"`
-- `"TV Sei"`
-- `"TV Yes Italia"`
-- `"TV7 Benevento"`
-- `"TV7 Triveneta"`
-- `"tv9 Telemaremma"`
-- `"TVL"`
-- `"TVRS"`
-- `"Umbria TV"`
-- `"Vera TV"`
-- `"Video Rola"`
-- `"Videolina Sardegna"`
-- `"Visual Radio"`
-- `"Wedding TV"`
+- `"Top Calcio 24"`
+- `"Travel TV"`
+- `"TRC Santeramo"`
+- `"Tremedia Tv"`
+- `"Trentino Tv"`
+- `"TRL Tele Radio Leo"`
+- `"TRM h24 Ⓨ"`
+- `"TSD Tv Arezzo(Tele San Domenico)"`
+- `"Tuscia Sabina 2000Tv"`
+- `"Tv 12"`
+- `"Tv Campi Flegrei"`
+- `"Tv Luna Napoli"`
+- `"Tv Prato"`
+- `"Tv Qui Modena"`
+- `"Tv Uno"`
+- `"Tv Yes"`
+- `"TVL (TV Libera Pistoia)"`
+- `"Tvm Palermo"`
+- `"Tvr Xenon"`
+- `"Tvrs Tv"`
+- `"Umbria Tv"`
+- `"Umbria+ TRT"`
+- `"Uno Tv"`
+- `"Uno4 Tv"`
+- `"VB33"`
+- `"Vera Tv"`
+- `"Video Calabria"`
+- `"Video Mediterraneo"`
+- `"Video Nola"`
+- `"Video Regione Sicilia"`
+- `"Video Star Tv Sicilia"`
+- `"Video Touring Tv"`
+- `"Videonovara"`
+- `"Videotelecarnia"`
+- `"Vintage Radio Tv"`
+- `"Vuemme Tv"`
+- `"Webcom Tv"`
+- `"WLTV"`
+- `"Yvii Tv"`
+- `"Zerouno Tv Music"`
+- `"Zerouno Tv News"`
+- `"è Tv Marche"`
+- `"è Tv Rete7"`
+- `"è Tv Umbria"`
 
