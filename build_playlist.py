@@ -30,10 +30,20 @@ STREAMS_URL = f"{API_BASE}/streams.json"
 
 COUNTRY = "IT"  # codice ISO 3166-1 alpha-2 del paese da estrarre
 
+# Seconda fonte (fallback) per i canali che iptv-org non copre, es. bouquet
+# Discovery free. E' la playlist Italia di Free-TV/IPTV. Viene usata SOLO per
+# i canali che hanno un LCN in tabella ma che iptv-org non ha fornito.
+# Se irraggiungibile o malformata, lo script prosegue con la sola iptv-org.
+FALLBACK_ENABLED = True
+FALLBACK_URL = "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_italy.m3u8"
+
 ROOT = Path(__file__).resolve().parent
 MAPPING_FILE = ROOT / "lcn_tivusat.json"
 OUTPUT_FILE = ROOT / "tivusat.m3u"
 REPORT_FILE = ROOT / "report.md"
+# File opzionale con stream da fonti diverse da iptv-org (es. bouquet Discovery,
+# che iptv-org non copre). Formato: { "Nome Canale": "https://url-stream", ... }
+OVERRIDES_FILE = ROOT / "overrides.json"
 
 # Numero da cui partire per i canali italiani NON presenti nella tabella LCN.
 # Vengono accodati in fondo, in ordine alfabetico, a partire da questo valore.
@@ -47,6 +57,89 @@ def fetch_json(url):
     req = urllib.request.Request(url, headers={"User-Agent": "tivusat-builder/1.0"})
     with urllib.request.urlopen(req, timeout=60) as resp:
         return json.loads(resp.read().decode("utf-8"))
+
+
+def fetch_text(url):
+    """Scarica testo grezzo da un URL (per la playlist M3U di fallback)."""
+    req = urllib.request.Request(url, headers={"User-Agent": "tivusat-builder/1.0"})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        return resp.read().decode("utf-8", errors="replace")
+
+
+def parse_m3u(text):
+    """
+    Parsa una playlist M3U e restituisce una lista di dict {name, logo, url}.
+    Estrae il nome dal testo dopo la virgola di #EXTINF e l'eventuale tvg-name.
+    """
+    entries = []
+    lines = text.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if line.startswith("#EXTINF"):
+            # nome: preferisci tvg-name se c'e', altrimenti il testo dopo la virgola
+            tvg_name = re.search(r'tvg-name="([^"]*)"', line)
+            logo = re.search(r'tvg-logo="([^"]*)"', line)
+            after_comma = line.split(",", 1)
+            name = (tvg_name.group(1) if tvg_name
+                    else (after_comma[1].strip() if len(after_comma) > 1 else ""))
+            # l'URL e' sulla prima riga non-commento successiva
+            url = ""
+            j = i + 1
+            while j < len(lines):
+                cand = lines[j].strip()
+                if cand and not cand.startswith("#"):
+                    url = cand
+                    break
+                j += 1
+            if name and url:
+                entries.append({
+                    "name": name,
+                    "logo": logo.group(1) if logo else "",
+                    "url": url,
+                })
+            i = j
+        i += 1
+    return entries
+
+
+def load_fallback_by_lcn(lcn_index):
+    """
+    Scarica la playlist di fallback e la indicizza per numero LCN, usando la
+    tabella per riconoscere quali canali ci interessano. Restituisce
+    { lcn: {name, logo, url} }. In caso di errore restituisce {} senza far
+    fallire lo script.
+    """
+    if not FALLBACK_ENABLED:
+        return {}
+    try:
+        text = fetch_text(FALLBACK_URL)
+    except Exception as e:
+        print(f"  (fallback non raggiungibile: {e} — proseguo con sola iptv-org)")
+        return {}
+
+    parsed = parse_m3u(text)
+    if len(parsed) < 10:
+        print(f"  (fallback malformato: solo {len(parsed)} voci — ignorato)")
+        return {}
+
+    by_lcn = {}
+    for entry in parsed:
+        # ripulisci il nome da simboli tipo "Ⓖ" che Free-TV aggiunge
+        clean = entry["name"].replace("Ⓖ", "").strip()
+        hit = lcn_index.get(normalize(clean))
+        if hit:
+            lcn = hit["lcn"]
+            # tieni la prima occorrenza per ogni LCN
+            if lcn not in by_lcn:
+                by_lcn[lcn] = {
+                    "name": hit["label"],
+                    "logo": entry["logo"],
+                    "url": entry["url"],
+                }
+    print(f"  Fallback Free-TV: {len(parsed)} canali totali, "
+          f"{len(by_lcn)} abbinati a un LCN tivusat")
+    return by_lcn
 
 
 def normalize(name):
@@ -88,6 +181,24 @@ def load_mapping():
     for channel_name, lcn in raw.items():
         index[normalize(channel_name)] = {"lcn": int(lcn), "label": channel_name}
     return raw, index
+
+
+def load_overrides():
+    """
+    Carica gli stream manuali da overrides.json, se presente.
+    Restituisce una lista di dict { "name", "url" }.
+    Serve per i canali che iptv-org non copre (es. bouquet Discovery free).
+    """
+    if not OVERRIDES_FILE.exists():
+        return []
+    raw = json.loads(OVERRIDES_FILE.read_text(encoding="utf-8"))
+    result = []
+    for name, url in raw.items():
+        if name.startswith("_"):
+            continue  # chiavi di commento/documentazione
+        if url:  # ignora voci vuote
+            result.append({"name": name, "url": url})
+    return result
 
 
 def build():
@@ -153,6 +264,61 @@ def build():
         else:
             unmapped.append(record)
 
+    # --- Seconda fonte (fallback Free-TV) per i LCN che iptv-org non copre ---
+    print("Controllo la seconda fonte (Free-TV) per i canali mancanti...")
+    fallback_by_lcn = load_fallback_by_lcn(lcn_index)
+    fallback_added = []
+    for lcn, fb in fallback_by_lcn.items():
+        if lcn in matched_lcns:
+            continue  # iptv-org ha gia' questo canale: non lo tocchiamo
+        entries.append({
+            "id": f"freetv:{normalize(fb['name'])}",
+            "name": fb["name"],
+            "logo": fb.get("logo", ""),
+            "categories": ["Discovery" if lcn in (9, 28, 31, 33, 37, 38, 44, 46, 56, 59) else "Italia"],
+            "url": fb["url"],
+            "lcn": lcn,
+            "source": "free-tv",
+        })
+        matched_lcns.add(lcn)
+        fallback_added.append((fb["name"], lcn))
+    if fallback_added:
+        print(f"  Aggiunti da Free-TV: {len(fallback_added)} canali "
+              f"(tra cui il bouquet Discovery se presente)")
+
+    # --- Applica gli override (stream manuali da fonti diverse da iptv-org) ---
+    overrides = load_overrides()
+    override_applied = []
+    if overrides:
+        # indicizza le entries esistenti per LCN, cosi' possiamo sostituirle
+        by_lcn = {r["lcn"]: r for r in entries}
+        for ov in overrides:
+            hit = lcn_index.get(normalize(ov["name"]))
+            if not hit:
+                # l'override punta a un canale che non e' nella tabella LCN: lo segnaliamo
+                override_applied.append((ov["name"], None, "nome non in lcn_tivusat.json"))
+                continue
+            lcn = hit["lcn"]
+            record = {
+                "id": f"override:{normalize(ov['name'])}",
+                "name": hit["label"],   # usa il nome canonico della tabella
+                "logo": "",
+                "categories": ["Discovery" if lcn in (9, 28, 31, 33, 37, 38, 44, 46, 56, 59) else "Italia"],
+                "url": ov["url"],
+                "lcn": lcn,
+                "override": True,
+            }
+            if lcn in by_lcn:
+                # sostituisce il canale gia' presente con lo stream dell'override
+                idx = entries.index(by_lcn[lcn])
+                entries[idx] = record
+                override_applied.append((hit["label"], lcn, "sostituito"))
+            else:
+                entries.append(record)
+                matched_lcns.add(lcn)
+                override_applied.append((hit["label"], lcn, "aggiunto"))
+            by_lcn[lcn] = record
+
     # Ordina i canali mappati per numero LCN
     entries.sort(key=lambda r: r["lcn"])
 
@@ -168,6 +334,15 @@ def build():
     print(f"\nFatto. Playlist scritta in {OUTPUT_FILE.name} ({len(entries)} canali).")
     print(f"  - con LCN tivusat: {len(entries) - len(unmapped)}")
     print(f"  - senza LCN (accodati): {len(unmapped)}")
+    if fallback_added:
+        print(f"  - presi dalla 2a fonte Free-TV: {len(fallback_added)}")
+        for name, lcn in sorted(fallback_added, key=lambda x: x[1]):
+            print(f"      [{lcn}] {name}")
+    if override_applied:
+        print(f"  - override applicati: {len(override_applied)}")
+        for name, lcn, what in override_applied:
+            num = lcn if lcn is not None else "?"
+            print(f"      [{num}] {name}: {what}")
 
 
 def write_m3u(entries):
