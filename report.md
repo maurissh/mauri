@@ -1,13 +1,13 @@
 # Report playlist tivusat
 
-Ultimo aggiornamento: **2026-05-24 14:36 UTC**
+Ultimo aggiornamento: **2026-05-24 14:59 UTC**
 
 ## Riepilogo
 
 - Canali IT nell'anagrafica iptv-org: **616**
 - Canali IT con stream disponibile: **247**
-- Canali abbinati a un LCN tivusat: **28**
-- Canali senza LCN (accodati da 9000): **219**
+- Canali abbinati a un LCN tivusat: **41**
+- Canali senza LCN (accodati da 9000): **206**
 
 ## Canali in tabella LCN ma senza stream oggi
 
@@ -20,21 +20,139 @@ Ultimo aggiornamento: **2026-05-24 14:36 UTC**
 - 19 — Cielo
 - 20 — 20 Mediaset
 - 22 — Focus
-- 26 — Spike
-- 27 — Paramount Network
 - 28 — DMAX
+- 30 — WeDoTV Movies
 - 31 — Real Time
 - 33 — Food Network
 - 35 — Radio Italia TV
-- 36 — RTL 102.5
 - 37 — Discovery
 - 38 — Giallo
 - 40 — Boing
-- 41 — K2
+- 41 — Cartoonito
 - 44 — Frisbee
-- 46 — Cartoonito
-- 56 — Motor Trend
+- 46 — K2
+- 48 — Arte
+- 49 — Mezzo
+- 51 — EQU TV
+- 54 — Solo Calcio
+- 55 — Marcopolo
+- 56 — HGTV
+- 58 — Euronews Italiano
+- 59 — Discovery Turbo
+- 60 — WeDo Big Stories
+- 63 — Radio Italia Live
+- 64 — Radio Kiss Kiss TV
+- 65 — Radio Zeta TV
+- 66 — Radiofreccia TV
+- 67 — Radio Monte Carlo TV
+- 68 — Virgin Radio TV
+- 69 — France 24 English
+- 70 — BBC News
+- 71 — Al Jazeera English
+- 72 — TRT World
+- 73 — NHK World Japan
+- 74 — UATV
+- 75 — France 24 Francais
+- 76 — Dim TV
+- 77 — Al Jazeera
+- 79 — Sonlife
+- 81 — CNBC
+- 82 — Bloomberg
+- 83 — Daystar
+- 85 — DW English
+- 86 — Euronews English
+- 87 — CGTN
+- 88 — CGTN Documentary
+- 89 — Senato
+- 91 — KBS World
+- 92 — CCTV 4
+- 94 — Svoboda
+- 95 — Svoboda News
+- 97 — Russia's Future
+- 98 — Belarus Tomorrow
+- 99 — Gordon Live
+- 202 — Rai Radio 2 Visual
 - 210 — Rai 4K
+- 220 — Museum 4K
+- 222 — MyZen 4K
+- 225 — TravelXP 4K
+- 230 — HotBird 4K
+- 301 — Rai 3 TGR Valle d'Aosta
+- 302 — Rai 3 TGR Piemonte
+- 303 — Rai 3 TGR Liguria
+- 304 — Rai 3 TGR Lombardia
+- 305 — Rai 3 TGR Veneto
+- 306 — Rai 3 TGR Trentino Alto Adige Bolzano
+- 307 — Rai 3 TGR Trentino Alto Adige Trento
+- 308 — Rai 3 TGR Sudtirol
+- 309 — Rai 3 TGR Friuli Venezia Giulia
+- 310 — Rai 3 TGR Furlanija Julijska Krajina
+- 311 — Rai 3 TGR Emilia-Romagna
+- 312 — Rai 3 TGR Toscana
+- 313 — Rai 3 TGR Marche
+- 314 — Rai 3 TGR Umbria
+- 315 — Rai 3 TGR Lazio
+- 316 — Rai 3 TGR Abruzzo
+- 317 — Rai 3 TGR Molise
+- 318 — Rai 3 TGR Campania
+- 319 — Rai 3 TGR Puglia
+- 320 — Rai 3 TGR Basilicata
+- 321 — Rai 3 TGR Calabria
+- 322 — Rai 3 TGR Sardegna
+- 323 — Rai 3 TGR Sicilia
+- 412 — Teleradiopace
+- 413 — Sender Neu Jerusalem
+- 420 — People TV
+- 422 — Telecupole
+- 500 — Tivu La Guida
+- 519 — TRM h24
+- 550 — San Marino RTV
+- 601 — Rai Radio 1
+- 602 — Rai Radio 2
+- 603 — Rai Radio 3
+- 604 — Rai Isoradio
+- 605 — Rai GR Parlamento
+- 606 — Rai Radio 1 Sport
+- 607 — Rai Radio 3 Classica
+- 608 — RDS
+- 609 — DimSuono Roma
+- 610 — RTL 102.5
+- 613 — Radio Gamma Stereo
+- 615 — Radio 105
+- 616 — Virgin Radio
+- 617 — Radio R101
+- 618 — Radio Monte Carlo
+- 619 — Rai Radio Sudtirol
+- 620 — Radio Italia
+- 621 — m2o
+- 622 — Radio Capital
+- 623 — Radio Deejay
+- 624 — Radio 24
+- 625 — Discoradio
+- 626 — Radio Onda d'Urto
+- 627 — Radio Anni 60
+- 629 — Radio Supersound
+- 630 — Radio Margherita
+- 633 — Radio Maria
+- 634 — Radio Mater
+- 635 — Radio Popolare
+- 636 — No Name Radio
+- 637 — Rai Radio Tutta Italiana
+- 638 — Rai Radio Techete'
+- 639 — Rai Radio Kids
+- 640 — Rai Radio Live Napoli
+- 643 — Radio Kiss Kiss
+- 644 — Radio Sportiva
+- 645 — RVS Radio Vita Serena
+- 646 — Canzoni Napoletane
+- 656 — RFI Francais
+- 661 — Swiss Pop
+- 662 — Swiss Jazz
+- 663 — Swiss Classic
+- 815 — Vatican Media
+- 819 — Videolina
+- 822 — Telesardegna
+- 868 — Arte Investimenti
 
 ## Canali italiani senza LCN tivusat
 
@@ -47,7 +165,6 @@ Aggiungi questi nomi a `lcn_tivusat.json` se vuoi assegnare loro un numero:
 - `"7 YOU & ME"`
 - `"70-80 TV"`
 - `"A2i TV"`
-- `"ACI Sport TV"`
 - `"Adnkronos"`
 - `"Alma TV"`
 - `"AltoAdige TV"`
@@ -57,12 +174,10 @@ Aggiungi questi nomi a `lcn_tivusat.json` se vuoi assegnare loro un numero:
 - `"Antenna Tre"`
 - `"Aurora Arte"`
 - `"Azzurra TV"`
-- `"BeJoy.kids"`
 - `"Bergamo TV"`
 - `"Bom Channel"`
 - `"CafeTV24"`
 - `"Calabria TV"`
-- `"Camera dei Deputati"`
 - `"Canale 2 Altamura"`
 - `"Canale 21 Extra"`
 - `"Canale 7"`
@@ -97,8 +212,8 @@ Aggiungi questi nomi a `lcn_tivusat.json` se vuoi assegnare loro un numero:
 - `"Gold TV"`
 - `"Gold TV Sat"`
 - `"GRP VERATV"`
-- `"Horse TV"`
 - `"Icaro TV"`
+- `"Italia 2"`
 - `"Italia 7"`
 - `"Italia2TV"`
 - `"Italian Fishing TV"`
@@ -129,9 +244,7 @@ Aggiungi questi nomi a `lcn_tivusat.json` se vuoi assegnare loro un numero:
 - `"Orler TV"`
 - `"Otto Channel"`
 - `"Paci Contemporary Channel"`
-- `"Padre Pio TV"`
 - `"Paradise TV"`
-- `"Parole di Vita"`
 - `"Passione Lotto"`
 - `"Peer TV Alto Adige"`
 - `"Peer TV South Tyrol"`
@@ -151,15 +264,11 @@ Aggiungi questi nomi a `lcn_tivusat.json` se vuoi assegnare loro un numero:
 - `"Radio Iglesias Sardegna"`
 - `"Radio Italia Trend TV"`
 - `"Radio Norba TV"`
-- `"Radio Number One"`
 - `"Radio Piter Pan TV"`
 - `"Radio Roma News"`
 - `"Radio Roma Television"`
 - `"Radio Studio Delta TV"`
 - `"Radio Taormina Sicilia"`
-- `"Radio Zeta"`
-- `"Radiofreccia"`
-- `"RDS Social TV"`
 - `"ReggioTV"`
 - `"Rete 55"`
 - `"Rete 8"`
@@ -172,11 +281,9 @@ Aggiungi questi nomi a `lcn_tivusat.json` se vuoi assegnare loro un numero:
 - `"RTC Telecalabria"`
 - `"RTL 102.5 Best"`
 - `"RTL 102.5 Bro&Sis"`
-- `"RTL 102.5 Caliente"`
 - `"RTL 102.5 Disco"`
 - `"RTL 102.5 Napule"`
 - `"RTL 102.5 Traffic"`
-- `"RTL 102.5 TV"`
 - `"RTM TV"`
 - `"RTP"`
 - `"RTTR Trento"`
@@ -249,11 +356,9 @@ Aggiungi questi nomi a `lcn_tivusat.json` se vuoi assegnare loro un numero:
 - `"TV7 Benevento"`
 - `"TV7 Triveneta"`
 - `"tv9 Telemaremma"`
-- `"TVA Vicenza"`
 - `"TVL"`
 - `"TVRS"`
 - `"Umbria TV"`
-- `"UniNettuno University TV"`
 - `"Vera TV"`
 - `"Video Rola"`
 - `"Videolina Sardegna"`
