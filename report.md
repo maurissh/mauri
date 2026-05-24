@@ -1,6 +1,6 @@
 # Report playlist tivusat
 
-Ultimo aggiornamento: **2026-05-24 14:59 UTC**
+Ultimo aggiornamento: **2026-05-24 15:06 UTC**
 
 ## Riepilogo
 
@@ -21,24 +21,37 @@ Ultimo aggiornamento: **2026-05-24 14:59 UTC**
 - 20 — 20 Mediaset
 - 22 — Focus
 - 28 — DMAX
+- 28 — DMAX Italy
 - 30 — WeDoTV Movies
 - 31 — Real Time
+- 31 — Real Time Italy
 - 33 — Food Network
+- 33 — Food Network Italy
 - 35 — Radio Italia TV
 - 37 — Discovery
+- 37 — Discovery Channel
+- 37 — Discovery Italy
+- 37 — Warner TV
+- 37 — Warner TV Italy
 - 38 — Giallo
 - 40 — Boing
 - 41 — Cartoonito
 - 44 — Frisbee
+- 44 — Frisbee HD
 - 46 — K2
+- 46 — K2 HD
 - 48 — Arte
 - 49 — Mezzo
 - 51 — EQU TV
 - 54 — Solo Calcio
 - 55 — Marcopolo
 - 56 — HGTV
+- 56 — HGTV Italy
 - 58 — Euronews Italiano
 - 59 — Discovery Turbo
+- 59 — Discovery Turbo Italy
+- 59 — Motor Trend
+- 59 — MotorTrend
 - 60 — WeDo Big Stories
 - 63 — Radio Italia Live
 - 64 — Radio Kiss Kiss TV
