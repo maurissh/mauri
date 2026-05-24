@@ -1,0 +1,41 @@
+name: Aggiorna playlist tivusat
+
+# Quando eseguire il workflow
+on:
+  schedule:
+    # ogni giorno alle 05:00 UTC (07:00 ora italiana in estate, 06:00 in inverno)
+    # iptv-org aggiorna i suoi dati di notte, quindi qui sono gia' pronti
+    - cron: "0 5 * * *"
+  workflow_dispatch:        # permette di lanciarlo a mano dal tab "Actions"
+
+# Permessi necessari per scrivere il commit nel repo
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Genera la playlist
+        run: python build_playlist.py
+
+      - name: Committa i file aggiornati (se cambiati)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tivusat.m3u report.md
+          if git diff --staged --quiet; then
+            echo "Nessuna modifica: la playlist e' identica a ieri."
+          else
+            git commit -m "Aggiornamento playlist tivusat $(date -u +'%Y-%m-%d')"
+            git push
+          fi
