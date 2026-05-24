@@ -1,0 +1,75 @@
+name: Controlla aggiornamenti LCN tivusat
+
+# Gira una volta a settimana (lunedi mattina) e si puo' lanciare a mano.
+on:
+  schedule:
+    - cron: "0 6 * * 1"      # ogni lunedi alle 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write              # serve per aprire/aggiornare la issue di report
+
+jobs:
+  check-lcn:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Esegue il controllo. Non usa --apply: non tocca lcn_tivusat.json,
+      # genera solo lcn_changes.md con le differenze.
+      # continue-on-error: se il forum cambia formato lo script esce con codice
+      # != 0, ma vogliamo comunque proseguire per segnalarlo nella issue.
+      - name: Controlla differenze LCN
+        id: check
+        continue-on-error: true
+        run: |
+          python sync_lcn.py
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+
+      # Prepara il corpo della issue dal report (o un messaggio di errore).
+      - name: Prepara messaggio
+        id: body
+        run: |
+          if [ -f lcn_changes.md ]; then
+            {
+              echo "body<<__EOF__"
+              cat lcn_changes.md
+              echo ""
+              echo "---"
+              echo "_Controllo automatico settimanale. La tabella \`lcn_tivusat.json\` NON e' stata modificata._"
+              echo "_Per applicare: aggiorna a mano i numeri/canali, ricordando di usare i nomi nella forma di iptv-org._"
+              echo "__EOF__"
+            } >> "$GITHUB_OUTPUT"
+          else
+            {
+              echo "body<<__EOF__"
+              echo "Il controllo automatico non ha prodotto un report."
+              echo "Probabile causa: la pagina del forum ha cambiato formato o non era raggiungibile."
+              echo "Controlla manualmente la fonte e il parser in sync_lcn.py."
+              echo "__EOF__"
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      # Apre una nuova issue solo se ci sono differenze reali.
+      # Se il report dice "Nessuna differenza", non disturba.
+      - name: Apri issue se ci sono modifiche
+        if: contains(steps.body.outputs.body, 'Canali') || contains(steps.body.outputs.body, 'non ha prodotto')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = `${{ steps.body.outputs.body }}`;
+            const title = `Aggiornamento numerazione LCN tivùsat — ${new Date().toISOString().slice(0,10)}`;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['lcn-update']
+            });
