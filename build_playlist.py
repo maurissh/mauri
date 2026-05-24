@@ -52,6 +52,15 @@ FALLBACK_URL = "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/
 VALIDATE_STREAMS = True
 VALIDATE_TIMEOUT = 8        # secondi max di attesa per stream
 VALIDATE_WORKERS = 12       # quanti stream testare in parallelo
+# Alcuni stream (es. canali Discovery, relinker Rai) rispondono solo con uno
+# user-agent specifico: con quello "normale" darebbero errore pur essendo vivi.
+# Li proviamo in sequenza, dal piu' comune ai piu' specifici.
+VALIDATE_USER_AGENTS = (
+    "Mozilla/5.0 (tivusat-builder stream-check)",   # generico
+    "HbbTV/1.6.1",                                   # canali Discovery / TV ibride
+    "raiplayappletv",                                # relinker Rai (Apple TV)
+    "VLC/3.0.18 LibVLC/3.0.18",                      # alcuni stream accettano solo VLC
+)
 # Alcuni stream sono geo-bloccati all'Italia: dal server GitHub (spesso fuori IT)
 # risulterebbero "morti" pur funzionando da casa tua. I canali il cui URL contiene
 # uno di questi frammenti NON vengono scartati anche se il test fallisce.
@@ -137,24 +146,19 @@ def is_geoblock_whitelisted(url):
 
 def check_stream(url):
     """
-    Verifica se uno stream risponde. Restituisce True se sembra vivo.
-    Strategia: richiesta GET con timeout breve; per le playlist .m3u8 basta
-    che il server risponda con codice 200 e un po' di contenuto.
-    Non scarica il video: legge solo i primi byte.
+    Verifica se uno stream risponde, provando piu' user-agent in sequenza.
+    Restituisce lo user-agent che ha funzionato (stringa), oppure None se
+    nessuno ha avuto successo. Non scarica il video: legge solo i primi byte.
     """
-    try:
-        req = urllib.request.Request(url, headers={
-            "User-Agent": "Mozilla/5.0 (tivusat-builder stream-check)"
-        })
-        with urllib.request.urlopen(req, timeout=VALIDATE_TIMEOUT) as resp:
-            code = resp.getcode()
-            if code != 200:
-                return False
-            # legge un piccolo campione per confermare che arrivano dati
-            chunk = resp.read(256)
-            return bool(chunk)
-    except Exception:
-        return False
+    for ua in VALIDATE_USER_AGENTS:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": ua})
+            with urllib.request.urlopen(req, timeout=VALIDATE_TIMEOUT) as resp:
+                if resp.getcode() == 200 and resp.read(256):
+                    return ua  # questo user-agent funziona
+        except Exception:
+            continue  # prova il prossimo user-agent
+    return None
 
 
 def validate_entries(entries):
@@ -174,8 +178,14 @@ def validate_entries(entries):
         results = list(pool.map(check_stream, urls))
 
     alive, dropped = [], []
-    for entry, ok in zip(entries, results):
-        if ok:
+    special_ua = 0
+    for entry, working_ua in zip(entries, results):
+        if working_ua is not None:
+            # se ha funzionato solo con uno user-agent speciale, lo salviamo
+            # nell'entry cosi' lo scriviamo nella playlist per il player
+            if working_ua != VALIDATE_USER_AGENTS[0]:
+                entry["user_agent"] = working_ua
+                special_ua += 1
             alive.append(entry)
         elif is_geoblock_whitelisted(entry["url"]):
             # test fallito ma e' geo-IT: lo teniamo e lo marchiamo
@@ -185,8 +195,11 @@ def validate_entries(entries):
             dropped.append(entry)
 
     kept_geo = sum(1 for e in alive if e.get("geo_kept"))
-    print(f"  Vivi: {len(alive)} (di cui {kept_geo} geo-IT tenuti per fiducia) "
-          f"| Scartati: {len(dropped)}")
+    msg = (f"  Vivi: {len(alive)} (di cui {kept_geo} geo-IT tenuti per fiducia) "
+           f"| Scartati: {len(dropped)}")
+    if special_ua:
+        msg += f" | {special_ua} richiedono user-agent speciale"
+    print(msg)
     return alive, dropped
 
 
@@ -460,6 +473,12 @@ def write_m3u(entries):
         # nel titolo metto il numero davanti per leggibilita' nei player che non leggono tvg-chno
         title = f'{r["lcn"]:>3} {r["name"]}'
         lines.append(f'#EXTINF:-1 {attrs},{title}')
+        # se il canale richiede uno user-agent speciale, lo dichiariamo nei
+        # formati che i player piu' comuni riconoscono (VLC, Kodi)
+        ua = r.get("user_agent")
+        if ua:
+            lines.append(f'#EXTVLCOPT:http-user-agent={ua}')
+            lines.append(f'#KODIPROP:inputstream.adaptive.stream_headers=User-Agent={ua}')
         lines.append(r["url"])
     OUTPUT_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -485,34 +504,4 @@ def write_report(raw_map, entries, unmapped, it_channels, streams_by_channel):
         "## Riepilogo",
         "",
         f"- Canali {COUNTRY} nell'anagrafica iptv-org: **{len(it_channels)}**",
-        f"- Canali {COUNTRY} con stream disponibile: **{len(streams_by_channel)}**",
-        f"- Canali abbinati a un LCN tivusat: **{mapped_count}**",
-        f"- Canali senza LCN (accodati da {UNMAPPED_START}): **{len(unmapped)}**",
-        "",
-    ]
-
-    if missing:
-        lines += [
-            "## Canali in tabella LCN ma senza stream oggi",
-            "",
-            "(numero — nome: lo stream potrebbe essere temporaneamente assente)",
-            "",
-        ]
-        lines += [f"- {lcn} — {label}" for lcn, label in missing]
-        lines.append("")
-
-    if unmapped:
-        lines += [
-            "## Canali italiani senza LCN tivusat",
-            "",
-            "Aggiungi questi nomi a `lcn_tivusat.json` se vuoi assegnare loro un numero:",
-            "",
-        ]
-        lines += [f'- `"{r["name"]}"`' for r in unmapped]
-        lines.append("")
-
-    REPORT_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
-if __name__ == "__main__":
-    build()
+        f"- Canali {COUNTRY} con stream disponibile: **{len
