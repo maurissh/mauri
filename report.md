@@ -1,6 +1,6 @@
 # Report playlist tivusat
 
-Ultimo aggiornamento: **2026-05-24 20:11 UTC**
+Ultimo aggiornamento: **2026-05-25 08:57 UTC**
 
 ## Riepilogo
 
