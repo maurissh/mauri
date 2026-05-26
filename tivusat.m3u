@@ -177,6 +177,8 @@ https://live20.bozztv.com/giatvplayout7/giatv-211474/playlist.m3u8
 https://59d7d6f47d7fc.streamlock.net/pierstyle/pierstyle/playlist.m3u8
 #EXTINF:-1 tvg-id="DITV80.it" tvg-chno="9035" tvg-logo="" group-title="general",9035 DI.TV 80
 https://5f22d76e220e1.streamlock.net/ditv80/ditv80/playlist.m3u8
+#EXTINF:-1 tvg-id="DonnaTV.it" tvg-chno="9036" tvg-logo="" group-title="series",9036 Donna TV
+https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8
 #EXTINF:-1 tvg-id="EliveTVBrescia.it" tvg-chno="9037" tvg-logo="" group-title="general",9037 Elive TV Brescia
 https://59d7d6f47d7fc.streamlock.net/elivebresciatv/elivebresciatv/playlist.m3u8
 #EXTINF:-1 tvg-id="EntellaTV.it" tvg-chno="9038" tvg-logo="" group-title="general",9038 Entella TV
@@ -201,6 +203,10 @@ https://5f204aff97bee.streamlock.net/GR_tv/livestream/playlist.m3u8
 https://media2021.rtvweb.com/giovannipaolotv/web/playlist.m3u8
 #EXTINF:-1 tvg-id="GOTVCanale163.it" tvg-chno="9050" tvg-logo="" group-title="general",9050 GO-TV Canale 163
 https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648993a.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="GoldTV.it" tvg-chno="9051" tvg-logo="" group-title="entertainment",9051 Gold TV
+https://streaming.softwarecreation.it/GoldTv/GoldTv/playlist.m3u8
+#EXTINF:-1 tvg-id="GoldTVSat.it" tvg-chno="9052" tvg-logo="" group-title="entertainment",9052 Gold TV Sat
+https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8
 #EXTINF:-1 tvg-id="GRPVERATV.it" tvg-chno="9053" tvg-logo="" group-title="general",9053 GRP VERATV
 https://webstream.multistream.it/memfs/a3195c96-f884-4c74-924f-2648814fc0b5_output_0.m3u8
 #EXTINF:-1 tvg-id="IcaroTV.it" tvg-chno="9054" tvg-logo="" group-title="general",9054 Icaro TV
@@ -243,6 +249,8 @@ https://5f22d76e220e1.streamlock.net/medjugorjeitaliatv/medjugorjeitaliatv/playl
 https://5db313b643fd8.streamlock.net/MinformoTV/MinformoTV/playlist.m3u8
 #EXTINF:-1 tvg-id="NauticalChannel.it" tvg-chno="9078" tvg-logo="" group-title="sports",9078 Nautical Channel
 https://a-cdn.klowdtv.com/live2/nautical_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="Odeon24.it" tvg-chno="9080" tvg-logo="" group-title="general",9080 Odeon 24
+https://streaming.softwarecreation.it/Odeon/Odeon/playlist.m3u8
 #EXTINF:-1 tvg-id="OndaNovaraTV.it" tvg-chno="9081" tvg-logo="" group-title="general",9081 Onda Novara TV
 https://585b674743bbb.streamlock.net/9006/9006/master.m3u8
 #EXTINF:-1 tvg-id="OndaTV.it" tvg-chno="9082" tvg-logo="" group-title="general",9082 Onda TV
@@ -337,6 +345,8 @@ https://stream1.aswifi.it/stereo5/live/index.m3u8
 https://5db313b643fd8.streamlock.net/SUPERSIXLombardia/SUPERSIXLombardia/playlist.m3u8
 #EXTINF:-1 tvg-id="SuperTV.it" tvg-chno="9140" tvg-logo="" group-title="general",9140 Super TV
 http://wms.shared.streamshow.it/supertv/mp4:supertv/playlist.m3u8
+#EXTINF:-1 tvg-id="T9.it" tvg-chno="9142" tvg-logo="" group-title="general",9142 T9
+https://streaming.softwarecreation.it/tnove/tnove/playlist.m3u8
 #EXTINF:-1 tvg-id="TaurianovaTV.it" tvg-chno="9143" tvg-logo="" group-title="general",9143 Taurianova TV
 https://5f22d76e220e1.streamlock.net/taurianovatv/taurianovatv/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleAbruzzo.it" tvg-chno="9145" tvg-logo="" group-title="Italia",9145 Tele Abruzzo
@@ -405,8 +415,6 @@ https://eu1.servers10.com:8081/8032/index.m3u8
 https://live.mariatvcdn.com/tvprato/2db0dd5674586686a867ec52c3aa8e06.sdp/index.m3u8
 #EXTINF:-1 tvg-id="TVQuiModena.it" tvg-chno="9192" tvg-logo="" group-title="Italia",9192 TV Qui Modena
 https://59d7d6f47d7fc.streamlock.net/tvqui/tvqui/playlist.m3u8
-#EXTINF:-1 tvg-id="TVYesItalia.it" tvg-chno="9194" tvg-logo="" group-title="Italia",9194 TV Yes Italia
-https://stream1.aswifi.it/radioyes/live/index.m3u8
 #EXTINF:-1 tvg-id="TV7Benevento.it" tvg-chno="9195" tvg-logo="" group-title="Italia",9195 TV7 Benevento
 http://streaming.senecadot.com/live/flv:tv7.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="tv9Telemaremma.it" tvg-chno="9197" tvg-logo="" group-title="news",9197 tv9 Telemaremma

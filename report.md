@@ -1,12 +1,12 @@
 # Report playlist tivusat
 
-Ultimo aggiornamento: **2026-05-25 08:57 UTC**
+Ultimo aggiornamento: **2026-05-26 08:32 UTC**
 
 ## Riepilogo
 
 - Canali IT nell'anagrafica iptv-org: **616**
 - Canali IT con stream disponibile: **247**
-- Canali abbinati a un LCN tivusat: **3**
+- Canali abbinati a un LCN tivusat: **7**
 - Canali senza LCN (accodati da 9000): **206**
 
 ## Canali in tabella LCN ma senza stream oggi
