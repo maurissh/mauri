@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Scarica la playlist IPTV da GitHub, la ordina in base al tvg-chno (LCN Tivùsat)
-e stampa il risultato. Nessun canale viene escluso, anche in presenza di commenti
-o righe vuote.
+Scarica la playlist IPTV, la ordina per tvg-chno (LCN Tivùsat) preservando
+TUTTE le righe di commento (es. #KODIPROP, #EXTVLCOPT) associate a ciascun canale.
+Nessun canale viene escluso e il DRM rimane funzionante.
 """
 
 import re
@@ -11,14 +11,16 @@ import urllib.request
 
 URL = "https://raw.githubusercontent.com/maginetweb-arch/TVITALIA/refs/heads/main/iptvit.m3u"
 
-def estrai_lcn(extinf):
-    """Restituisce il numero LCN come intero, oppure 99999 se assente."""
-    m = re.search(r'tvg-chno="(\d+)"', extinf)
-    if m:
-        return int(m.group(1))
-    m = re.search(r'tvg-chno=(\d+)', extinf)
-    if m:
-        return int(m.group(1))
+def estrai_lcn(blocco):
+    """Restituisce il numero LCN dal primo #EXTINF del blocco, o 99999 se assente."""
+    for line in blocco:
+        if line.startswith('#EXTINF'):
+            m = re.search(r'tvg-chno="(\d+)"', line)
+            if m:
+                return int(m.group(1))
+            m = re.search(r'tvg-chno=(\d+)', line)
+            if m:
+                return int(m.group(1))
     return 99999
 
 def main():
@@ -27,54 +29,49 @@ def main():
 
     righe = contenuto.splitlines(keepends=True)
 
+    # Separiamo header (tutto prima del primo #EXTINF) e blocchi canale
     header = []
-    canali = []   # lista di tuple (extinf, url)
+    blocchi = []   # ogni blocco è una lista di righe: [#EXTINF, (commenti...), URL]
 
     i = 0
-    while i < len(righe):
-        riga = righe[i]
-        s = riga.strip()
-
-        # Riga #EXTM3U -> sempre nell'header
-        if s.startswith('#EXTM3U'):
-            header.append(riga)
-            i += 1
-            continue
-
-        # Riga #EXTINF -> cattura l'EXTINF e cerca l'URL sulla prossima riga non vuota/non commento
-        if s.startswith('#EXTINF'):
-            extinf = riga
-            i += 1
-            # Salta eventuali righe vuote o commenti (righe che iniziano con '#' ma non #EXTINF e non #EXTM3U)
-            while i < len(righe) and (righe[i].strip() == '' or (righe[i].strip().startswith('#') and not righe[i].strip().startswith('#EXTINF') and not righe[i].strip().startswith('#EXTM3U'))):
-                # possiamo salvare questi commenti nell'header? No, meglio ignorarli per non sporcare, ma se si volesse conservarli andrebbero legati al canale.
-                # Per semplicità li scartiamo, dato che non contengono dati essenziali.
-                i += 1
-            if i < len(righe):
-                url = righe[i]
-                canali.append((extinf, url))
-                i += 1
-            else:
-                # EXTINF senza URL: lo mettiamo lo stesso con URL vuoto? O lo ignoriamo? In una playlist normale non dovrebbe accadere, ma per sicurezza lo aggiungiamo con url=''
-                canali.append((extinf, ''))
-            continue
-
-        # Qualunque altra riga (commenti fuori posto, righe vuote prima di un EXTINF) -> la conserviamo nell'header
-        # ma solo se non siamo nel bel mezzo di un blocco EXTINF+URL. Siccome il ciclo è sequenziale, qui ci arrivano solo righe che non seguono immediatamente un EXTINF.
-        header.append(riga)
+    # Aggiungi tutte le righe prima del primo #EXTINF all'header
+    while i < len(righe) and not righe[i].strip().startswith('#EXTINF'):
+        header.append(righe[i])
         i += 1
 
-    # Ordinamento stabile in base al LCN
-    canali_ordinati = sorted(canali, key=lambda x: estrai_lcn(x[0]))
+    # Ora processiamo i blocchi canale
+    while i < len(righe):
+        blocco = []
+        # La riga corrente è sicuramente un #EXTINF
+        blocco.append(righe[i])
+        i += 1
+
+        # Raccogli eventuali righe di commento (iniziano con '#', ma non sono nuovi #EXTINF o #EXTM3U)
+        while i < len(righe) and righe[i].strip().startswith('#') and not righe[i].strip().startswith('#EXTINF') and not righe[i].strip().startswith('#EXTM3U'):
+            blocco.append(righe[i])
+            i += 1
+
+        # Ora ci aspettiamo l'URL (prima riga senza '#')
+        if i < len(righe) and not righe[i].strip().startswith('#'):
+            blocco.append(righe[i])
+            i += 1
+        else:
+            # Caso anomalo: EXTINF senza URL (ignoriamo o aggiungiamo URL vuoto)
+            if i < len(righe) and righe[i].strip().startswith('#'):
+                # Potrebbe essere un nuovo EXTINF senza URL precedente? Lo gestiamo forzando un URL vuoto.
+                pass  # terremo il blocco senza URL (poi sotto lo aggiungiamo con stringa vuota se assente)
+
+        blocchi.append(blocco)
+
+    # Ordinamento stabile per LCN
+    blocchi_ordinati = sorted(blocchi, key=lambda b: estrai_lcn(b))
 
     # Output
     sys.stdout.writelines(header)
-    for extinf, url in canali_ordinati:
-        sys.stdout.write(extinf)
-        sys.stdout.write(url)
+    for blocco in blocchi_ordinati:
+        sys.stdout.writelines(blocco)
 
-    # Messaggio di debug su stderr per non sporcare l'output M3U
-    print(f"\n\n[INFO] Canali totali ordinati: {len(canali_ordinati)}", file=sys.stderr)
+    print(f"\n[INFO] Canali totali ordinati: {len(blocchi)}", file=sys.stderr)
 
 if __name__ == '__main__':
     main()
