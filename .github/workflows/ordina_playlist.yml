@@ -1,36 +1,32 @@
-name: Ordina playlist per LCN Tivùsat
+name: Aggiorna Lista Tivusat
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # ogni giorno alle 06:00 UTC
-  workflow_dispatch:       # permette l'esecuzione manuale
+    # Esegue lo script ogni giorno alle 04:00 del mattino (ora UTC)
+    - cron: '0 4 * * *'
+  workflow_dispatch: # Ti permette di avviare l'aggiornamento manualmente dal sito
 
 jobs:
-  ordina:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout del repository
+        uses: actions/checkout@v3
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: Configura Python
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: '3.x'
 
-      - name: Esegui script di ordinamento
-        run: python ordina_tivusat.py > tivusat_ordinato.m3u
+      - name: Esegui lo script Python
+        run: python update_list.py
 
-      - name: Carica playlist ordinata come artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: playlist-ordinata
-          path: tivusat_ordinato.m3u
-
-      # Opzionale: committa il file ordinato nello stesso repo
-      - name: Commit e push del file ordinato
+      - name: Committa e pusha i cambiamenti
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action@github.com"
           git add tivusat_ordinato.m3u
-          git diff --staged --quiet || git commit -m "Aggiornamento automatico playlist ordinata"
-          git push
+          # Se non ci sono cambiamenti, non fa nulla ed evita errori
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Aggiornamento lista Tivùsat" && git push)
+          
