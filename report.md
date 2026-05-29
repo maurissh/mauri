@@ -1,12 +1,12 @@
 # Report playlist tivusat
 
-Ultimo aggiornamento: **2026-05-28 08:43 UTC**
+Ultimo aggiornamento: **2026-05-29 08:43 UTC**
 
 ## Riepilogo
 
 - Canali IT nell'anagrafica iptv-org: **616**
 - Canali IT con stream disponibile: **247**
-- Canali abbinati a un LCN tivusat: **8**
+- Canali abbinati a un LCN tivusat: **-2**
 - Canali senza LCN (accodati da 9000): **206**
 
 ## Canali in tabella LCN ma senza stream oggi
@@ -55,6 +55,7 @@ Ultimo aggiornamento: **2026-05-28 08:43 UTC**
 - 87 — CGTN
 - 88 — CGTN Documentary
 - 89 — Senato
+- 90 — Camera dei Deputati
 - 91 — KBS World
 - 92 — CCTV 4
 - 94 — Svoboda
