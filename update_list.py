@@ -45,7 +45,7 @@ def processa_m3u():
     print("[*] Estrazione e analisi dei canali (DRM, EPG, Picons inclusi)...")
     for linea in linee:
         linea = linea.strip()
-        if non linea: continue
+        if not linea: continue
         
         if linea.startswith("#EXTM3U"):
             continue # Lo saltiamo qui, lo aggiungiamo in cima alla fine
