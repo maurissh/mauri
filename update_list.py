@@ -5,33 +5,43 @@ import re
 URL_SORGENTE = "https://raw.githubusercontent.com/maginetweb-arch/TVITALIA/refs/heads/main/iptvit.m3u"
 FILE_OUTPUT = "tivusat_ordinato.m3u"
 
-# Numerazione LCN Tivùsat
+# Numerazione UFFICIALE Tivùsat
 LCN_TIVUSAT = {
     "rai 1": 1, "rai 2": 2, "rai 3": 3, "rete 4": 4, "canale 5": 5, "italia 1": 6,
-    "la7": 7, "tv8": 8, "nove": 9, "20 mediaset": 20, "rai 4": 21, "iris": 22,
-    "rai 5": 23, "rai movie": 24, "rai premium": 25, "cielo": 26, "twentyseven": 27,
-    "27 twentyseven": 27, "la7d": 28, "cine34": 29, "la5": 30, "real time": 31,
-    "qvc": 32, "food network": 33, "warner tv": 34, "focus": 35, "rtl 102.5": 36,
-    "giallo": 37, "top crime": 38, "dmax": 39, "boing": 40, "k2": 41, "frisbee": 42,
-    "rai gulp": 43, "rai yoyo": 44, "cartoonito": 46, "super!": 47,
-    "rai news 24": 48, "tgcom24": 51, "rai storia": 54, "mediaset extra": 55, 
-    "hgtv": 56, "motor trend": 59, "sportitalia": 60, "rai sport": 61, 
-    "supertennis": 64, "radio 105": 66, "r101": 67, "virgin radio": 68, 
-    "radio italia": 70, "kiss kiss": 72, "radionorba tv": 73, "rtl 102.5 news": 74, 
-    "radio zeta": 75, "freccia": 76, "rds social tv": 50, "vh1": 22, "paramount": 27
+    "la7": 7, "tv8": 8, "nove": 9, "rai 4": 10, "iris": 11, "la 5": 12, "la5": 12, "rai 5": 13,
+    "rai movie": 14, "rai premium": 15, "italia 2": 16, "mediaset extra": 17,
+    "tv2000": 18, "cielo": 19, "20 mediaset": 20, "mediaset 20": 20, "rai sport": 21,
+    "focus": 22, "rai storia": 23, "rai news 24": 24, "tgcom 24": 25, "tgcom24": 25,
+    "rai scuola": 26, "twentyseven": 27, "27 twentyseven": 27, "dmax": 28,
+    "la7d": 29, "la7 cinema": 29, "real time": 31, "food network": 33,
+    "cine 34": 34, "cine34": 34, "radio italia": 35, "rtl 102.5": 36, "discovery": 37, 
+    "giallo": 38, "top crime": 39, "boing": 40, "cartoonito": 41, "rai gulp": 42, 
+    "rai yoyo": 43, "frisbee": 44, "k2": 46, "super!": 47, "arte": 48, "mezzo": 49,
+    "rds social": 50, "rds social tv": 50, "equ": 51, "equ tv": 51, "aci sport": 52, 
+    "aci sport tv": 52, "sportitalia": 54, "hgtv": 56, "euronews": 58, 
+    "motor trend": 59, "discovery turbo": 59, "radio italia live": 63, "kiss kiss": 64, 
+    "radio kiss kiss": 64, "radio zeta": 65, "freccia": 66, "radiofreccia": 66, 
+    "radio monte carlo": 67, "virgin radio": 68, "deejay": 69, "warner": 54, "warner tv": 54
 }
 
 def normalizza_nome(nome_grezzo):
-    """Pulisce il nome del canale per garantire un matching perfetto con l'LCN."""
+    """Pulisce in modo chirurgico i nomi IPTV per trovare l'accoppiamento perfetto."""
     nome = nome_grezzo.lower()
+    
+    # Rimuove tutto ciò che è tra parentesi [] () {}
     nome = re.sub(r'\[.*?\]|\(.*?\)|\{.*?\}', '', nome)
-    da_rimuovere = ["hd", "fhd", "4k", "it:", "tv", "hevc"]
-    for parola in da_rimuovere:
-        nome = nome.replace(parola, "")
-    return nome.strip()
+    
+    # Rimuove classici prefissi da IPTV
+    nome = nome.replace("it:", "").replace("it |", "").replace("it-", "")
+    
+    # Rimuove parole inutili per la classificazione, mantenendo i nomi composti (es. TV8, TV2000 restano intatti)
+    parole_da_rimuovere = ["hd", "fhd", "4k", "hevc", "1080p", "720p", "h265", "tv", "ita"]
+    parole_pulite = [p for p in nome.split() if p not in parole_da_rimuovere]
+    
+    return " ".join(parole_pulite).strip()
 
 def processa_m3u():
-    print("[*] Scaricamento della lista da GitHub in corso...")
+    print("[*] Scaricamento della lista da GitHub...")
     req = urllib.request.Request(URL_SORGENTE, headers={'User-Agent': 'Mozilla/5.0'})
     
     with urllib.request.urlopen(req) as response:
@@ -40,7 +50,7 @@ def processa_m3u():
     canali = []
     blocco_corrente = []
     
-    print("[*] Estrazione e analisi dei canali (DRM, EPG, Picons inclusi)...")
+    print("[*] Estrazione blocchi (DRM/EPG/Picons intatti)...")
     for linea in linee:
         linea = linea.strip()
         if not linea: 
@@ -55,6 +65,7 @@ def processa_m3u():
             blocco_corrente = [linea]
         elif blocco_corrente:
             blocco_corrente.append(linea)
+            # Se la riga NON inizia con #, vuol dire che è l'URL di riproduzione (fine del blocco)
             if not linea.startswith("#"):
                 canali.append(blocco_corrente)
                 blocco_corrente = []
@@ -70,6 +81,7 @@ def processa_m3u():
         nome_grezzo = extinf_line.split(',')[-1].strip()
         nome_pulito = normalizza_nome(nome_grezzo)
         
+        # Assegna LCN, se non lo trova mette 9999 (spingendolo a fine lista)
         lcn = LCN_TIVUSAT.get(nome_pulito, 9999) 
         
         if lcn != 9999:
@@ -77,17 +89,18 @@ def processa_m3u():
         else:
             canali_non_mappati.append((lcn, blocco))
 
+    # Ordina i canali Tivùsat secondo l'LCN
     canali_ordinati.sort(key=lambda x: x[0])
     lista_finale = canali_ordinati + canali_non_mappati
 
-    print("[*] Generazione del file M3U finale...")
+    print("[*] Generazione del file M3U...")
     with open(FILE_OUTPUT, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for lcn, blocco in lista_finale:
             f.write("\n".join(blocco) + "\n")
 
-    print(f"[+] Lavoro completato. Lista salvata come: {FILE_OUTPUT}")
+    print(f"[+] Lavoro completato! {len(canali_ordinati)} canali associati a Tivusat. Lista salvata come: {FILE_OUTPUT}")
 
 if __name__ == "__main__":
     processa_m3u()
-  
+    
