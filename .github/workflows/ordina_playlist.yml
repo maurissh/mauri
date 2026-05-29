@@ -2,13 +2,14 @@ name: Aggiorna Lista Tivusat
 
 on:
   schedule:
-    # Esegue lo script ogni giorno alle 04:00 del mattino (ora UTC)
     - cron: '0 4 * * *'
-  workflow_dispatch: # Ti permette di avviare l'aggiornamento manualmente dal sito
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout del repository
@@ -27,6 +28,5 @@ jobs:
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "action@github.com"
           git add tivusat_ordinato.m3u
-          # Se non ci sono cambiamenti, non fa nulla ed evita errori
           git diff --quiet && git diff --staged --quiet || (git commit -m "Aggiornamento lista Tivùsat" && git push)
           
